@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Vehicle Detection",
+		"image": "proj2/title_img.gif",
+		"url": "/proj/proj2",
+		"date": "Mar 2017",
+		"tags": ["Self-Driving Car","Computer Vision"],
+		"main": "true",
+		"id": "proj2"
+	},
+	{
+		"name": "Lane Lines Detection",
+		"image": "proj1/title_img.gif",
+		"url": "/proj/proj1",
+		"date": "Feb 2017",
+		"tags": ["Self-Driving Car","Computer Vision"],
+		"main": "true",
+		"id": "proj1"
+	}
+]

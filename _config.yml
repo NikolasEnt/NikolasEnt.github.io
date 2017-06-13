@@ -1,0 +1,27 @@
+title: Self-Driving Cars Lab
+email: nikolasent@gmail.com
+author: Nikolay Falaleev
+logo: /static/img/avatar.png
+about: Nikolay Falaleev
+description: > # this means to ignore newlines until "baseurl:"
+  A Robotics, Computer Vision and Machine Learning lab by Nikolay Falaleev. The main focus of the blog is Self-Driving Car Technology.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nikolasent.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: NFalaleev
+github:  NikolasEnt
+
+allowsearch: false
+enableTags:  false
+
+paginate: 20
+per_page: 20
+paginate_path: "/blog/page:num/"
+markdown: kramdown
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  
+exclude:
+  - Gemfile
+  - Gemfile.lock
