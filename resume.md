@@ -37,9 +37,14 @@ permalink: /resume/
 __10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Institute of Machines Science named after A.A.Blagonravov of the Russian Academy of Sciences._ 
 
 Responsibilities:
-* Constructing stable finite-difference schemes for transient
-heat conduction. Choosing the solution approach. Coding
-and numerical calculations.
+* Constructing stable finite-difference schemes for transient heat conduction. Choosing the solution approach. Coding and numerical calculations.
+* Scientific programming using C and MATLAB languages.
+* Automation of experimental data collection and processing.
+* Conducting mechanical experiments and numerical results data analysis in R.
+* Sample preparation and instrumental analysis.
+
+Achievements:
+* 6 scientific papers and 3 conference reports were coauthored.
 
 ## __Interests__
 
