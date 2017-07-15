@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Resume
 permalink: /resume/
 ---
 <div align="center">
@@ -30,7 +30,14 @@ permalink: /resume/
 
 ## __Prizes__
 
-|__2016__ ||| 3d place on [Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)
+|__2016__ ||| __Udacity [Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)__ |
+| ||| The 3d place. A deep learning approach based on GoogLeNet inception module was applied for "localization as classification" method for localization of an autonomous vehicle. |
+|__2015__ ||| __ХХVII International Innovation Conference of Young Scientists and Students__, Moscow, Russia |
+| ||| Diploma for the best scientific report “Mathematical modeling and numerical calculations of particles and coatings heating during gas-dynamic spraying”. |
+|__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
+| ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
+|__2011__ ||| __Siemens Science Award__, Moscow, Russia |
+| ||| Project "The UAV-based Global Surveillance System" |
 
 ## __Employment__
 
