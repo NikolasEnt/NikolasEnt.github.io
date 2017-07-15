@@ -10,9 +10,9 @@ permalink: /resume/
 
 ## __Education__
 
-| __09/2011 - 07/2015__ |||__Bachelor of Science__ in Materials Science Department of Materials Science |
-| ||| _Lomonosov Moscow State University (MSU)_ |
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
+| ||| _Lomonosov Moscow State University (MSU)_ |
+| __09/2011 - 07/2015__ |||__Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
 | __11/2016 - present__ ||| __Self-Driving Car Engineer__ Nanodegree |
 | ||| _Udacity_ |	
@@ -41,17 +41,43 @@ permalink: /resume/
 
 ## __Employment__
 
-__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Institute of Machines Science named after A.A.Blagonravov of the Russian Academy of Sciences._ 
+__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
 
 Responsibilities:
-* Constructing stable finite-difference schemes for transient heat conduction. Choosing the solution approach. Coding and numerical calculations.
-* Scientific programming using C and MATLAB languages.
-* Automation of experimental data collection and processing.
-* Conducting mechanical experiments and numerical results data analysis in R.
-* Sample preparation and instrumental analysis.
+* Constructing stable finite-difference schemes for transient heat conduction in 3D case. Choosing the solution approach. Coding and numerical calculations
+* Scientific programming using C and MATLAB languages
+* Automation of experimental data collection and processing
+* Conducting mechanical experiments and numerical results data analysis in R
+* Sample preparation and instrumental analysis
 
 Achievements:
-* 6 scientific papers and 3 conference reports were coauthored.
+* 6 scientific papers and 3 conference reports were coauthored
+
+__09/2016 - 12/2016__ __Internship__ _National Research Center «Kurchatov Institute»_ 
+
+* Take part in experiments at the Kurchatov Synchrotron Radiation Source
+* Processing of large amount of experimental results: data cleaning, feature extraction and interpretation of the results
+* Development of software utilities for the data processing such as [XPS results visualizer and converter](https://github.com/NikolasEnt/XPS-visualizer-and-converter)
+* Results of the internship were applied during a beamtime at HZB BESSY II Synchrotron Radiation Source (Berlin, Germany)
+
+__09/2014 - 07/2015__ __Research Assistant__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
+
+* Constructing stable finite-difference schemes for heat conduction. Choosing the solution approach. Coding and numerical calculations
+* Scientific programming using C and MATLAB languages
+* Conducting mechanical experiments and numerical results data analysis in R
+
+__09/2011 - 07/2015__ __Head of Research Department, Research Supervisor__ _Moscow State School #224_ 
+
+Responsibilities:
+• Generation and screening of science and engineering projects ideas. Main topics: robotics, UAV, automation
+• Planning of the research program, suggesting relevant literature and sources. Provide supervision of the research projects
+• Preparing students for local and international science fairs and competitions
+• Making efforts to ensure students have access to academic, financial and other resources
+• Giving guidance on the nature of research
+
+Achievements:
+• 6 high school science projects were prepared for local and international science fairs
+• Two extracurricular courses were designed: “Introduction to Aerodynamics” and “Robotics and Artificial Intelligence” for senior school students
 
 ## __Interests__
 
@@ -59,7 +85,7 @@ Self-Driving Cars, Deep Learning, Robotics, Artificial Intelligence, Computer Vi
 
 ## __Patents__
 
-Russian Patent __#106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
+* Russian Patent __#106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
 
 ## __Publications__
 
