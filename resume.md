@@ -37,7 +37,7 @@ permalink: /resume/
 |__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
 | ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
 |__2011__ ||| __Siemens Science Award__, Moscow, Russia |
-| ||| Project "The UAV-based Global Surveillance System" |
+| ||| Project "The UAV-based Global Surveillance System". |
 
 ## __Employment__
 
@@ -69,15 +69,15 @@ __09/2014 - 07/2015__ __Research Assistant__ _Department of Strength, Survivabil
 __09/2011 - 07/2015__ __Head of Research Department, Research Supervisor__ _Moscow State School #224_ 
 
 Responsibilities:
-• Generation and screening of science and engineering projects ideas. Main topics: robotics, UAV, automation
-• Planning of the research program, suggesting relevant literature and sources. Provide supervision of the research projects
-• Preparing students for local and international science fairs and competitions
-• Making efforts to ensure students have access to academic, financial and other resources
-• Giving guidance on the nature of research
+* Generation and screening of science and engineering projects ideas. Main topics: robotics, UAV, automation
+* Planning of the research program, suggesting relevant literature and sources. Provide supervision of the research projects
+* Preparing students for local and international science fairs and competitions
+* Making efforts to ensure students have access to academic, financial and other resources
+* Giving guidance on the nature of research
 
 Achievements:
-• 6 high school science projects were prepared for local and international science fairs
-• Two extracurricular courses were designed: “Introduction to Aerodynamics” and “Robotics and Artificial Intelligence” for senior school students
+* 6 high school science projects were prepared for local and international science fairs
+* Two extracurricular courses were designed: “Introduction to Aerodynamics” and “Robotics and Artificial Intelligence” for senior school students
 
 ## __Interests__
 
