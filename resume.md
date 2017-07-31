@@ -16,7 +16,7 @@ permalink: /resume/
 | ||| _Lomonosov Moscow State University (MSU)_ |
 | __11/2016 - present__ ||| __Self-Driving Car Engineer__ Nanodegree |
 | ||| _Udacity_ |	
-| __11/2012 - present__ ||| __MOOCs__ >30 courses in computer and data sciences, robotics, computer vision and machine learning|
+| __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
 
