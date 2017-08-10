@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Profile
 permalink: /resume/
 ---
 <div align="center">
@@ -91,7 +91,7 @@ Self-Driving Cars, Deep Learning, Robotics, Artificial Intelligence, Computer Vi
 
 _In a field of Nanotechnology:_
 
-1. <u>N. S. Falaleev</u>, A.S. Kumskov, V.G. Zhigalina, I.I. Verbitskiy, A.L. Vasiliev, A. A. Makarova,e D. V. Vyalikh, N.A. Kiselev, A.A. Eliseev. _Capsulate structure effect on SWNTs doping in Rb<sub>x</sub>Ag<sub>1−x</sub>I@SWNT composites_ // __CrystEngComm__, 2017, DOI: 10.1039/c7ce00155j
+1. <u>N. S. Falaleev</u>, A.S. Kumskov, V.G. Zhigalina, I.I. Verbitskiy, A.L. Vasiliev, A. A. Makarova, D. V. Vyalikh, N.A. Kiselev, A.A. Eliseev. _Capsulate structure effect on SWNTs doping in Rb<sub>x</sub>Ag<sub>1−x</sub>I@SWNT composites_ // __CrystEngComm__, 2017, DOI: 10.1039/c7ce00155j
 
 2. Andrei A. Eliseev, <u>Nikolay S. Falaleev</u>, Nikolay I. Verbitskiy, Andrei A. Volykhov, Lada V. Yashina, Andrei S. Kumskov, Victoria G. Zhigalina, Alexander L. Vasiliev, Alexey V. Lukashin, Jeremy Sloan, Nikolay A. Kiselev. _Size-dependent structure relations between nanotube and encapsulated nanocrystal._ // __ACS Nano Letters__, V. 17 I. 2, 2017, P. 805–810 DOI: 10.1021/acs.nanolett.6b04031
 
