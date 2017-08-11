@@ -14,7 +14,7 @@ layout: default
   <div class="post-content">
     {{ content }}
     <p> </p>
-    <p>The full project code is available on my <a href="https://github.com/NikolasEnt">Github</a></p>
+    <p>The full project code is available on my {% if page.github_url != null %}<a href={{ page.github_url }}>Github</a></p>{% else %}<a href="https://github.com/NikolasEnt">Github</a></p>{% endif %}
 
 <h3>Project posts</h3>
 	<div class="well">

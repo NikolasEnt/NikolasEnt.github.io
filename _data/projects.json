@@ -16,5 +16,14 @@
 		"tags": ["Self-Driving Car","Computer Vision"],
 		"main": "true",
 		"id": "proj1"
+	},
+	{
+		"name": "Image-Based Localization",
+		"image": "proj3/title_img.gif",
+		"url": "/proj/proj3",
+		"date": "Nov 2016",
+		"tags": ["Self-Driving Car", "Deep Learning"],
+		"main": "true",
+		"id": "proj3"
 	}
 ]
