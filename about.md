@@ -16,6 +16,7 @@ I believe that I have to be engaged in self-development in my chosen area, that 
 
 I also completed a lot of robotics-related independent DIY projects. Most of them was about building and coding ground rovers or flying vehicle able to perform tasks autonomously. My most advanced independent project which was related to an unmanned aerial vehicle, was a quadcopter-like fully autonomous flying vehicle for indoor operation. It was able to find the path to a goal in an unknown environment using only onboard sensors and computers, so there was no need for communication with a ground station, which might be essential in some cases. 
 
+#### See my [resume][cv] for details
 
 [Udacity]:  https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
 [projects]: /projects/

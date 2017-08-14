@@ -24,7 +24,7 @@ permalink: /resume/
 ## __IT Skills and experience__
 
 | __Languages:__ | | C/C++, Python, R, MATLAB |
-| __Libraries:__ | | TensorFlow, Keras, OpenCV, Scikit-learn |
+| __Libraries:__ | | TensorFlow, Keras, OpenCV, Scikit-learn, NumPy |
 | __Skills:__ | | Artificial Neural Networks, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
 | __Projects:__ | | [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
