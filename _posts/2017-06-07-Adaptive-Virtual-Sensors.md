@@ -33,32 +33,32 @@ from sklearn.metrics import mean_squared_error
 DEV_POL = 2 # Max mean squared error of the approximation
 MSE_DEV = 1.1 # Minimum mean squared error ratio to consider higher order of the polynomial
 def best_pol_ord(x, y):
-    pol1 = np.polyfit(y,x,1)
+    pol1 = np.polyfit(y, x, 1)
     pred1 = pol_calc(pol1, y)
     mse1 = mean_squared_error(x, pred1)
     if mse1 < DEV_POL:
         return pol1, mse1
-    pol2 = np.polyfit(y,x,2)
+    pol2 = np.polyfit(y, x, 2)
     pred2 = pol_calc(pol2, y)
     mse2 = mean_squared_error(x, pred2)
-    if mse2 < DEV_POL or mse1/mse2 < MSE_DEV:
+    if mse2 < DEV_POL or mse1 / mse2 < MSE_DEV:
             return pol2, mse2
     else:
-        pol3 = np.polyfit(y,x,3)
+        pol3 = np.polyfit(y, x, 3)
         pred3 = pol_calc(pol3, y)
         mse3 = mean_squared_error(x, pred3)
-        if mse2/mse3 < MSE_DEV:
+        if mse2 / mse3 < MSE_DEV:
             return pol2, mse2
         else:
             return pol3, mse3
 {% endhighlight %}
 
-It is possible to use a simple low pass filter or an alpha-beta filter for smoothing polynomial coefficients of the same degree. But for two polynomial with different orders a dedicated function `smooth_dif_ord` can be introduced. It calculates average x position of points for a given function f(y) at y values from the new dataset and fit these new average points with polinomial of desired degree.
+It is possible to use a simple low pass filter or an alpha-beta filter for smoothing polynomial coefficients of the same degree. But for two polynomial with different orders a dedicated function `smooth_dif_ord` can be introduced. It calculates average _x_ position of points for a given function _f(y)_ at _y_ values from the new dataset and fit these new average points with polinomial of desired degree.
 {% highlight python %}
 # Smooth polinomial functions of different degrees   
 def smooth_dif_ord(pol_p, x, y, new_ord):
     x_p = pol_calc(pol_p, y)
-    x_new = (x+x_p)/2.0
+    x_new = (x + x_p) / 2.0
     return np.polyfit(y, x_new, new_ord)
 {% endhighlight %}
 ## The pipline demonstration
