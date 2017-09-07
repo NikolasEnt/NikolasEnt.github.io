@@ -91,10 +91,12 @@ Self-Driving Cars, Deep Learning, Robotics, Artificial Intelligence, Computer Vi
 
 _In a field of Nanotechnology:_
 
-1. <u>N. S. Falaleev</u>, A.S. Kumskov, V.G. Zhigalina, I.I. Verbitskiy, A.L. Vasiliev, A. A. Makarova, D. V. Vyalikh, N.A. Kiselev, A.A. Eliseev. _Capsulate structure effect on SWNTs doping in Rb<sub>x</sub>Ag<sub>1−x</sub>I@SWNT composites_ // __CrystEngComm__, 2017, DOI: 10.1039/c7ce00155j
+1.  Eliseev Andrei A., Kumskov A.S., <u>Falaleev N.S.</u>, Zhigalina V.S., Eliseev Artem A., Mitrofanov A.A., Petukhov D.I., Vasiliev A.L., Kisilev N.A. _Mass Transport Through Defects in Graphene Layers_ // __Journal of Physical Chemistry C__, 2017, DOI: 10.1021/acs.jpcc.7b06100
 
-2. Andrei A. Eliseev, <u>Nikolay S. Falaleev</u>, Nikolay I. Verbitskiy, Andrei A. Volykhov, Lada V. Yashina, Andrei S. Kumskov, Victoria G. Zhigalina, Alexander L. Vasiliev, Alexey V. Lukashin, Jeremy Sloan, Nikolay A. Kiselev. _Size-dependent structure relations between nanotube and encapsulated nanocrystal._ // __ACS Nano Letters__, V. 17 I. 2, 2017, P. 805–810 DOI: 10.1021/acs.nanolett.6b04031
+2. <u>N. S. Falaleev</u>, A.S. Kumskov, V.G. Zhigalina, I.I. Verbitskiy, A.L. Vasiliev, A. A. Makarova, D. V. Vyalikh, N.A. Kiselev, A.A. Eliseev. _Capsulate structure effect on SWNTs doping in Rb<sub>x</sub>Ag<sub>1−x</sub>I@SWNT composites_ // __CrystEngComm__, 2017, DOI: 10.1039/c7ce00155j
 
-3. N.A. Kiselev, A.S. Kumskov, V.G. Zhigalina, A.L. Vasiliev, J. Sloan, <u>N.S. Falaleev</u>, N.I. Verbitskiy, A.A. Eliseev. _The structure and continuous stoichiometry change of 1DTbBr<sub>x</sub>@SWCNTs_ // __Journal of Microscopy__. V. 262, I. 1, April 2016, P. 92–101 DOI: 10.1111/jmi.12348
+3. Andrei A. Eliseev, <u>Nikolay S. Falaleev</u>, Nikolay I. Verbitskiy, Andrei A. Volykhov, Lada V. Yashina, Andrei S. Kumskov, Victoria G. Zhigalina, Alexander L. Vasiliev, Alexey V. Lukashin, Jeremy Sloan, Nikolay A. Kiselev. _Size-dependent structure relations between nanotube and encapsulated nanocrystal._ // __ACS Nano Letters__, V. 17 I. 2, 2017, P. 805–810 DOI: 10.1021/acs.nanolett.6b04031
 
-4. Lukashin A.V., <u>Falaleev N.S.</u>, Verbitskiy N.I., Volykhov A.A., Verbitskiy I.I., Yashna L.V., Kumskov A.S., Kiselev N.A., Eliseev A.A. Quasi free-standing one-dimensional nanocrystals of PbTe grown in 1.4 nm SWNTs. // __Nanosystems: physics, chemistry, mathematics__. V. 6, I. 6, 2015, P. 850-856 DOI: 10.17586/2220-8054-2015-6-6-850-856
+4. N.A. Kiselev, A.S. Kumskov, V.G. Zhigalina, A.L. Vasiliev, J. Sloan, <u>N.S. Falaleev</u>, N.I. Verbitskiy, A.A. Eliseev. _The structure and continuous stoichiometry change of 1DTbBr<sub>x</sub>@SWCNTs_ // __Journal of Microscopy__. V. 262, I. 1, April 2016, P. 92–101 DOI: 10.1111/jmi.12348
+
+5. Lukashin A.V., <u>Falaleev N.S.</u>, Verbitskiy N.I., Volykhov A.A., Verbitskiy I.I., Yashna L.V., Kumskov A.S., Kiselev N.A., Eliseev A.A. Quasi free-standing one-dimensional nanocrystals of PbTe grown in 1.4 nm SWNTs. // __Nanosystems: physics, chemistry, mathematics__. V. 6, I. 6, 2015, P. 850-856 DOI: 10.17586/2220-8054-2015-6-6-850-856
