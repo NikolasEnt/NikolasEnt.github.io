@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Camera calibration with OpenCV"
+abstract: A simple way to calibrate an optical system with a chessboard pattern by means of the OpenCV.
 date:   2017-05-05 12:00:00 +0300
 categories: OpenCV
 project: proj1

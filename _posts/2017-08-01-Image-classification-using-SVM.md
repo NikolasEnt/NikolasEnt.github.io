@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Image classification using SVM"
+abstract: Application of a linear SVM for image classificatoin with HOG, binned color and color histogram features.
 date:   2017-08-01 12:00:00 +0300
 categories: Classifier
 project: proj2
@@ -14,7 +15,7 @@ To address the task three types of features were used: HOG (Histogram of Oriente
 
 It is possible to use built in functions from different libraries for features extraction.
 
-* **HOG** is implemented in [skimage][skimage]. All you need is provide parameters. Detailed description of what is the HOG features available [here][HOG]. It can be used as following:
+* **HOG** is implemented in [skimage][skimage]. All what you need is to provide parameters. Detailed description of what is the HOG features available [here][HOG]. It can be used as following:
 
 {% highlight python %}
 from skimage.feature import hog
