@@ -10,7 +10,7 @@ title: Home
 <div class="projects row">
     {% include project_tags.html %}
     {% for i in site.data.projects %}
-    {% if i.main %}
+    {% if i.main == "true" %}
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
         <div class="well project-outer">
             <div class="project-inner">

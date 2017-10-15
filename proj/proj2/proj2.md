@@ -5,7 +5,8 @@ permalink: /proj/proj2
 project_id: proj2
 ---
 
-This Project is based on the fifth task of the Udacity Self-Driving Car Nanodegree program. The main goal of the project is to create a software pipeline to identify vehicles in a video from a front-facing camera on a car. Additionally, a [Lane Line finding][proj1] algorithm was added.
+This Project is based on the fifth task of the Udacity Self-Driving Car Nanodegree program. The main goal of the project is to create a software pipeline to identify vehicles in a video from a front-facing camera on a car.
+Additionally, a lane line finding algorithm was added. See **[Lane Lines Detection Project][proj1]** for details.
 
 It was implemented in Python with OpenCV and Scikit-learn libraries. Linear SVM was used as a classifier for HOG, binned color and color histogram features. The project repo is availuble on [Github][projectRepo].
 
