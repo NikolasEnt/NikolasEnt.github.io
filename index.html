@@ -52,7 +52,11 @@ title: Home
       {% for post in site.posts offset: 0 limit: 10  %}
       <div class="list-group-item">
         <div class="row-action-primary">
-          <i class="fa fa-sticky-note"></i>
+            {% if post.title_img %}
+            <i><img src={{ post.title_img }} alt="Title img"></i>
+            {% else %}
+            <i class="fa fa-sticky-note"></i>
+            {% endif %}
         </div>
         <div class="row-content">
           <div class="least-content">{{ post.date | date_to_string }}</div>

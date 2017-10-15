@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bird's Eye View Transformation"
+title_img: /assets/post3/title_img.gif
 abstract: Convert a normal image to a Bird's Eye view projection with OpenCV.
 date:   2017-05-07 14:00:00 +0300
 categories: OpenCV

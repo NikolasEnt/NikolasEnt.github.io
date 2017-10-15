@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Approximate equidistant curve for polynomials"
+title_img: /assets/post1/title_img.jpg
 abstract: An approximate approach to find an equidistant curve for a given polynomial.
 date:   2017-05-02 12:43:27 +0300
 categories: Mathematics Algorithms
