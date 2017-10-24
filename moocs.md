@@ -9,6 +9,7 @@ permalink: /moocs/
 </div>
 
 | __Provider__ | | __MOOC Title__ | | __Grade__ | | __Link__ |
+| _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](/static/img/nd013.pdf) |
 | _Coursera_ | | Machine Learning (Stanford) _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/YABSQTND48ZS) |
 | _Coursera_ | | Practical Machine Learning | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/LHFKMBMFCBS7) |
 | _Coursera_ | | Reproducible Research | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/MPSVGPLZUXU6) |

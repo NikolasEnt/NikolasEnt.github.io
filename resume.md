@@ -12,10 +12,10 @@ permalink: /resume/
 
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
-| __09/2011 - 07/2015__ |||__Bachelor of Science__ in Materials Science, Department of Materials Science |
+| __09/2011 - 07/2015__ ||| __Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
-| __11/2016 - present__ ||| __Self-Driving Car Engineer__ Nanodegree |
-| ||| _Udacity_ |	
+| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
+| ||| _Udacity_, [graduated](/static/img/nd013.pdf) with the first ever cohort |	
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
@@ -24,9 +24,9 @@ permalink: /resume/
 ## __IT Skills and experience__
 
 | __Languages:__ | | C/C++, Python, R, MATLAB |
-| __Libraries:__ | | TensorFlow, Keras, OpenCV, Scikit-learn, NumPy |
+| __Libraries:__ | | TensorFlow, Keras, PyTorch, OpenCV, Scikit-learn, NumPy |
 | __Skills:__ | | Artificial Neural Networks, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
-| __Projects:__ | | [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
+| __Spare-time Projects:__ | | [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
 ## __Prizes__
 
@@ -40,6 +40,12 @@ permalink: /resume/
 | ||| Project "The UAV-based Global Surveillance System". |
 
 ## __Employment__
+
+__08/2017 - present__ __Computer Vision R&D__ _Constanta_
+
+Responsibilities:
+* Apply computer vision and deep learning for video analysis of sport events
+* Computer vision programming in Python
 
 __10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
 
