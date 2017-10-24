@@ -9,7 +9,7 @@ categories: DeepLearning
 
 ## Introduction
 
-I was faced with necessity of computational power increase in order to  meet my needs in computer vision research. As for me, AMD Ryzen CPU's provide the best value/cost ration on the market at the given time. That is why, I built my new PC on the platform. However, the path of software installation for deep learning is not straightforward, so, here it is a set of instructions I followed to start TensorFlow 1.4 on Nvidia GPUs with the latest CUDA 9 and cuDNN 7.0.
+I was faced with necessity of computational power increase in order to  meet my needs in computer vision research. As for me, AMD Ryzen CPU's provide the best value/cost ratio on the market at the given time. That is why, I built my new PC on the platform. However, the path of software installation for deep learning is not straightforward, so, here it is a set of instructions I followed to start TensorFlow 1.4 on Nvidia GPUs with the latest CUDA 9 and cuDNN 7.0.
 
 _I cannot guarantee your results, so, do it voluntarily, with deep understanding what you do and at your own risk._
 
@@ -24,9 +24,9 @@ _I cannot guarantee your results, so, do it voluntarily, with deep understanding
 My motherboard was shipped with outdated BIOS. I had to install the latest one from official site of the motherboard vendor.
 It is preferred to install a version with AGESA 1.0.0.6b as it can [resolve][agesa] some Ryzen issues.
 
-The motherboard was unable to correctly set default CPU and RAM voltage (it was to high for processor and too low for memory in my case which cause some issues with the system boot). So, I had to check and set them manually to values recommended by the parts manufacturer.
+The motherboard was unable to correctly set default CPU and RAM voltage (it was to high for processor and too low for memory in my case which cause some issues with the system boot). So, I had to check and set them manually to the values recommended by the parts manufacturer.
 
-## Install OpenSUSE 
+## Install openSUSE 
 
 It is possible to simply install the OS with an .iso image from [openSUSE][opensuse] official site. We have to use Leap 42.2 version as it the only version supported by proprietary precompiled CUDA 9.
 One can follow GUI instructions during the installation process. In partitioner I prefer to use LVM for future flexibility.
@@ -39,7 +39,7 @@ After that it is possible to overclock the setup, if you want.  The system has a
 
 ## Install Nvidia
 
-The latest available Nvidea driver can be installed with [Zypper][driver]. [Cuda 9][cuda] can be downloaded from the official Nvidia site and installed without any problems as well as [cuDNN 7][cudnn]. One may need to add the installation location into the `$LD_LIBRARY_PATH`.
+The latest available Nvidia driver can be installed with [Zypper][driver]. [Cuda 9][cuda] can be downloaded from the official Nvidia site and installed without any problems as well as [cuDNN 7][cudnn]. One may need to add the installation location into the `$LD_LIBRARY_PATH`.
 
 ```
 LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
