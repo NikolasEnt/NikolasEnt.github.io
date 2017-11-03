@@ -10,12 +10,12 @@ permalink: /resume/
 
 ## __Education__
 
+| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
+| ||| _Udacity_, [graduated](/static/img/nd013.pdf) with the first ever cohort |
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
 | __09/2011 - 07/2015__ ||| __Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
-| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
-| ||| _Udacity_, [graduated](/static/img/nd013.pdf) with the first ever cohort |	
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
@@ -44,7 +44,7 @@ permalink: /resume/
 __08/2017 - present__ __Computer Vision R&D__ _Constanta_
 
 Responsibilities:
-* Apply computer vision and deep learning for video analysis of sport events
+* Develop and apply computer vision and deep learning algorithms for real time video analysis of sport events
 * Computer vision programming in Python
 
 __10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
