@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How I run TensorFlow with CUDA 9 and cuDNN 7 in OpenSUSE on Ryzen"
+title:  "How I run TensorFlow with CUDA 9 and cuDNN 7 in openSUSE on Ryzen"
 title_img: /assets/post7/title_img.jpg
-abstract: A set of instruction to run a modern version of the deep learning framework TensorFlow on AMD TensorFlow.
+abstract: A set of instruction to run a modern version of the deep learning framework TensorFlow on AMD Ryzen.
 date:   2017-10-20 12:00:00 +0300
 categories: DeepLearning
 ---
@@ -10,6 +10,8 @@ categories: DeepLearning
 ## Introduction
 
 I was faced with necessity of computational power increase in order to  meet my needs in computer vision research. As for me, AMD Ryzen CPU's provide the best value/cost ration on the market at the given time. That is why, I built my new PC on the platform. However, the path of software installation for deep learning is not straightforward, so, here it is a set of instructions I followed to start TensorFlow 1.4 on Nvidia GPUs with the latest CUDA 9 and cuDNN 7.0.
+
+Generally speaking, every step is quite simple, however, it is challenging to select appropriate versions of software to make the whole system run. The versions compatibility is the main focus of the post.
 
 _I cannot guarantee your results, so, do it voluntarily, with deep understanding what you do and at your own risk._
 
@@ -26,7 +28,9 @@ It is preferred to install a version with AGESA 1.0.0.6b as it can [resolve][age
 
 The motherboard was unable to correctly set default CPU and RAM voltage (it was to high for processor and too low for memory in my case which cause some issues with the system boot). So, I had to check and set them manually to values recommended by the parts manufacturer.
 
-## Install OpenSUSE 
+## Install openSUSE 
+
+There are a great variety of operating system distros, so everyone can choose one to meet own tastes. As for me, openSUSE is a good option because of its stability.
 
 It is possible to simply install the OS with an .iso image from [openSUSE][opensuse] official site. We have to use Leap 42.2 version as it the only version supported by proprietary precompiled CUDA 9.
 One can follow GUI instructions during the installation process. In partitioner I prefer to use LVM for future flexibility.
