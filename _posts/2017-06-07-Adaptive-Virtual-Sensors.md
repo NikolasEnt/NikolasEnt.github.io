@@ -26,7 +26,7 @@ One may use different approaches based on combination of threshold filters for d
 
 ## Order of a polynomial
 
-One of the key ideas of the project is the usage of the reasonable minimal order of polinomial functions for lines fitting (order should be in range [1,3]). The function  `best_pol_ord` chooses such order. It starts from a linear function and, if it does not perform well enough increases the polinomial order (up to 3). It returns polinomial coefficients and mean squared error of the selected approximation. The function stops increasing the order if it does not help (mean squared error drops not significant in case of higher order) or in case the mean squared error is small enough (`< DEV_POL`).
+One of the key ideas of the project is the usage of the reasonable minimal order of polinomial functions for lines fitting (order should be in range [1,3]). The function  `best_pol_ord` chooses such order. It starts from a linear function and, if it does not perform well enough, increases the polinomial order (up to 3). It returns polinomial coefficients and mean squared error of the selected approximation. The function stops increasing the order if it does not help (mean squared error drops not significant in case of higher order) or in case the mean squared error is small enough (`< DEV_POL`).
 
 {% highlight python %}
 import numpy as np
@@ -63,7 +63,7 @@ def smooth_dif_ord(pol_p, x, y, new_ord):
     x_new = (x + x_p) / 2.0
     return np.polyfit(y, x_new, new_ord)
 {% endhighlight %}
-## The pipline demonstration
+## The pipeline demonstration
 
 After image warping the algorithm perform points finding by the described above in the *Key ideas* section points finding approach. Basically, virtual sensors are filters with an adaptive region-of-interest and adaptive threshold.
 
