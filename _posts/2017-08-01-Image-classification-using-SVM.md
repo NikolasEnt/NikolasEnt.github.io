@@ -2,7 +2,7 @@
 layout: post
 title:  "Image classification using SVM"
 title_img: /assets/post5/hog_image.jpg
-abstract: Application of a linear SVM for image classificatoin with HOG, binned color and color histogram features.
+abstract: Application of a linear SVM for image classification with HOG, binned color and color histogram features.
 date:   2017-08-01 12:00:00 +0300
 categories: Classifier
 project: proj2
@@ -14,9 +14,9 @@ The main goal of the project is to create a software pipeline to identify vehicl
 ## Feature extraction
 To address the task three types of features were used: HOG (Histogram of Oriented Gradients) (shape features), binned color (color and shape features) and color histogram features (color only features). This combination of features can provide enough information for image classification.
 
-It is possible to use built in functions from different libraries for features extraction.
+It is possible to use built-in functions from different libraries for features extraction.
 
-* **HOG** is implemented in [skimage][skimage]. All what you need is to provide parameters. Detailed description of what is the HOG features available [here][HOG]. It can be used as following:
+* **HOG** is implemented in [skimage][skimage]. All that you need is to provide parameters. A detailed description of what is the HOG features available [here][HOG]. It can be used as follows:
 
 {% highlight python %}
 from skimage.feature import hog
@@ -28,7 +28,7 @@ features = hog(input_image, orientations = number_of_orientations,
                        visualise = False, feature_vector = True)
 {% endhighlight %}
 
-The function is very powerful and can even produce the the HOG features images just by setting `visualise = True` and adding an extra output. Here it is an example:
+The function is very powerful and can even produce the HOG features images just by setting `visualise = True` and adding an extra output. Here it is an example:
 
 
 | ![Original image](/assets/post5/hog_image.jpg) | ![HOG image](/assets/post5/hog_example.jpg) |
@@ -74,7 +74,7 @@ for image in images:
 {% endhighlight %}
 
 ### Hyperparameters
-We are going to use the linear SVM classifier from [sklearn][sklearn]. It can work with default parameters (but they may be fine tuned later). There are a lot of hyperparameters of the feature extraction process. So, one may consider to use automated way of the parameters tuning.
+We are going to use the linear SVM classifier from [sklearn][sklearn]. It can work with default parameters (but they may be fine-tuned later). There are a lot of hyperparameters of the feature extraction process. So, one may consider using automated way of the parameters tuning.
 
 {% highlight python %}
 import numpy as np

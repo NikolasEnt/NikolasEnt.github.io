@@ -9,7 +9,7 @@ categories: DeepLearning
 
 ## Introduction
 
-I was faced with necessity of computational power increase in order to  meet my needs in computer vision research. As for me, AMD Ryzen CPU's provide the best value/cost ratio on the market at the given time. That is why, I built my new PC on the platform. However, the path of software installation for deep learning is not straightforward, so, here it is a set of instructions I followed to start TensorFlow 1.4 on Nvidia GPUs with the latest CUDA 9 and cuDNN 7.0.
+I was faced with the necessity of computational power increase in order to meet my needs in computer vision research. As for me, AMD Ryzen CPU's provide the best value/cost ratio on the market at the given time. That is why I built my new PC on the platform. However, the path of software installation for deep learning is not straightforward, so, here it is a set of instructions I followed to start TensorFlow 1.4 on Nvidia GPUs with the latest CUDA 9 and cuDNN 7.0.
 
 Generally speaking, every step is quite simple, however, it is challenging to select appropriate versions of software to make the whole system run. The versions compatibility is the main focus of the post.
 
@@ -23,22 +23,22 @@ _I cannot guarantee your results, so, do it voluntarily, with deep understanding
 
 ## Right after assembly
 
-My motherboard was shipped with outdated BIOS. I had to install the latest one from official site of the motherboard vendor.
+My motherboard was shipped with outdated BIOS. I had to install the latest one from the official site of the motherboard vendor.
 It is preferred to install a version with AGESA 1.0.0.6b as it can [resolve][agesa] some Ryzen issues.
 
-The motherboard was unable to correctly set default CPU and RAM voltage (it was to high for processor and too low for memory in my case which cause some issues with the system boot). So, I had to check and set them manually to the values recommended by the parts manufacturer.
+The motherboard was unable to correctly set default CPU and RAM voltage (it was too high for the processor and too low for memory in my case which causes some issues with the system boot). So, I had to check and set them manually to the values recommended by the parts manufacturer.
 
-## Install openSUSE 
+## Install openSUSE
 
 There are a great variety of operating system distros, so everyone can choose one to meet own tastes. As for me, openSUSE is a good option because of its stability.
 
 It is possible to simply install the OS with an .iso image from [openSUSE][opensuse] official site. We have to use Leap 42.2 version as it the only version supported by proprietary precompiled CUDA 9.
-One can follow GUI instructions during the installation process. In partitioner I prefer to use LVM for future flexibility.
+One can follow GUI instructions during the installation process. In the partitioner, I prefer to use LVM for future flexibility.
 
-After the OS installation one have to upgrade the Linux kernel version because AMD Ryzen's are supported since kernel v. 4.10, while default kernel in openSUSE Leap 42.2 is 4.4.
+After the OS installation, one has to upgrade the Linux kernel version because AMD Ryzen's are supported since kernel v. 4.10, while default kernel in openSUSE Leap 42.2 is 4.4.
 It can be performed with [Zypper][kernel]. Finally, I use Linux kernel 4.13.9 from the [repo][kernel_repo]. Unfortunately, 4.14 is under development and unstable, so, I did not manage to make it work properly.
 
-After that it is possible to overclock the setup, if you want.  The system has a great overclocking potential. I, personally, achieved 3.8 GHz CPU rate and 2933 MHz RAM clock rate on near to stock voltage. However, it all depends on your ambitions, luck and efficiency of the cooler system. 
+After that, it is possible to overclock the setup, if you want. The system has a great overclocking potential. I, personally, achieved 3.8 GHz CPU rate and 2933 MHz RAM clock rate on near to stock voltage. However, it all depends on your ambitions, luck and efficiency of the cooling system. 
 [Prime95][prime95] can be used for system stability testing.
 
 ## Install Nvidia
@@ -56,7 +56,7 @@ You may add the lines to your .bashrc file
 ## TensorFlow
 
 To build Tensorflow from source (as it is the only option to make it runnable with CUDA 9) we need [Bazel][bazel]. It should be compiled from source as well.
-However, I was not able to compile it with default java openjdk, so, I had to install original [Java JDK 8][java]. `/usr/local/` is my place to install it. Do not forget to add its location as `$JAVA_HOME`
+However, I was not able to compile it with default java OpenJDK, so, I had to install original [Java JDK 8][java]. `/usr/local/` is my place to install it. Do not forget to add its location as `$JAVA_HOME`
 
 ```
 export JAVA_HOME=/usr/local/jdk
@@ -64,7 +64,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 ```
 
 The Bazel installation [instruction][bazel_install] is quite simple, however, do not forget to install the Bazel dependencies (`zip` is the only missed package in case of described here installation of openSUSE 42.2).
-After compilation I placed it in the   `/usr/local/` as well and add it to the $PATH.
+After compilation, I placed it in the   `/usr/local/` as well and add it to the $PATH.
 
 ```
 export PATH=/usr/local/bazel/bin:$PATH
@@ -88,7 +88,7 @@ cd tensorflow
 git checkout r1.4
 ./configure
 ```
-At this step you have to specify path to installed packages and versions you'd like to use. After configure it can be built and installed.
+At this step, you have to specify the path to installed packages and versions you'd like to use. After configure, it can be built and installed.
 
 ```
 bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
