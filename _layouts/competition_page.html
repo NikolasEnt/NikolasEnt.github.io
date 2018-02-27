@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<article class="post">
+  <h3>{{ page.title }}</h3>
+    {% for p in  site.data.competitions %}
+        {% if p.id == page.project_id %}
+            {% assign project = p %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    <img src='/static/projects/{{ project.image }}' alt="Project title image">
+  <p> </p>
+  <div class="post-content">
+    {{ content }}
+    <p> </p>
+    {% if page.github_url %}
+    <p>The full project code is available on my <a href={{ page.github_url }}>Github</a></p>
+    {% endif %}
+
+<h3>Competition posts</h3>
+    <div class="well">
+        <div class="list-group">
+        {% for post in site.posts %}
+        {% if post.project == project.id %}
+            <div class="list-group-item">
+                <div class="row-action-primary">
+                {% if post.title_img %}
+                <i><img src={{ post.title_img }} alt="Title img"></i>
+                {% else %}
+                <i class="fa fa-sticky-note"></i>
+                {% endif %}
+                </div>
+            <div class="row-content">
+                <div class="least-content">{{ post.date | date_to_string }}</div>
+                <h4 class="list-group-item-heading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+                {% if post.abstract %}
+                  <p class="list-group-item-text">{{ post.abstract }}</p>
+                {% else %}
+                  <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="list-group-separator"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div><!-- end #home -->
+  </div>
+
+</article>

@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-## Self-Driving Car projects
+## Study and independent projects

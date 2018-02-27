@@ -6,33 +6,33 @@
     "layout": "post"
   },
   {
-    "text": "Projects",
-    "url": "/projects",
-    "icon": "fa-desktop"
-  },
-  {
     "text": "Blog",
     "url": "/blog",
     "icon": "fa-list"
   },
   {
+    "text": "Projects",
+    "url": "/projects",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "Competitions",
+    "url": "/competitions",
+    "icon": "fa-trophy"
+  },
+  {
+    "text": "Interesting",
+    "url": "/articles",
+    "icon": "fa-indent"
+  },
+  {
     "text": "About me",
-    "url": "/about/",
+    "url": "/about",
     "icon": "fa-user"
   },
   {
     "text": "Profile",
-    "url": "/resume/",
+    "url": "/resume",
     "icon": "fa-graduation-cap",
-  },
-  {
-    "text": "Github",
-    "url": "https://github.com/NikolasEnt",
-    "icon": "fa-github"
-  },
-  {
-    "text": "YouTube",
-    "url": "https://www.youtube.com/channel/UC_pK0vOXh_FCBvFa2J2CRAA",
-    "icon": "fa-youtube"
   }
 ]

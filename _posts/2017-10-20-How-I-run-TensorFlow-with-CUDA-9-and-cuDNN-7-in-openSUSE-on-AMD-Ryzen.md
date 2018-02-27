@@ -5,6 +5,7 @@ title_img: /assets/post7/title_img.jpg
 abstract: A set of instruction to run a modern version of the deep learning framework TensorFlow on AMD Ryzen.
 date:   2017-10-20 12:00:00 +0300
 categories: DeepLearning
+article: true
 ---
 
 ## Introduction
@@ -14,6 +15,9 @@ I was faced with the necessity of computational power increase in order to meet 
 Generally speaking, every step is quite simple, however, it is challenging to select appropriate versions of software to make the whole system run. The versions compatibility is the main focus of the post.
 
 _I cannot guarantee your results, so, do it voluntarily, with deep understanding what you do and at your own risk._
+
+UPDATE: Some of the provided instructions are redundant since TensorFlow 1.5 with CUDA 9 support can be simply installed by `pip install tensorflow-gpu`.
+However, one may use the article as a reference for TensorFlow build from source for obtaining the most recent version or processor-specific optimization.
 
 ## Hardware
 
@@ -96,6 +100,9 @@ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 sudo pip install /tmp/tensorflow_pkg/tensorflow-YOUR-VERSION.whl
 ```
 
+UPDATE: You may consider building Tensorflow with the processor-specific optimization, such as AVX2 or SSE4.2 instructions. See [How to compile Tensorflow with SSE4.2 and AVX instructions][TensorflowAvx].
+It really can increase the system performance for about 10-20% according to my personal experience.
+
 And it is done!
 
 [agesa]: https://www.phoronix.com/scan.php?page=news_item&px=AGESA-1.0.0.6b-Update
@@ -111,3 +118,4 @@ And it is done!
 [java]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [tensorflow]: https://www.tensorflow.org/install/install_sources
 [miniconda]: https://conda.io/miniconda.html
+[TensorflowAvx]: https://stackoverflow.com/questions/41293077/how-to-compile-tensorflow-with-sse4-2-and-avx-instructions

@@ -5,12 +5,13 @@ title: Blog
 <a name="top"></a>
 <h3><a href="/#top">Welcome!</a></h3>
 <p>{{ site.description }}</p>
-<p>Here you can find all posts materials.</p>
+<p>Here you can find interesting articles, How-Tos and many other useful materials.</p>
 <a name="posts"></a>
-<h3><a href="#posts">All Posts</a></h3>
+<h3><a href="#posts">Posts</a></h3>
 <div class="well">
     <div class="list-group">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
+      {% if post.project == null or post.article %}
       <div class="list-group-item">
         <div class="row-action-primary">
             {% if post.title_img %}
@@ -30,6 +31,7 @@ title: Blog
         </div>
       </div>
       <div class="list-group-separator"></div>
+      {% endif %}
       {% endfor %}
     </div>
    
