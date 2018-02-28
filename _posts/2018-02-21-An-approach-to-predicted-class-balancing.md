@@ -27,7 +27,7 @@ A two-stage algorithm was introduced for class balancing:
 
 The following function implements the proposed algorithm and it can be applied to manipulated and unaltered images separately:
 
-{% highlight python %}
+{% highlight python linenos%}
 import numpy as np
 import pandas as pd
 
@@ -40,7 +40,8 @@ def class_balancer(df):
         df = df.sort_values(by=[nam], ascending=False).reset_index(drop=True)
         k = 0
         while float(df.iloc[0, (i+1)]) > THRES and len(res[nam]) < n_per_cl:
-            # If the prediction is confident enought and we have slots in the class, add the sample to it
+            # If the prediction is confident enought and we have slots
+            # in the class, add the sample to it
             res[nam].append(df.iloc[0, 0])
             df = df.drop([0]).reset_index(drop=True)
             k += 1
@@ -49,7 +50,8 @@ def class_balancer(df):
         df_l = df.loc[:, df.columns != 'frame']
         row = df.max(axis=1).idxmax()  # A sample with the max probability in the remaining set
         nam = df_l.max(axis=0).idxmax()  # Class of the max probability
-        if len(res[nam]) < n_per_cl:  # If it is posseble to fill the most probable class
+        if len(res[nam]) < n_per_cl:
+            # If it is posseble to fill the most probable class
             res[nam].append(df.iloc[row, 0])
             df = df.drop([row]).reset_index(drop=True)
         else:  # Set probobility to 0
@@ -60,7 +62,7 @@ def class_balancer(df):
 
 The function was used along with the following code for data reading, blending predictions by mean square, preparing pandas dataframes for unaltered and manipulated images, processing, and generation of the final submission file.
 
-{% highlight python %}
+{% highlight python linenos%}
 import os
 
 THRES = 0.5  # Minimal probaility to consider as a confident prediction
@@ -107,7 +109,7 @@ for i in res_unalt.keys():  # Append res_unalt to res_manip
 make_sub("results.csv", res_manip)
 {% endhighlight %}
 
-_It is the real competition code, writen in the last two hours of the competition. Sorry, pep8 :)_
+_It is the real competition code, written in the last two hours of the competition. Sorry, pep8 :)_
 
 An increase of accuracy on the leaderboard by ~1.2-1.6% was observed as the result of this approach application, which makes a huge difference in the final standing.
 

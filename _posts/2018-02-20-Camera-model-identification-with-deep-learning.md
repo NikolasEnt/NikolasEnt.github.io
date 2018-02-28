@@ -33,10 +33,10 @@ This challenge was evaluated on the weighted categorization accuracy of predicti
 
 ## Dataset
 
-Originally, the dataset contained 275 images for each camera for training and 2640 images in the test dataset.
+Originally, the dataset contained 275 random images for each camera for training and 2640 images in the test dataset.
 
 The train data consisted of full images, while the test dataset was presented only by single 512x512 pixel patches cropped from the center of images taken with the device.
-What is more, half of the images in the test imageset have been manipulated and labeled accordingly _unalt and _manip. The test images possible transformations are listed below:
+What is more, half of the images in the test imageset was manipulated and labeled accordingly *_unalt* and *_manip*. The test images possible transformations are listed below:
 
 * JPEG compression (quality = 70, 90)
 * Resizing by bicubic interpolation (scale factors: 0.5, 0.8, 1.5, 2.0)
@@ -47,17 +47,17 @@ Interestingly, manipulation levels were limited by the listed discrete values.
 ## Dataset enriching
 
 One of the keys to the competition was to download as many photos taken by appropriate cameras as possible.
-For the purpose, the [Flickr API][Flickr] was used. Unfortunately, it does not provide any tools for simple images sorting by camera model from EXIF without necessarily to download images. That is why images were found by tags and description and filtered locally.
+For the purpose, the [Flickr API][Flickr] was used. Unfortunately, it does not provide any tools for simple images sorting by camera model from EXIF without necessity to download images. That is why images were found by tags and description and filtered locally.
 It was very important to filter out all irrelevant images (e.q. edited) as it may lead to incorrect features extraction in a CNN.
 
 Filtering criteria:
-* Correct image size according to the camera specification. An image could 
+* Correct image size according to the camera specification. An image could be in horizontal or vertical orientation
 * Jpeg quality > 93 for filtering out compressed and edited images
 * Correct camera model in EXIF information
 * No comments on editing in photo editing software, such as Photoshop, Lightroom, GIMP, etc.
 
 These parameters can be checked in a batch manner with a very useful [identify][identify] cli utility. For example, ```identify -format '%[EXIF:Model]' /path/to/file```
-returns the camera model from EXIF; ```identify -format '%Q' /path/to/file``` - jpeg quality. So, a bash script was created for tmage filtering.
+returns the camera model from EXIF; ```identify -format '%Q' /path/to/file``` - jpeg quality. So, a bash script was created for image filtering.
 
 Finally, a dataset of 25000 images was utilized for training and 500 - for validation.
 
@@ -65,7 +65,7 @@ Finally, a dataset of 25000 images was utilized for training and 500 - for valid
 
 The Kaggle competitor Andres Torrubia shared an excellent starter [code][AndresTorrubia] written with Keras and TensorFlow backend, which was really helpful for participants. Many thanks to Andres!
 It allows training different CNN architectures, such as ResNet, DenseNet, Inception V3, VGG, MobileNet, etc., set patch size and dropout rate.
-What is interesting about the implementation - additional parameter 'is_manipulated' which actually is a flag indicating whether a given image is a raw one or manipulated.
+What is interesting about the implementation: there is an additional parameter 'is_manipulated' which actually is a flag indicating whether a given image is a raw one or manipulated.
 The flag was added to the final stage of CNN's architectures in the fully connected layers of the image classifier and it looks like it helps.
 
 For me, the competition was an interesting personal experience with Nvidia Tesla V100 GPU as provided by AWS EC2 p3.2xlarge instances and it definitely was a pleasant impression.  
@@ -78,11 +78,11 @@ Test time augmentation was applied for predictions on the test dataset. A symmet
 The resulted predictions were averaged by mean square. Arithmetic mean was examined as well, but performed worse for the competition on the public leaderboard.
 
 It was observed that the predicted class distribution is near to equal. Hence, one may assume that there is equal number of images from each class. The altered images were considered as separate classes.
-So, there are 20 classes for images assignment and 132 images are expected for each class. Given the assumption, predictions where balanced. See the [post][ClassBalancer] for details.
+So, there are 20 classes for images assignment and 132 images are expected for each class (given 2640 images in the test set). Given the assumption, predictions where balanced for the final submission. See the [post][ClassBalancer] for details.
 
 ## Results
 
-As it was mentioned, my final submission is in top-3% on the leaderboard which is the best personal result on Kaggle so far and, what it mare important, a lot of useful lessons were learned during the challenge. Such as training models on AWS, competitions data science tricks as class balancing, etc.
+As it was mentioned, my final submission is in top-3% on the [leaderboard][Leaderboard] which is the best personal result on Kaggle so far and, what is more important, a lot of useful lessons were learned during the challenge. Such as training models on AWS, competitions data science tricks as class balancing, etc.
 
 ## Further thoughts
 
@@ -94,4 +94,4 @@ As it was mentioned, my final submission is in top-3% on the leaderboard which i
 [identify]: https://www.imagemagick.org/script/identify.php
 [AndresTorrubia]: https://github.com/antorsae/sp-society-camera-model-identification
 [ClassBalancer]: {% post_url 2018-02-21-An-approach-to-predicted-class-balancing %}
-
+[Leaderboard]: https://www.kaggle.com/c/sp-society-camera-model-identification/leaderboard
