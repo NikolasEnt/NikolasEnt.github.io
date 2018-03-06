@@ -4,7 +4,9 @@ layout: default
 
 <div class="post-content well">
 <article class="content">
+    <div class="post-head">
     <h1><b>{{ page.title }} </b></h1>
+    </div>
     <p>{{ page.date | date: '%B %d, %Y' }}</p>
     <p>{% include readtime.html post=content%}</p>
     <div class="post">{{ content }}</div>
