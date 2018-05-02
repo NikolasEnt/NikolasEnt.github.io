@@ -23,15 +23,17 @@ permalink: /resume/
 
 ## __IT Skills and experience__
 
-| __Languages:__ | | C/C++, Python, R, MATLAB |
-| __Libraries:__ | | TensorFlow, Keras, PyTorch, OpenCV, Scikit-learn, NumPy |
-| __Skills:__ | | Artificial Neural Networks, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
+| __Languages:__ | | Python, C/C++, R, MATLAB |
+| __Tools:__ | | PyTorch, TensorFlow, Keras, OpenCV, ffmpeg, Scikit-learn, NumPy |
+| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
 | __Spare-time Projects:__ | | [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
-## __Prizes__
+## __Prizes and Awards__
 
-|__2016__ ||| __Udacity [Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)__ |
-| ||| The 3d place. A deep learning approach based on GoogLeNet inception module was applied for "localization as classification" method for localization of an autonomous vehicle. |
+|__2018__ ||| __[IEEE's Signal Processing Society - Camera Model Identification](https://www.kaggle.com/c/sp-society-camera-model-identification)__, __Kaggle__ |
+| ||| Top-3%. The [solution](/proj/comp1) is based on convolutional neural networks as classifiers for camera models captured a given image. |
+|__2016__ ||| __[Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)__, __Udacity__ |
+| ||| The 3d place. A deep learning [approach](/proj/proj3) based on GoogLeNet inception module was applied for "localization as classification" method for localization of an autonomous vehicle. |
 |__2015__ ||| __ХХVII International Innovation Conference of Young Scientists and Students__, Moscow, Russia |
 | ||| Diploma for the best scientific report “Mathematical modeling and numerical calculations of particles and coatings heating during gas-dynamic spraying”. |
 |__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
@@ -41,11 +43,13 @@ permalink: /resume/
 
 ## __Employment__
 
-__08/2017 - present__ __Computer Vision R&D__ _Constanta_
+__08/2017 - present__ __Computer Vision Scientist__ _Constanta_
 
 Responsibilities:
-* Develop and apply computer vision and deep learning algorithms for real time video analysis of sport events
-* Computer vision programming in Python
+* Develop and apply deep learning and computer vision algorithms for real time video analysis of sport events.
+* Solve video event detection, image segmentation, object detection and tracking in real time.
+* Post-processing of predictions with sophisticated filters, e.q. with unscented Kalman filter.
+* Applied computer vision programming in Python.
 
 __10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
 
@@ -87,7 +91,7 @@ Achievements:
 
 ## __Interests__
 
-Self-Driving Cars, Deep Learning, Robotics, Artificial Intelligence, Computer Vision, Mathematical Modeling, UAVs
+Self-Driving Cars, Deep Learning, Computer Vision, Robotics, Artificial Intelligence, Mathematical Modeling, UAVs
 
 ## __Patents__
 
@@ -106,3 +110,5 @@ _In a field of Nanotechnology:_
 4. N.A. Kiselev, A.S. Kumskov, V.G. Zhigalina, A.L. Vasiliev, J. Sloan, <u>N.S. Falaleev</u>, N.I. Verbitskiy, A.A. Eliseev. _The structure and continuous stoichiometry change of 1DTbBr<sub>x</sub>@SWCNTs_ // __Journal of Microscopy__. V. 262, I. 1, April 2016, P. 92–101 DOI: 10.1111/jmi.12348
 
 5. Lukashin A.V., <u>Falaleev N.S.</u>, Verbitskiy N.I., Volykhov A.A., Verbitskiy I.I., Yashna L.V., Kumskov A.S., Kiselev N.A., Eliseev A.A. Quasi free-standing one-dimensional nanocrystals of PbTe grown in 1.4 nm SWNTs. // __Nanosystems: physics, chemistry, mathematics__. V. 6, I. 6, 2015, P. 850-856 DOI: 10.17586/2220-8054-2015-6-6-850-856
+
+[Google Scholar profile](https://scholar.google.com/citations?user=745cJkYAAAAJ&hl=en)
