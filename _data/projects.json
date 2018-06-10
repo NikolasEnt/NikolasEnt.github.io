@@ -13,7 +13,7 @@
         "image": "proj2/title_img.gif",
         "url": "/proj/proj2",
         "date": "Mar 2017",
-        "tags": ["Self-Driving Car","Computer Vision"],
+        "tags": ["Self-Driving","Computer Vision"],
         "main": "true",
         "id": "proj2"
     },
@@ -22,7 +22,7 @@
         "image": "proj3/title_img.gif",
         "url": "/proj/proj3",
         "date": "Nov 2016",
-        "tags": ["Self-Driving Car", "Deep Learning"],
+        "tags": ["Self-Driving", "Deep Learning"],
         "main": "true",
         "id": "proj3"
     },
@@ -31,7 +31,7 @@
         "image": "proj1/title_img.gif",
         "url": "/proj/proj1",
         "date": "Feb 2017",
-        "tags": ["Self-Driving Car","Computer Vision"],
+        "tags": ["Self-Driving","Computer Vision"],
         "main": "false",
         "id": "proj1"
     }
