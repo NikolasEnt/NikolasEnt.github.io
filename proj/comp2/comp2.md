@@ -20,7 +20,7 @@ The final result of participation: the __4th__ place out of 155 participants (__
 2. [Multiclass semantic segmentation with LinkNet34][Linknet]
 4. [Discussion of the Lyft Perception Challenge][Discussion]
 
-## Filal results
+## Final results
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/15vnXdaoo8Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
