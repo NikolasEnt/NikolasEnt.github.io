@@ -10,9 +10,9 @@ project: comp2
 
 ## Software and Hardware
 
-The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availaility and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti,  Tesla V100 (as p3.2xlarge AWS instance).
+The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availaility and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti,  Tesla V100 (as a p3.2xlarge AWS instance).
 
-The deep neural network was implemented with [PyTorch][Pytorch] 0.4 framework. The framework was chosen for its flexibility, which is comparable to TensorFlow, and simplicity of prototyping on a par with Keras. Great fast and easy to use dataloader is also a huge advantage		 of the deep learning framework.
+The deep neural network was implemented with [PyTorch][Pytorch] 0.4 framework. The framework was chosen for its flexibility, which is comparable to TensorFlow, and simplicity of prototyping on a par with Keras. Great fast and easy to use dataloader is also a huge advantage of the deep learning framework.
 
 NumPy and OpenCV libraries were involved in data preparation and postprocessing. However, PyTorch itself played a key rule in predictions postprocessing as it can be used for some computer vision image processing (such as morphological dilation and erosion operations) right on GPU. This helped a lot in the pipeline speeding up.
 
@@ -28,7 +28,7 @@ Binary labeled images for vehicles and binary labeled images for the drivable su
 
 _Left to right: original image; raw masks; preprocessed target masks._
 
-Images were augmented online during training by random gamma, color, and brightness adjustment. The augmentation was done right on a GPU for training time reduction.
+Images were [augmented][Augmentation] online during training by random gamma, color, and brightness adjustment. The augmentation was done right on a GPU for training time reduction.
 
 ![Augmentation](/assets/post11/augmentation.jpg)
 
@@ -77,6 +77,8 @@ The best checkpoint for the submit was chosen by max score metric, which is the 
 
 __Score = (F<sub>0.5</sub>(road) + F<sub>2</sub>(car))/2__
 
+The model was trained with Adam optimizer. Learning rate was manually decreased several times during training. The final learning rates was: 75 epochs with lr=1e-4; 20 epochs with lr=1e-5 and finally 10 epochs with lr=1e-6.
+
 ## Results postprocessing
 
 The model output is a matrix with elements in the range [0..1] (softmax layer output), so, it should be binarized. A simple thresholding was applied. As recall is more important than precision for the 'car' class, so its threshold is quite low. Contrary, the road threshold is high enough.
@@ -89,6 +91,7 @@ The project code is available on [Github][Github].
 
 
 [Pytorch]: https://pytorch.org
+[Augmentation]: https://github.com/NikolasEnt/Lyft-Perception-Challenge/blob/master/dataprocess.py
 [Unet]: https://arxiv.org/abs/1505.04597
 [Linknet]: https://arxiv.org/abs/1707.03718
 [Surgery]: https://arxiv.org/abs/1803.01207v1

@@ -14,8 +14,6 @@ The overall goal of the Challenge is to generate a binary labeled image masks fo
 
 The challenge was open from May 1st 10:00 am PST to June 3rd at 6:00 pm PST. There were 155 participants who submitted anything to the leaderboard.
 
-TODO Images
-
 ## Evaluation
 
 The final metric is based on pixel-wise F-beta scores. The F-beta score can be interpreted as a weighted harmonic mean of the precision and recall, the score  value spans in range [0..1].
@@ -32,7 +30,7 @@ So, the final score (S) is:
 
 __S = F<sub>avg</sub> * 100 - Penalty__
 
-A common environment (workspace) with a Nvidia Tesla K80 GPU, 4 cores CPU and 16 GB of RAM  was provided by the organizers. The virtual environment w used as a way to standardize the speed measurements for everyone's solutions as FPS is a part of the submission score.
+A common environment (workspace) with a Nvidia Tesla K80 GPU, 4 cores CPU and 16 GB of RAM  was provided by the organizers. The virtual environment was used as a way to standardize the speed measurements for everyone's solutions as FPS is a part of the submission score.
 
 ## Data
 

@@ -8,6 +8,23 @@ categories: DeepLearning Competitions
 project: comp2
 ---
 
+## Speedup tricks
+
+The basic prediction script was profiled with [yappi][Yappi] multithreaded python profiler and the profiling results gave rise to some speed up ideas.
+
+It was observed in the train dataset, that cars and roads cannot be situated on arbitrary part of the input image, but only on the center region, while the top part contains the sky and the bottom - the hood. So, the model was trained and predicts only that center part of the image.
+
+Images with masks should be encoded with png encoding at the final step of the pipeline. The process was parallelized with a [joblib][Joblib] library. It is a great instrument for simple parallel for loops using multiprocessing or multithreading.
+
+To increase the inference rate, one may reduce the amount of data transferred between GPU and CPU. So, most of the postprocessing was done on a GPU and only binary masks of desired classes were transferred back from GPU as byte tensors (3x times less volume as compared to original float32 tensor).
+
+The whole pipeline, suggested by the competition organizers, was also optimized. It was experimentally shown that pybase64 library is faster than the standard base64 in base64 encoding. OpenCV is better for fast png encoding that PIL, suggested in the demo script. One may also play with the png compression rate, but it was not useful in this case. Predictions were done in a batch manner, so, it helps to utilize the whole GPU and take advantages of big VRAM storage.
+
+A significant amount of time the prediction script spends on the model file loading, python modules import and the model preparation. In order to eliminate this lag, a client-server approach was used. A server should be started in advance and on start, it loads all necessary things. After the server is ready, a client application can be used. Client application only sends the path to the test video as a http request and receives the predictions from the server as a json.
+
+Each of the tricks helped to improve the FPS a little bit, but the whole program was able to reach >20 FPS rate in the testing workspace and >60 FPS on an ordinary desktop with Nvidia GTX 1080 Ti GPU. One should keep in mind that the timing result includes png and base64 encodings of the model predictions. So, the approach may be applied for real-time semantic segmentation!
+
+
 ## Examined ideas
 Besides the [described][Post] pipeline, several other approaches were tested, but did not lead to better results:
 
@@ -35,10 +52,12 @@ Some further ideas for prediction results improvement:
 * Use extra input channels with semantic masks from the previous frame. This may make masks predictions more sustainable and smooth between frames, however, it should decrease the neural network prediction speed.
 
 
-## Results:
+## Results
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/15vnXdaoo8Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ![Leaderoard](/assets/post12/lb.jpg)
 
+[Yappi]: https://pypi.org/project/yappi/
+[Joblib]: https://pythonhosted.org/joblib/
 [Post]: {% post_url 2018-06-01-Multiclass-semantic-segmentation-with-LinkNet34 %}
