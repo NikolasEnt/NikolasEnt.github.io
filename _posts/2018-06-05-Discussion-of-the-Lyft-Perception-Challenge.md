@@ -12,7 +12,7 @@ project: comp2
 
 The basic prediction script was profiled with [yappi][Yappi] multithreaded python profiler and the profiling results gave rise to some speed up ideas.
 
-It was observed in the train dataset, that cars and roads cannot be situated on arbitrary part of the input image, but only on the center region, while the top part contains the sky and the bottom - the hood. So, the model was trained and predicts only that center part of the image.
+It was observed in the train dataset, that cars and roads cannot be situated on arbitrary part of the input image, but only on the center region, while the top part contains the sky and the bottom - the hood. So, the model was trained and predicts only that center part of the image. Original image was 800x600 px, while 800x320 px crops were utilized.
 
 Images with masks should be encoded with png encoding at the final step of the pipeline. The process was parallelized with a [joblib][Joblib] library. It is a great instrument for simple parallel for loops using multiprocessing or multithreading.
 
@@ -58,6 +58,9 @@ Some further ideas for prediction results improvement:
 
 ![Leaderoard](/assets/post12/lb.jpg)
 
+The project code is available on [Github][Github].
+
 [Yappi]: https://pypi.org/project/yappi/
 [Joblib]: https://pythonhosted.org/joblib/
 [Post]: {% post_url 2018-06-01-Multiclass-semantic-segmentation-with-LinkNet34 %}
+[Github]: https://github.com/NikolasEnt/Lyft-Perception-Challenge

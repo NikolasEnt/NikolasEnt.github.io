@@ -10,7 +10,7 @@ project: comp2
 
 ## Software and Hardware
 
-The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availaility and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti,  Tesla V100 (as a p3.2xlarge AWS instance).
+The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availaility and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti, Tesla V100 (as a p3.2xlarge AWS instance).
 
 The deep neural network was implemented with [PyTorch][Pytorch] 0.4 framework. The framework was chosen for its flexibility, which is comparable to TensorFlow, and simplicity of prototyping on a par with Keras. Great fast and easy to use dataloader is also a huge advantage of the deep learning framework.
 
