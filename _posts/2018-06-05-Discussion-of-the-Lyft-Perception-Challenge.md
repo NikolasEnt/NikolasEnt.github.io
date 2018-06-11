@@ -48,7 +48,8 @@ Some further ideas for prediction results improvement:
 
 * Add some techniques to prevent overfitting: weights regularization, dropout, etc.
 
-* Find the best encoder architecture, experiment with the decoder blocks. Or experiment with other architectures, such as 
+* Find the best encoder architecture, experiment with the decoder blocks. Or experiment with other architectures.
+
 * Use extra input channels with semantic masks from the previous frame. This may make masks predictions more sustainable and smooth between frames, however, it should decrease the neural network prediction speed.
 
 

@@ -33,7 +33,7 @@ permalink: /resume/
 |__2018__ ||| __[Lyft Perception Challenge](https://www.udacity.com/lyft-challenge)__, __Udacity__ |
 | ||| Top-3% (4/155) and the fastest neural network pipeline. The [solution](/proj/comp2) is based on LinkNet34 for real-time multiclass semantic segmentation. |
 |__2018__ ||| __[IEEE's Signal Processing Society - Camera Model Identification](https://www.kaggle.com/c/sp-society-camera-model-identification)__, __Kaggle__ |
-| ||| Top-3%. The [solution](/proj/comp1) is based on convolutional neural networks as classifiers for camera models captured a given image. |
+| ||| Top-3% (15/583). The [solution](/proj/comp1) is based on convolutional neural networks as classifiers for camera models captured a given image. |
 |__2016__ ||| __[Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)__, __Udacity__ |
 | ||| The 3d place. A deep learning [approach](/proj/proj3) based on GoogLeNet inception module was applied for "localization as classification" method for localization of an autonomous vehicle. |
 |__2015__ ||| __ХХVII International Innovation Conference of Young Scientists and Students__, Moscow, Russia |
