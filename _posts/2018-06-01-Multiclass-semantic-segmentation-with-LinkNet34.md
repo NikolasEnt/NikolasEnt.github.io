@@ -10,17 +10,17 @@ project: comp2
 
 ## Software and Hardware
 
-The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availaility and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti, Tesla V100 (as a p3.2xlarge AWS instance).
+The model used in the submission as well as previous experiments were prepared with use of different machines and GPUs depends on their availability and spare time. The variety of video cards includes Nvidia GTX 1070, 1080 Ti, Tesla V100 (as a p3.2xlarge AWS instance).
 
-The deep neural network was implemented with [PyTorch][Pytorch] 0.4 framework. The framework was chosen for its flexibility, which is comparable to TensorFlow, and simplicity of prototyping on a par with Keras. Great fast and easy to use dataloader is also a huge advantage of the deep learning framework.
+The deep neural network was implemented with [PyTorch][Pytorch] 0.4 framework. The framework was chosen for its flexibility, which is comparable to TensorFlow, and simplicity of prototyping on a par with Keras. The great fast and easy to use dataloader is also a huge advantage of the deep learning framework.
 
-NumPy and OpenCV libraries were involved in data preparation and postprocessing. However, PyTorch itself played a key rule in predictions postprocessing as it can be used for some computer vision image processing (such as morphological dilation and erosion operations) right on GPU. This helped a lot in the pipeline speeding up.
+NumPy and OpenCV libraries were involved in data preparation and postprocessing. However, PyTorch itself played a crucial rule in predictions postprocessing as it can be used for some computer vision image processing (such as morphological dilation and erosion operations) right on GPU. This helped a lot in the pipeline speeding up.
 
 ## Data and preprocessing
 
 Samples from the official train dataset, as well as provided by the community datasets and manually generated ones were utilized for training and validation. Totally, there were 15601 images in train subset and 1500 in the validation one.
 
-The generated images were manually filtered in order to exclude a long series of frames without of any movements. Such may occur when the car is stopped at a red traffic light and not a lot of moving other cars are visible. Such series of same images may lead to overfitting to them, that is why such cases were removed from the training and validation datasets.
+The generated images were manually filtered in order to exclude a long series of frames without of any movements. Such may occur when the car is stopped at a red traffic light, and not a lot of moving other cars are visible. Such series of same images may lead to overfitting to them, that is why such cases were removed from the training and validation datasets.
 
 Binary labeled images for vehicles and binary labeled images for the drivable surface of the road were generated out of the provided label images with help of NumPy and openCV. The camera-carrier vehicle hood was excluded from labeling as it is required by the challenge rules. An additional background class was defined as “everything except the road and vehicles”. So, the target was organized as a three channel binary image.
 
@@ -67,7 +67,7 @@ def fb_loss(preds, trues, beta):
     FN = ((1-preds) * trues).sum(2)
     Fb = ((1+beta2) * TP + smooth)/((1+beta2) * TP + beta2 * FN + FP + smooth)
     Fb = Fb * weights
-    score = Fb.sum() / weights.sum()
+    score = Fb.sum() / (weights.sum() + smooth)
     return torch.clamp(score, 0., 1.)
 {% endhighlight %}
 
@@ -85,7 +85,7 @@ The model output is a matrix with elements in the range [0..1] (softmax layer ou
 
 After binarization of the output, a simple classical computer vision can be applied for the final score improvement. Morphology [erosion and dilation][GithubL130] operations, which can be performed on the GPU are included in the prediction script. It was observed, that a slight dilation increase the F-score on the 'car' class, so it is applied in the final version of the script.
 
-As the car hood is a constant part of a camera image, its pixels were deliberately excluded from predictions. The hood mask was saved from a training image and it was noticed that such simple postprocessing can add a bit to the final score as it removes some wrongly included road pixels on the hood edge. As the process is done on the GPU, the FPS is not significantly reduced by the step.
+As the car hood is a constant part of a camera image, its pixels were deliberately excluded from predictions. The hood mask was saved from a training image and it was noticed that such simple postprocessing could add a bit to the final score as it removes some wrongly included road pixels on the hood edge. As the process is done on the GPU, the FPS is not significantly reduced by the step.
 
 The project code is available on [Github][Github].
 

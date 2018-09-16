@@ -23,8 +23,8 @@ permalink: /resume/
 
 ## __IT Skills and experience__
 
-| __Languages:__ | | Python, C/C++, R, MATLAB |
-| __Tools:__ | | PyTorch, TensorFlow, Keras, OpenCV, ffmpeg, Scikit-learn, NumPy |
+| __Languages:__ | | Python, C/C++, R|
+| __Tools:__ | | PyTorch, TensorFlow, Keras, OpenCV, ffmpeg, Scikit-learn, NumPy, Docker |
 | __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
 | __Spare-time Projects:__ | | [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
@@ -48,9 +48,10 @@ permalink: /resume/
 __08/2017 - present__ __Computer Vision Scientist__ _Constanta_
 
 Responsibilities:
-* Develop and apply deep learning and computer vision algorithms for real time video analysis of sport events.
-* Solve video event detection, image segmentation, object detection and tracking in real time.
-* Post-processing of predictions with sophisticated filters, e.q. with unscented Kalman filter.
+* Research, develop and apply deep learning and computer vision algorithms for real-time video analysis of sports events.
+* Solve video event detection, image segmentation, object detection and tracking tasks in real time.
+* Speeding up Deep Learning based pipeline, prepare production ready inference.
+* Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
 * Applied computer vision programming in Python.
 
 __10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
