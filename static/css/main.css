@@ -220,3 +220,8 @@ footer {
     position: absolute;
     right: 12px;
 }
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}

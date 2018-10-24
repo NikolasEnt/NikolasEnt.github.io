@@ -30,6 +30,8 @@ permalink: /resume/
 
 ## __Prizes and Awards__
 
+|__2018__ ||| __[TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)__, __Kaggle__ |
+| ||| Top-0.5% (14/3234). The deep-learning based [approach](/proj/comp3) helps to segment seismic images which is crucial for oil and gas company drillers. |
 |__2018__ ||| __[Lyft Perception Challenge](https://www.udacity.com/lyft-challenge)__, __Udacity__ |
 | ||| Top-3% (4/155) and the fastest neural network pipeline. The [solution](/proj/comp2) is based on LinkNet34 for real-time multiclass semantic segmentation. |
 |__2018__ ||| __[IEEE's Signal Processing Society - Camera Model Identification](https://www.kaggle.com/c/sp-society-camera-model-identification)__, __Kaggle__ |

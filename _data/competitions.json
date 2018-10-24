@@ -1,5 +1,14 @@
 [
     {
+        "name": "Kaggle: TGS Salt Identification Challenge",
+        "image": "comp3/title.jpg",
+        "url": "/proj/comp3.html",
+        "date": "Oct 2018",
+        "tags": ["Deep Learning", "Computer Vision", "Kaggle"],
+        "main": "true",
+        "id": "comp3"
+    },
+    {
         "name": "Lyft Perception Challenge",
         "image": "comp2/title.gif",
         "url": "/proj/comp2.html",
