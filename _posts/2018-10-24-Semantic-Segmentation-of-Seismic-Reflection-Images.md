@@ -89,7 +89,7 @@ For details of the networks implementations, please, check out the GitHub [repo]
 ## Approaches to training
 The training process looks like the following after hyperparameters optimization by manual try-and-error process with some support by an automated grid search.
 
-* Loss: Lovasz hinge loss with elu + 1. Details see [here][Loss]
+* Loss: Lovasz hinge loss with elu + 1. See details [here][Loss]
 * Optimizer: SGD with LR 0.01, momentum 0.9, weight_decay 0.0001
 * Train stages:
 
