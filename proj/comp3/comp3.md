@@ -24,7 +24,7 @@ _Example of the whole mosaic post-processing. Green/blue - salt/empty regions fr
 
 The project code is available on [Github][Github].
 
-_Title image is [from][title_link]._
+_The title image is from [here][title_link]._
 
 [TGS-Salt]: https://www.kaggle.com/c/tgs-salt-identification-challenge
 [Ruslan_li]: https://www.kaggle.com/romul0212
