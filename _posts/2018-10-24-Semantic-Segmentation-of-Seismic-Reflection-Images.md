@@ -23,6 +23,9 @@ Our main GPU computational power used for the competition consists of:
  3x GTX 1080 Ti
  1x GTX 1070
 ```
+
+_See the GPU's performance compare [here][GPU]._
+
 The GPUs are distributed among several PCs. However, in some cases, some extra cloud-based instances with Nvidia V100 were utilized, when it was reasonable to increase calculations on graphical cards extensively. Particularly, they were used when it was necessary to train many folds for cross-validation or to conduct serial experiments.
 Although a lot of GPUs were used during experiments, the final models can be trained in about one week on a single GTX 1070.
 
@@ -164,6 +167,7 @@ The project code is available on [Github][Github].
 [Ruslan_li]: https://www.kaggle.com/romul0212
 [Nikolay_li]: https://www.kaggle.com/nikolasent
 [About]: {% post_url 2018-10-23-About-Kaggle-TGS-Salt-Identification-Challenge %}
+[GPU]: {% post_url 2018-11-06-Benchmarking-RTX-2080-Ti-vs-Pascal-GPUs-with-DL-tasks %}
 [Jigsaw-puzzle]: https://www.kaggle.com/vicensgaitan/salt-jigsaw-puzzle
 [Sjsu-thesis]: https://github.com/ZaydH/sjsu_thesis/tree/master/mixed_bag_solver
 [Unet]: https://arxiv.org/abs/1505.04597
