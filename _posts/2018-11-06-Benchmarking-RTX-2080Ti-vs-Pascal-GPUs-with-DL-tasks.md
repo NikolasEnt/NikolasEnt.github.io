@@ -127,5 +127,7 @@ The relative results as compared with GTX 1080 Ti as a reference are given in br
 
 To sum up, the new generation of GPU's has a bit less than 30% increase in computational power as compared with the Pascal 1080 Ti. However, one should note up to 50% increase in FP16 performance which is archived by the hardware support of the half precision calculations. Such an increase might produce a huge difference for practical application, especially for inference speed-up.
 
+An interesting point to mention is the fact that the Nvidia RTX 2080 Ti performance in the test is on par with the Nvidia Titan V results (see [here][Benchmark], but mind the software versions difference).
+
 [Benchmark]: https://github.com/u39kun/deep-learning-benchmark
 [NGC]: https://ngc.nvidia.com
