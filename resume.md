@@ -6,16 +6,20 @@ permalink: /resume/
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
   <p>Moscow, Russia, <a href="mailto:nikolasent@gmail.com">nikolasent@gmail.com</a></p>
+  <i>Computer Vision Scientist, <a href="https://www.kaggle.com/nikolasent/">Kaggle master</a></i>
 </div>
 
 ## __Education__
 
 | __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
 | ||| _Udacity_, [graduated](/static/img/nd013.pdf) with the first ever cohort |
+
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
+
 | __09/2011 - 07/2015__ ||| __Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
+ 
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
@@ -30,6 +34,8 @@ permalink: /resume/
 
 ## __Prizes and Awards__
 
+|__2018__ ||| __[Quick, Draw! Doodle Recognition Challenge](https://www.kaggle.com/c/quickdraw-doodle-recognition)__, __Kaggle__ |
+| ||| Top-4% (50/1316). Application of deep neural networks to classification of users drawings into 300+ classes with 50M train samples |
 |__2018__ ||| __[TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)__, __Kaggle__ |
 | ||| Top-0.5% (14/3234). The deep-learning based [approach](/proj/comp3) helps to segment seismic images which is crucial for oil and gas company drillers. |
 |__2018__ ||| __[Lyft Perception Challenge](https://www.udacity.com/lyft-challenge)__, __Udacity__ |
@@ -42,8 +48,6 @@ permalink: /resume/
 | ||| Diploma for the best scientific report “Mathematical modeling and numerical calculations of particles and coatings heating during gas-dynamic spraying”. |
 |__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
 | ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
-|__2011__ ||| __Siemens Science Award__, Moscow, Russia |
-| ||| Project "The UAV-based Global Surveillance System". |
 
 ## __Employment__
 
