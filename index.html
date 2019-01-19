@@ -82,5 +82,5 @@ title: Home
 <a name="posts"></a>
 <h3><a href="/blog">Posts</a></h3>
 
-{% assign posts = site.posts offset: 0 limit: 2 %}
+{% assign posts=site.posts | limit: 10 %}
 {% include posts_list.html posts=posts%}
