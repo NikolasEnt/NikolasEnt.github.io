@@ -9,14 +9,15 @@ permalink: /moocs/
 </div>
 
 | __Provider__ | | __MOOC Title__ | | __Grade__ | | __Link__ |
+| _Coursera_ | | Deep Learning Specialization _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/specialization/RJV7RR3QXRPD) |
 | _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](/static/img/nd013.pdf) |
-| _Coursera_ | | Machine Learning (Stanford) _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/YABSQTND48ZS) |
-| _Coursera_ | | Practical Machine Learning | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/LHFKMBMFCBS7) |
-| _Coursera_ | | Reproducible Research | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/MPSVGPLZUXU6) |
-| _Coursera_ | | Statistical Inference | | 97.8% | | [Link](https://www.coursera.org/account/accomplishments/records/KBKGBRNXVHUR) |
-| _Coursera_ | | Exploratory Data Analysis | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/UXXEJGD627DM) |
-| _Coursera_ | | Getting and Cleaning Data | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/QVfwUD3Yje7uqTKu) |
-| _Coursera_ | | Regression Models | | 100% | | [Link](https://www.coursera.org/account/accomplishments/records/AN28YHEWVFP7) |
+| _Coursera_ | | Machine Learning (Stanford) _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/WKJK4NLH6BFS) |
+| _Coursera_ | | Practical Machine Learning | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/EGD3GEC2P3LW) |
+| _Coursera_ | | Reproducible Research | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/UT6CT93KXBLS) |
+| _Coursera_ | | Statistical Inference | | 97.8% | | [Link](https://www.coursera.org/account/accomplishments/certificate/EAEBJVLQBAYJ) |
+| _Coursera_ | | Exploratory Data Analysis | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/GV5S4SMCBMRR) |
+| _Coursera_ | | Getting and Cleaning Data | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/KSGHYJJ6ZL) |
+| _Coursera_ | | Regression Models | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/RZVZPF339A2F) |
 | _edX_ | | Autonomous Navigation for Flying Robots | | 100% | | [Link](https://verify.edx.org/cert/c23e9769777b48aa82a8950bb0f4d16c) |
 | _QUT Online_ | | Introduction to robotics _by Peter Corke_ | | 100% | | [Video of the final project](https://youtu.be/MI-_qLKzQXc)|
 | _QUT Online_ | | Robotic Vision _by Peter Corke_ | | 100% | | [Video of the final project](https://youtu.be/RPiUF6k66uc)|

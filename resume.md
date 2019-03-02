@@ -27,9 +27,9 @@ permalink: /resume/
 
 ## __IT Skills and experience__
 
-| __Languages:__ | | Python, C/C++, R|
+| __Languages:__ | | Python, C/C++, R |
 | __Tools:__ | | PyTorch, TensorFlow, Keras, OpenCV, ffmpeg, Scikit-learn, NumPy, Docker |
-| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods|
+| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods |
 | __Spare-time Projects:__ | | [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
 ## __Prizes and Awards__
@@ -55,8 +55,8 @@ __08/2017 - present__ __Computer Vision Scientist__ _Constanta_
 
 Responsibilities:
 * Research, develop and apply deep learning and computer vision algorithms for real-time video analysis of sports events.
-* Solve video event detection, image segmentation, object detection and tracking tasks in real time.
-* Speeding up Deep Learning based pipeline, prepare production ready inference.
+* Solve video event detection, image segmentation, object detection and tracking tasks in real-time.
+* Speeding up Deep Learning based pipelines, prepare production ready inference.
 * Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
 * Applied computer vision programming in Python.
 
