@@ -138,7 +138,7 @@ body .container .jumbotron-info,
 body .container .well-info,
 body .container-fluid .jumbotron-info,
 body .container-fluid .well-info {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 body .container .jumbotron-warning,
@@ -211,7 +211,7 @@ body .container-fluid .well-danger {
 
 .btn:not(.btn-raised).btn-info,
 .input-group-btn .btn:not(.btn-raised).btn-info {
-    color: #03a9f4
+    color: #062F4F
 }
 
 .btn:not(.btn-raised).btn-warning,
@@ -290,7 +290,7 @@ body .container-fluid .well-danger {
 .btn.btn-raised.btn-info,
 .input-group-btn .btn.btn-fab.btn-info,
 .input-group-btn .btn.btn-raised.btn-info {
-    background-color: #03a9f4;
+    background-color: #062F4F;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -449,7 +449,7 @@ body .container-fluid .well-danger {
 .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-info,
 .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-info,
 .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-info {
-    background-color: #0fb2fc
+    background-color: #652e5a
 }
 
 .btn-group-raised .btn:not(.btn-link).active.btn-warning,
@@ -818,7 +818,7 @@ fieldset[disabled][disabled] .input-group-btn .btn.btn-raised:focus:not(:active)
 
 .btn-group-vertical.open>.dropdown-toggle.btn.btn-info,
 .btn-group.open>.dropdown-toggle.btn.btn-info {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .btn-group-vertical.open>.dropdown-toggle.btn.btn-warning,
@@ -1715,7 +1715,7 @@ output {
 }
 
 .label.label-info {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .label.label-warning {
@@ -1900,15 +1900,15 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .form-group.has-info.is-focused .form-control {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#03a9f4)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#03a9f4, #03a9f4), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#03a9f4, #03a9f4), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#062F4F), to(#062F4F)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#062F4F, #062F4F), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#062F4F, #062F4F), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#062F4F, #062F4F), linear-gradient(#D2D2D2, #D2D2D2)
 }
 
 .form-group.has-info .help-block,
 .form-group.has-info label.control-label {
-    color: #03a9f4
+    color: #062F4F
 }
 
 .form-group textarea {
@@ -2363,7 +2363,7 @@ legend {
     position: absolute;
     right: 16px;
     top: 16px;
-    color: rgb(0, 150, 136);
+    color: #062F4F;
     font-size: 13px
 }
 
@@ -2768,7 +2768,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .navbar.navbar-info {
-    background-color: #03a9f4;
+    background-color: #062F4F;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2798,12 +2798,12 @@ fieldset[disabled] .navbar .btn-link:hover {
 
 .navbar.navbar-info .dropdown-menu li>a:focus,
 .navbar.navbar-info .dropdown-menu li>a:hover {
-    color: #03a9f4;
+    color: #062F4F;
     background-color: #eee
 }
 
 .navbar.navbar-info .dropdown-menu .active>a {
-    background-color: #03a9f4;
+    background-color: #062F4F;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2991,7 +2991,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .alert.alert-info {
-    background-color: #03a9f4;
+    background-color: #062F4F;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -3063,7 +3063,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .progress .progress-bar.progress-bar-info {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .progress .progress-bar.progress-bar-warning {
@@ -3091,7 +3091,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .text-info {
-    color: #03a9f4
+    color: #062F4F
 }
 
 .nav-tabs {
@@ -3292,7 +3292,7 @@ fieldset[disabled] .navbar .btn-link:hover {
 }
 
 .panel.panel-info>.panel-heading {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .panel.panel-warning>.panel-heading {
@@ -3620,7 +3620,7 @@ hr.on-light {
 }
 
 .slider.slider-info.noUi-connect {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .slider.slider-warning.noUi-connect {
@@ -3649,7 +3649,7 @@ hr.on-light {
 }
 
 .slider.slider-info .noUi-connect {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .slider.slider-warning .noUi-connect {
@@ -3678,7 +3678,7 @@ hr.on-light {
 }
 
 .slider.slider-info .noUi-handle {
-    background-color: #03a9f4
+    background-color: #062F4F
 }
 
 .slider.slider-warning .noUi-handle {
@@ -3707,7 +3707,7 @@ hr.on-light {
 }
 
 .slider.slider-info .noUi-handle {
-    border-color: #03a9f4
+    border-color: #062F4F
 }
 
 .slider.slider-warning .noUi-handle {
@@ -3891,7 +3891,7 @@ hr.on-light {
 }
 
 .post-head {
-    color: rgb(0, 150, 136)
+    color: #062F4F
 }
 
 /*# sourceMappingURL=bootstrap-material-design.min.css.map */
