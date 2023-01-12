@@ -149,7 +149,7 @@ All GPUs were tested with stock clock speed, without overclocking applied.
 It is important to note that Tensor Core technology has been updated with each generation of GPUs, particularly with the inclusion of a wider range of precisions and improved throughput, which has made the use of Tensor Cores more convenient, easier and rewarding.
 
 ## Results
-The tables contains inference (```eval```) and training (```train```) rate in samples per second. Nvidia GTX 1080 Ti is used as the reference.
+The tables contain inference (```eval```) and training (```train```) rate in samples per second. Nvidia GTX 1080 Ti is used as the reference.
 
 <table style="width:100%">
   <caption><b>FP32 results</b></caption>
