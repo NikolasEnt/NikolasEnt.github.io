@@ -4,7 +4,7 @@ author: Nikolay Falaleev
 logo: /static/img/avatar.png
 about: Nikolay Falaleev
 description: > 
-  A Robotics, Computer Vision and Machine Learning lab by Nikolay Falaleev. The main focus of the blog is Self-Driving Car Technology and Deep Learning.
+  A Robotics, Computer Vision and Machine Learning lab by Nikolay Falaleev. The main focus of the blog is application of Deep Learning for Computer Vision tasks, as well as other relevant topics: classical Computer Vision, Numerical Methods and Hardware.
 baseurl: ""
 url: "https://nikolasent.github.io" # the base hostname & protocol 
 twitter_username: NFalaleev

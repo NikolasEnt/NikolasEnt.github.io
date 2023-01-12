@@ -15,7 +15,7 @@ table, th, td {
 }
 th, td {
     padding: 5px;
-    text-align: left;    
+    text-align: center;
 }
 </style>
 
@@ -23,7 +23,7 @@ th, td {
 The post presents results of Turing and Pascal GPUs benchmarking with a popular [Deep Learning Benchmark][Benchmark].
 PyTorch based tests with both floating point precisions (FP32 and FP16) were chosen for the comparison.
 
-All tests were performed within a docker container nvcr.io/nvidia/pytorch:18.10-py3 (nvidia-docker image with PyTorch 1.0a0, CUDA 10, cuDNN 7400) for reproducibility. Proprietary Nvidia driver version: 410.73.
+All tests were performed within a docker container _nvcr.io/nvidia/pytorch:18.10-py3_ (nvidia-docker image with PyTorch 1.0a0, CUDA 10, cuDNN 7400) for reproducibility. Proprietary Nvidia driver version: 410.73.
 It can be obtained from the [Nvidia NGC Registry][NGC]. Other test parameters were set the same to the original [tests][Benchmark], that allows a direct comparison between the results.
 
 An AMD Ryzen 7 1700X CPU powered the testing machine with 64 GB of RAM. All pieces of hardware were on stock frequencies without overclocking. The Tesla V100 setup is the only exclusion, an AWS p3.2xlarge cloud instance was used for the test.
@@ -157,7 +157,7 @@ To sum up, the new generation of GPU's has a less than 30% increase in computati
 
 An interesting point to mention is the fact that the Nvidia RTX 2080 Ti performance in the test is on par with the Nvidia Titan V results (see [here][Benchmark], but mind the software versions difference).
 Interestingly, the software versions make a big difference. For instance, see an older [benchmark][Benchmark] of Tesla V100 within a docker container with CUDA 9.0.
-It also worth to mention that the Tesla V100 performs significantly better in case of the VGG-16 neural network, probably due to special architecture related optimizations.
+It is also worth mentioning that the Tesla V100 performs significantly better in the case of the VGG-16 neural network, probably due to special architecture related optimizations.
 
 _[UPDATE] 19.01.2019 Add Tesla V100 test results._
 

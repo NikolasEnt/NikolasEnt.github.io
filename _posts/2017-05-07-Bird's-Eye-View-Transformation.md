@@ -9,7 +9,7 @@ project: proj1
 ---
 ## Introduction
 
-Parallel lines appear to converge on images from the front facing camera due to perspective. In order to keep parallel lines parallel for photogrammetry a bird's eye view transformation should be applied. The post describes how to transform images for lane lines detection. 
+Parallel lines appear to converge on images from a front facing camera due to perspective. In order to keep parallel lines parallel for photogrammetry a bird's eye view transformation should be applied. The post describes how to transform images for lane lines detection.
 
 ## What transformation to use
 
@@ -31,7 +31,7 @@ _b)_ shrinking the bottom of the image while keeping the top row unchanged;
 
 ![Transformation a](/assets/post3/transform_b.jpg)
 
-One may consider the first variant more obvious. However, it increase the spatial resolution (without adding information) for the distant part of the image and it could lead to line bounds erosion, hence, gradient algorithms may have difficulties with its detection. It also reduce viewing angle, therefore it is impossible to track other than central lanes.
+One may consider the first variant more obvious. However, it increases the spatial resolution (without adding information) for the distant part of the image and it could lead to line bounds erosion, hence, gradient algorithms may have difficulties with its detection. It also reduce viewing angle, therefore it is impossible to track other than central lanes.
 
 The second way of transformation was selected as a better one because it preserves all avalable pixels from the raw image on the top edge where there is lower relative resolution. To find correct transformation, source and destinations points a test image with flat and straight road can be used for perspective measurements. 
 
