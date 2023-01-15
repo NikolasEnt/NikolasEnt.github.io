@@ -5,32 +5,84 @@ permalink: /resume/
 ---
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
-  <p>Moscow, Russia, <a href="mailto:nikolasent@gmail.com">nikolasent@gmail.com</a></p>
-  <i>Computer Vision Scientist, <a href="https://www.kaggle.com/nikolasent/">Kaggle master</a></i>
+  <p>London, United Kingdom, <a href="mailto:nikolasent@gmail.com">nikolasent@gmail.com</a></p>
+  <i>Head of AI, <a href="https://www.kaggle.com/nikolasent/">Kaggle master</a></i>
 </div>
 
-## __Education__
+## __IT Skills and experience__
 
-| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
-| ||| _Udacity_, [graduated](/static/img/nd013.pdf) with the first ever cohort |
+| __Languages:__ | | Python, C/C++, R |
+| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, Keras, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO |
+| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods, Deep Learning, Team Leader |
+| __Spare-time Projects:__ | | [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
+
+## __Employment__
+
+__10/2020 - present,__ __Head of AI__ _Sportlight Technology_
+
+Development of CV-based Analytics for elite football clubs.
+
+_Responsibilities:_
+* Architect a Deep Learning system for match data capturing. Research and development of DL solutions for LIDAR and visual data analytics: object detection and tracking, segmentation, person re-identification, pose estimation, event detection, data fusion.
+* Leading AI projects with cross-functional teams, e.g.: a project on transition to real-time data processing.
+
+_Achievements:_
+* The system is being deployed in commercial operation in the majority of The English Premier League stadiums.
+* The results allowed 5x time cost reduction of the data processing. The startup [raised £4m](https://news.sky.com/story/athlete-tracking-start-up-sportlight-scores-with-1634m-fundraising-12643021) in 2022.
+
+__08/2017 - 08/2020,__ __Leading Computer Vision R&D__ _Constanta/OSAI_
+
+R&D of applied CV systems for real-time Sports Analytics.
+
+_Responsibilities:_
+* Research, development and application of DL-based CV algorithms for real-time video analysis of sports events (e.g.: table tennis, billiards games, team and cyber sports). The data was used for [MR broadcasting](https://www.youtube.com/watch?v=S7T2hKB4DSA), sports analytic and betting.
+* Video event detection, image segmentation, object detection and tracking of fast moving objects (e.q., balls, players) in real-time.
+* Industrial cameras video capturing and online calibration pipelines development.
+* Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
+* Speed up DL pipelines, implementation of production ready inference.
+* Leading CV projects teams, mentoring junior colleagues.
+
+_Achievements:_
+* Designed a novel multi-task (object detection and tracking, semantic segmentation and event spotting) neural network architecture for real-time video processing. [CVPRw2020 paper: TTNet: Real-Time Temporal and Spatial Video Analysis of Table Tennis](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html).
+* Implemented a multitask Computer Vision module for real-time video table tennis analysis (at 120 fps). For example, the system was deployed at [Tokyo 2020 Olympics](https://tokyo2020.osai.ai/) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c).
+* Created a Computer Vision module for pool-9 real-time analysis from organizing data collection to product deployment. [Video demo](https://youtu.be/KfQTzod34JE), [Blog article [rus]](https://habr.com/ru/company/constanta/blog/430030/).
+
+__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
+
+Responsibilities:
+* Constructing stable finite-difference schemes for transient heat conduction in 3D case. Choosing the solution approach. Coding and numerical calculations.
+* Scientific programming using C and MATLAB languages.
+* Automation of experimental data collection and processing.
+* Conducting mechanical experiments and numerical results data analysis in R.
+* Sample preparation and instrumental analysis.
+
+Achievements:
+* 6 scientific papers and 3 conference reports were coauthored
+
+## __Education__
 
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
 
 | __09/2011 - 07/2015__ ||| __Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
+
+### __Continuing education__
+
+| __07/2021 - 08/2021__ ||| __Oxford Machine Learning Summer School 2021__  |
+| ||| [Certificate](/static/img/OxML.pdf) |
+
+| __03/2021 - 08/2021__ ||| __Intel Edge AI for IoT Developers__ Nanodegree |
+| ||| _Udacity_, [Certificate](https://confirm.udacity.com/CDQPRVAA)|
+
+| __01/2020 - 06/2020__ ||| __C++__ Nanodegree |
+| ||| _Udacity_, [Certificate](https://confirm.udacity.com/J7YTCDPL)|
+
+| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
+| ||| _Udacity_, [Certificate](https://confirm.udacity.com/ERTTLT2G), graduated with the first ever cohort |
  
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
-
-
-
-## __IT Skills and experience__
-
-| __Languages:__ | | Python, C/C++, R |
-| __Tools:__ | | PyTorch, TensorFlow, Keras, OpenCV, ffmpeg, Scikit-learn, NumPy, Docker |
-| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods |
-| __Spare-time Projects:__ | | [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
 ## __Prizes and Awards__
 
@@ -49,66 +101,17 @@ permalink: /resume/
 |__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
 | ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
 
-## __Employment__
-
-__08/2017 - present__ __Computer Vision Scientist__ _Constanta_
-
-Responsibilities:
-* Research, develop and apply deep learning and computer vision algorithms for real-time video analysis of sports events.
-* Solve video event detection, image segmentation, object detection and tracking tasks in real-time.
-* Speeding up Deep Learning based pipelines, prepare production ready inference.
-* Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
-* Applied computer vision programming in Python.
-
-__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
-
-Responsibilities:
-* Constructing stable finite-difference schemes for transient heat conduction in 3D case. Choosing the solution approach. Coding and numerical calculations
-* Scientific programming using C and MATLAB languages
-* Automation of experimental data collection and processing
-* Conducting mechanical experiments and numerical results data analysis in R
-* Sample preparation and instrumental analysis
-
-Achievements:
-* 6 scientific papers and 3 conference reports were coauthored
-
-__09/2016 - 12/2016__ __Internship__ _National Research Center «Kurchatov Institute»_ 
-
-* Take part in experiments at the Kurchatov Synchrotron Radiation Source
-* Processing of large amount of experimental results: data cleaning, feature extraction and interpretation of the results
-* Development of software utilities for the data processing such as [XPS results visualizer and converter](https://github.com/NikolasEnt/XPS-visualizer-and-converter)
-* Results of the internship were applied during a beamtime at HZB BESSY II Synchrotron Radiation Source (Berlin, Germany)
-
-__09/2014 - 07/2015__ __Research Assistant__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
-
-* Constructing stable finite-difference schemes for heat conduction. Choosing the solution approach. Coding and numerical calculations
-* Scientific programming using C and MATLAB languages
-* Conducting mechanical experiments and numerical results data analysis in R
-
-__09/2011 - 07/2015__ __Head of Research Department, Research Supervisor__ _Moscow State School #224_ 
-
-Responsibilities:
-* Generation and screening of science and engineering projects ideas. Main topics: robotics, UAV, automation
-* Planning of the research program, suggesting relevant literature and sources. Provide supervision of the research projects
-* Preparing students for local and international science fairs and competitions
-* Making efforts to ensure students have access to academic, financial and other resources
-* Giving guidance on the nature of research
-
-Achievements:
-* 6 high school science projects were prepared for local and international science fairs
-* Two extracurricular courses were designed: “Introduction to Aerodynamics” and “Robotics and Artificial Intelligence” for senior school students
-
-## __Interests__
-
-Self-Driving Cars, Deep Learning, Computer Vision, Robotics, Artificial Intelligence, Mathematical Modeling, UAVs
-
 ## __Patents__
 
 * Russian Patent __#106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
 
 ## __Publications__
 
-_In a field of Nanotechnology:_
+_Deep Learning:_
+
+1. Voeikov R., Falaleev N., Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: 10.1109/CVPRW50498.2020.00450
+
+_Nanotechnology:_
 
 1.  Eliseev Andrei A., Kumskov A.S., <u>Falaleev N.S.</u>, Zhigalina V.S., Eliseev Artem A., Mitrofanov A.A., Petukhov D.I., Vasiliev A.L., Kisilev N.A. _Mass Transport Through Defects in Graphene Layers_ // __Journal of Physical Chemistry C__, 2017, DOI: 10.1021/acs.jpcc.7b06100
 
@@ -121,3 +124,9 @@ _In a field of Nanotechnology:_
 5. Lukashin A.V., <u>Falaleev N.S.</u>, Verbitskiy N.I., Volykhov A.A., Verbitskiy I.I., Yashna L.V., Kumskov A.S., Kiselev N.A., Eliseev A.A. Quasi free-standing one-dimensional nanocrystals of PbTe grown in 1.4 nm SWNTs. // __Nanosystems: physics, chemistry, mathematics__. V. 6, I. 6, 2015, P. 850-856 DOI: 10.17586/2220-8054-2015-6-6-850-856
 
 [Google Scholar profile](https://scholar.google.com/citations?user=745cJkYAAAAJ&hl=en)
+
+[ResearchGate profile](https://www.researchgate.net/profile/Nikolay-Falaleev)
+
+## __Interests__
+
+Self-Driving Cars, Deep Learning, Computer Vision, Robotics, Artificial Intelligence, Mathematical Modeling, UAVs

@@ -9,8 +9,10 @@ permalink: /moocs/
 </div>
 
 | __Provider__ | | __MOOC Title__ | | __Grade__ | | __Link__ |
+| _Udacity_ | | Intel Edge AI for IoT Developers Nanodegree | |  | | [Certificate](https://confirm.udacity.com/CDQPRVAA) |
+| _Udacity_ | | C++ Nanodegree | |  | | [Certificate](https://confirm.udacity.com/J7YTCDPL) |
 | _Coursera_ | | Deep Learning Specialization _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/specialization/RJV7RR3QXRPD) |
-| _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](/static/img/nd013.pdf) |
+| _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](https://confirm.udacity.com/ERTTLT2G) |
 | _Coursera_ | | Machine Learning (Stanford) _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/WKJK4NLH6BFS) |
 | _Coursera_ | | Practical Machine Learning | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/EGD3GEC2P3LW) |
 | _Coursera_ | | Reproducible Research | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/UT6CT93KXBLS) |
