@@ -109,7 +109,7 @@ Achievements:
 
 _Deep Learning:_
 
-1. Voeikov R., Falaleev N., Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: 10.1109/CVPRW50498.2020.00450
+1. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: 10.1109/CVPRW50498.2020.00450
 
 _Nanotechnology:_
 
