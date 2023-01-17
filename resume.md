@@ -2,6 +2,8 @@
 layout: page
 title: Profile
 permalink: /resume/
+sitemap:
+    lastmod: 2022-01-15
 ---
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>

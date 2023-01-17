@@ -6,6 +6,8 @@ abstract: Balancing temporal and spatial losses for simultenious training of mul
 date:   2020-06-29 12:00:00 +0300
 categories: DeepLearning, ComputerVision
 article: true
+sitemap:
+    lastmod: 2022-01-10
 ---
 
 
