@@ -6,6 +6,8 @@ abstract: An approximate approach to find an equidistant curve for a given polyn
 date:   2017-05-02 12:43:27 +0300
 categories: Mathematics Algorithms
 project: proj1
+sitemap:
+    lastmod: 2022-01-18
 ---
 ## Introduction
 
@@ -25,11 +27,13 @@ The following simple expressions are useful for the calculations:
 
 Equation of a straight line:
 
-#### _y = k * x + b;_
 
-It is needed to flip the reference slope and change its sign to find a perpendicular slope:
+$$y=kx + b;$$
 
-#### _k<sub>m</sub> = -1 / k;_
+To find the slope of a line perpendicular to this line, it is needed to flip the slope coefficient and change its sign:
+
+
+$$ K_m = -1/k;$$
 
 ## Implementation
 
@@ -50,54 +54,52 @@ y_pol = pol_calc(pol, x_pol)
 
 In order to make things simpler with bounds points and better define the slope coefficients we will consider points in between to neighbour pairs of generated ones. They can be obtained by linear interpolation. 
 
-Here we calculate coordinates of such points and direction of perpendiculars as slopes of perpendicular lines (`k_m` calculated as _k<sub>m</sub> = -1 / k_)which start from the middle points:
+Here we calculate coordinates of such points and direction of perpendiculars as slopes of perpendicular lines (`k_m` calculated as \\( K_m = -1/k \\) ), which start from the middle points:
 
 {% highlight python %}
 # Calculate polints position between given points
 for i in range(len(x_pol)-1):
-    y_m.append((y_pol[i+1]-y_pol[i])/2.0+y_pol[i])
-    x_m.append((x_pol[i+1]-x_pol[i])/2.0+x_pol[i])
+    y_m.append((y_pol[i+1] - y_pol[i]) / 2.0 + y_pol[i])
+    x_m.append((x_pol[i+1] - x_pol[i]) / 2.0 + x_pol[i])
     # Slope of perpendicular lines
     if y_pol[i+1] == y_pol[i]: #Avoid division by 0
         k_m.append(1e8) # A vary big number
     else:
-        k_m.append(-(x_pol[i+1]-x_pol[i])/(y_pol[i+1]-y_pol[i])) # Slope of perpendicular lines
+        k_m.append(-(x_pol[i+1] - x_pol[i])/(y_pol[i+1] - y_pol[i])) # Slope of perpendicular lines
 {% endhighlight %}
 
 Shifts `dx` and `dy` of the equidistant points (`x_eq` and `y_eq`) from the middle reference points (`x_m` and `y_m`) should be calculated. In fact, `dx = x_eq - x_m` and `dy = y_eq - y_m`.
 
 Taking into account the Pythagorean theorem:
 
-#### _dx<sup>2</sup> + dy<sup>2</sup> = d<sup>2</sup>;_
+$$ dx^2 + dy^2 = d^2; $$
 
-And k<sub>m</sub> definition:
-
-#### _k<sub>m</sub> = dy / dx;_
+And \\( K_m \\) definition: \\( K_m = \frac{dy}{dx}; \\)
 
 One can found out `dx` and `dy`:
 
-#### _dx = d(1/(1+k<sub>m</sub><sup>2</sup>))<sup>0.5</sup>;_
-#### _dy = k<sub>m</sub> * dx;_
+$$ dx = d\sqrt{\frac{1}{1+k_m^2}}; dy = k_m * dx;$$
+
 Here the calculations implemented with respect to desired position (sign of `d`) of the equidistant and the reference points positions.
 
 {% highlight python %}
 #Calculate equidistant points
-x_eq = d*np.sqrt(1.0/(1+k_m**2)) # Calculate reference shift of the equidistant points
+x_eq = d*np.sqrt(1.0/(1 + k_m**2)) # Calculate reference shift of the equidistant points
 y_eq = np.zeros_like(x_eq) # Create np.array for y_eq
 if d >= 0: # x positions of the equidistant depends on direction
     for i in range(len(y_m)):
         if k_m[i] < 0: 
-            x_eq[i] = x_m[i]-abs(x_eq[i])
+            x_eq[i] = x_m[i] - abs(x_eq[i])
         else:
-            x_eq[i] = x_m[i]+abs(x_eq[i])
-        y_eq[i] = (y_m[i]-k_m[i]*x_m[i])+k_m[i]*x_eq[i]
+            x_eq[i] = x_m[i] + abs(x_eq[i])
+        y_eq[i] = (y_m[i] - k_m[i] * x_m[i]) + k_m[i] * x_eq[i]
 else:
     for i in range(len(x_m)):
         if k_m[i] < 0:
-            x_eq[i] = x_m[i]+abs(x_eq[i])
+            x_eq[i] = x_m[i] + abs(x_eq[i])
         else:
-            x_eq[i] = x_m[i]-abs(x_eq[i])
-        y_eq[i] = (y_m[i]-k_m[i]*x_m[i])+k_m[i]*x_eq[i]
+            x_eq[i] = x_m[i] - abs(x_eq[i])
+        y_eq[i] = (y_m[i] - k_m[i]*x_m[i]) + k_m[i] * x_eq[i]
 {% endhighlight %}
 
 The final step is to fit a new polynomial of desired degree to the point set
@@ -143,7 +145,7 @@ def text_eq(pol):
     for i,p in enumerate(pol):
         print(p)
         str_eq += str(p)
-        order = len(pol)-j
+        order = len(pol) - j
         if order > 1:
             str_eq += ('x^'+str(order))
             if pol[i+1] > 0:
@@ -165,37 +167,37 @@ def equidistant(pol, d, max_l = 1, plot = False):
     y_m = []
     k_m = []
     # Calculate polints position between given points
-    for i in range(len(x_pol)-1):
-        y_m.append((y_pol[i+1]-y_pol[i])/2.0+y_pol[i])
-        x_m.append((x_pol[i+1]-x_pol[i])/2.0+x_pol[i])
+    for i in range(len(x_pol) - 1):
+        y_m.append((y_pol[i+1] - y_pol[i]) / 2.0 + y_pol[i])
+        x_m.append((x_pol[i+1] - x_pol[i]) / 2.0 + x_pol[i])
         # Slope of perpendicular lines
         if y_pol[i+1] == y_pol[i]: #Avoid division by 0
             k_m.append(1e8) # A vary big number
         else:
-            k_m.append(-(x_pol[i+1]-x_pol[i])/(y_pol[i+1]-y_pol[i])) # Slope of a perpendicular
+            k_m.append(-(x_pol[i+1] - x_pol[i])/(y_pol[i+1] - y_pol[i])) # Slope of a perpendicular
     # Convert arrays into np.arrays
     x_m = np.array(x_m)
     y_m = np.array(y_m)
     k_m = np.array(k_m)
     # Calculate equidistant points
-    x_eq = d*np.sqrt(1.0/(1+k_m**2)) # Calculate reference shift dx of the equidistant points
+    x_eq = d*np.sqrt(1.0/(1 + k_m**2)) # Calculate reference shift dx of the equidistant points
     y_eq = np.zeros_like(x_eq) # Create np.array for y_eq
     if d >= 0: # x positions of the equidistant depends on direction
         for i in range(len(y_m)):
             if k_m[i] < 0: 
-                x_eq[i] = x_m[i]-abs(x_eq[i])
+                x_eq[i] = x_m[i] - abs(x_eq[i])
             else:
-                x_eq[i] = x_m[i]+abs(x_eq[i])
-            y_eq[i] = (y_m[i]-k_m[i]*x_m[i])+k_m[i]*x_eq[i]
+                x_eq[i] = x_m[i] + abs(x_eq[i])
+            y_eq[i] = (y_m[i] - k_m[i] * x_m[i]) + k_m[i] * x_eq[i]
     else:
         for i in range(len(y_m)):
             if k_m[i] < 0:
-                x_eq[i] = x_m[i]+abs(x_eq[i])
+                x_eq[i] = x_m[i] + abs(x_eq[i])
             else:
-                x_eq[i] = x_m[i]-abs(x_eq[i])
-            y_eq[i] = (y_m[i]-k_m[i]*x_m[i])+k_m[i]*x_eq[i]
+                x_eq[i] = x_m[i] - abs(x_eq[i])
+            y_eq[i] = (y_m[i] - k_m[i] * x_m[i]) + k_m[i] * x_eq[i]
     # Fit a polinomial of order which is the same to the given one to the equidistant points 
-    pol_eq = np.polyfit(x_eq, y_eq, len(pol)-1)
+    pol_eq = np.polyfit(x_eq, y_eq, len(pol) - 1)
     # Visualize results
     if plot:
         # Original line
@@ -209,13 +211,13 @@ def equidistant(pol, d, max_l = 1, plot = False):
         plt.axis('equal')
         # Draw black connection lines
         for i in range(len(x_m)):
-            plt.plot([x_m[i],x_eq[i]], [y_m[i],y_eq[i]], color='black', linewidth=1) 
+            plt.plot([x_m[i], x_eq[i]], [y_m[i], y_eq[i]], color='black', linewidth=1)
         plt.show()
         #plt.savefig('./equid.jpg')
     return pol_eq
 
 # Use example
-pol = np.array([-4.0, 5.5,  -2.5,  0.2])
+pol = np.array([-4.0, 5.5, -2.5, 0.2])
 print(equidistant(pol, -0.1, plot=True))
 {% endhighlight %}
 
