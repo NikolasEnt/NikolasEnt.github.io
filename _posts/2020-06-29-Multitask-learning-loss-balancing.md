@@ -4,7 +4,7 @@ title:  "Multi-task learning loss balancing"
 title_img: /assets/post16/ttnet.png
 abstract: Balancing temporal and spatial losses for simultenious training of multi-task neural networks for video processing and some data tips.
 date:   2020-06-29 12:00:00 +0300
-categories: DeepLearning, ComputerVision
+categories: DeepLearning ComputerVision
 article: true
 sitemap:
     lastmod: 2022-01-10

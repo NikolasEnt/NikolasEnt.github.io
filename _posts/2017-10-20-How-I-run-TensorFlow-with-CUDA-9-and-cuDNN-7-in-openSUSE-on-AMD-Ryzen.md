@@ -4,7 +4,7 @@ title:  "How I run TensorFlow with CUDA 9 and cuDNN 7 in openSUSE on Ryzen"
 title_img: /assets/post7/title_img.jpg
 abstract: A set of instruction to run a modern version of the deep learning framework TensorFlow on AMD Ryzen.
 date:   2017-10-20 12:00:00 +0300
-categories: DeepLearning
+categories: Hardware DeepLearning
 article: true
 ---
 

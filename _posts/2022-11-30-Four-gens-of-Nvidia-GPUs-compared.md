@@ -4,7 +4,7 @@ title:  "Four generations of Nvidia GPUs compared"
 title_img: /assets/post17/title.png
 abstract: Benchmark results of GTX 1080 TI, RTX 2080Ti, 3090 and 4090 on DL tasks.
 date:   2022-11-30 12:00:00 +0100
-categories: Hardware, DeepLearning
+categories: Hardware DeepLearning
 article: true
 ---
 
