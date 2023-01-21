@@ -3,7 +3,7 @@ layout: page
 title: Profile
 permalink: /resume/
 sitemap:
-    lastmod: 2022-01-15
+    lastmod: 2022-01-21
 ---
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
@@ -14,8 +14,8 @@ sitemap:
 ## __IT Skills and experience__
 
 | __Languages:__ | | Python, C/C++, R |
-| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, Keras, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO |
-| __Skills:__ | | Artificial Neural Networks, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods, Deep Learning, Team Leader |
+| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, Keras, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow |
+| __Skills:__ | | Artificial Neural Networks, Deep Learning, CNN, Computer Vision, Localization and Pathplanning, Control, Numerical Methods, MLOps, Research, Team Leader |
 | __Spare-time Projects:__ | | [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
 
 ## __Employment__
