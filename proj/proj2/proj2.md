@@ -15,7 +15,6 @@ It was implemented in Python with OpenCV and Scikit-learn libraries. Linear SVM 
 ### Contents:
 
 1. [Image classification using SVM][postSVM]
-2. Vehicles finding
 
 ## Final project video:
 

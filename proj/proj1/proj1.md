@@ -9,16 +9,14 @@ This Project is based on the fourth task of the Udacity Self-Driving Car Nanodeg
 
 It was implemented in Python with OpenCV library. The project [repo](https://github.com/NikolasEnt/Advanced-Lane-Lines).
 
-The key idea of the realization is use of virtual sensors with adaptive position and threshold which analyze the region of interest row by row. It also use information from previous frames and different techniques of results filtering for smoothing.
-The code also estimates radius of the road curvature and the position of the vehicle with respect to the lane center.
-
+The key idea of the realization is the use of virtual sensors with adaptive position and threshold which analyze the region of interest row by row. It also uses information from previous frames and different techniques of results filtering for smoothing.
+The code also estimates the radius of the road curvature and the position of the vehicle with respect to the lane centre.
 ### Contents:
 
 1. [Camera calibration]({% post_url 2017-05-05-Camera-calibration-with-OpenCV %})
 2. [Image warping]({% post_url 2017-05-07-Bird's-Eye-View-Transformation %})
 3. [Math help function: Equidistant]({% post_url 2017-05-02-Approximate-equidistant-curve-for-polynomials %})
 4. [Adaptive Virtual Sensors]({% post_url 2017-06-07-Adaptive-Virtual-Sensors %})
-5. Video processing
 
 ### Final project videos:
 
