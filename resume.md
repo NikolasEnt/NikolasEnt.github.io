@@ -49,7 +49,7 @@ _Achievements:_
 * Implemented a multitask Computer Vision module for real-time video table tennis analysis (at 120 fps). For example, the system was deployed at [Tokyo 2020 Olympics](https://tokyo2020.osai.ai/) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c).
 * Created a Computer Vision module for pool-9 real-time analysis from organizing data collection to product deployment. [Video demo](https://youtu.be/KfQTzod34JE), [Blog article [rus]](https://habr.com/ru/company/constanta/blog/430030/).
 
-__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_ 
+__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_
 
 Responsibilities:
 * Constructing stable finite-difference schemes for transient heat conduction in 3D case. Choosing the solution approach. Coding and numerical calculations.
@@ -82,12 +82,14 @@ Achievements:
 
 | __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
 | ||| _Udacity_, [Certificate](https://confirm.udacity.com/ERTTLT2G), graduated with the first ever cohort |
- 
+
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
 ## __Prizes and Awards__
 
+|__2023__ ||| __[SoccerNet Camera Calibration Challenge 2023](https://www.soccer-net.org/challenges/2023)__, __CVPR__ |
+| ||| Top-1 An approach to generate camera calibration values from football broadcast videos. The challenges was held at CVPR 2023. |
 |__2018__ ||| __[Quick, Draw! Doodle Recognition Challenge](https://www.kaggle.com/c/quickdraw-doodle-recognition)__, __Kaggle__ |
 | ||| Top-4% (50/1316). Application of deep neural networks to classification of users drawings into 300+ classes with 50M train samples |
 |__2018__ ||| __[TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)__, __Kaggle__ |
