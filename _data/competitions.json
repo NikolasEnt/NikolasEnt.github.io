@@ -1,10 +1,27 @@
 [
     {
+        "name": "SoccerNet Camera Calibration Challenge 2023",
+        "image": "comp4/logo.jpg",
+        "url": "/proj/comp4.html",
+        "date": "May 2023",
+        "tags": [
+            "Deep Learning",
+            "Computer Vision",
+            "CVPR"
+        ],
+        "main": "true",
+        "id": "comp4"
+    },
+    {
         "name": "Kaggle: TGS Salt Identification Challenge",
         "image": "comp3/title.jpg",
         "url": "/proj/comp3.html",
         "date": "Oct 2018",
-        "tags": ["Deep Learning", "Computer Vision", "Kaggle"],
+        "tags": [
+            "Deep Learning",
+            "Computer Vision",
+            "Kaggle"
+        ],
         "main": "true",
         "id": "comp3"
     },
@@ -13,7 +30,11 @@
         "image": "comp2/title.gif",
         "url": "/proj/comp2.html",
         "date": "May 2018",
-        "tags": ["Deep Learning", "Computer Vision", "Self-Driving"],
+        "tags": [
+            "Deep Learning",
+            "Computer Vision",
+            "Self-Driving"
+        ],
         "main": "true",
         "id": "comp2"
     },
@@ -22,8 +43,11 @@
         "image": "comp1/title_img.jpg",
         "url": "/proj/comp1.html",
         "date": "Jan 2018",
-        "tags": ["Deep Learning", "Kaggle"],
-        "main": "true",
+        "tags": [
+            "Deep Learning",
+            "Kaggle"
+        ],
+        "main": "false",
         "id": "comp1"
     },
 ]
