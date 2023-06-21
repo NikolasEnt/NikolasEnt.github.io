@@ -10,7 +10,7 @@ The objective of the challenge in 2023 was to generate precise camera calibratio
 ![An input image example and predictions](/assets/post18/image_and_predictions.jpg){: .center-image }
 _An original input video frame and a football pitch model overlay (represented by green lines) drawn using the predicted camera calibration values._
 
-In this solution, [Ruilong Chen](https://www.linkedin.com/in/ruilong-chen-199a08111/) participated as well, the participation in the challenge was partially supported by [Sportlight](https://www.sportlight.ai/). 2 out of 10 GPUs used at the peak of the experimental stage of the challenge was provided by Sportlight.
+In this solution, [Ruilong Chen](https://www.linkedin.com/in/ruilong-chen-199a08111/) participated as well (thanks a lot for valuable contributions!), the participation in the challenge was supported by [Sportlight](https://www.sportlight.ai/), which also included providing some of the GPUs resources, used for the challenge.
 
 ### Contents:
 
