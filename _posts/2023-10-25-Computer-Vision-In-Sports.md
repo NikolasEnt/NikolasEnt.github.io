@@ -27,7 +27,7 @@ The application of various machine learning algorithms has significantly transfo
 
 ### Sensor Calibration
 
-Most ML-based workflows heavily rely on indirectly measured parameters, such as an athlete's speed in sports analysis or the trajectory of a pedestrian for or accurate location of other cars in autonomous vehicles applications. Just as in any photogrammetry system, precise calibration is crucial. In practice, this not only involves calibration of a single sensor type or [intrinsic calibration]({% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}) alone, but also encompasses extrinsic calibration to align data from different sensors (e.g., cameras, LIDARs, and radars) into a unified space. For example, [Trackman 4 Launch Monitor](https://www.trackman.com/golf/launch-monitors/trackman-4) uses radars and a camera for collecting golf club and ball data, or [Sportlight](sportlight.ai) system utilizes multicamera and LIDAR data for football players tracking.
+Most ML-based workflows heavily rely on indirectly measured parameters, such as an athlete's speed in sports analysis or the trajectory of a pedestrian for accurate location of other cars in autonomous vehicles applications. Just as in any photogrammetry system, precise calibration is crucial. In practice, this not only involves calibration of a single sensor type or [intrinsic calibration]({% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}) alone, but also encompasses extrinsic calibration to align data from different sensors (e.g., cameras, LIDARs, and radars) into a unified space. For example, [Trackman 4 Launch Monitor](https://www.trackman.com/golf/launch-monitors/trackman-4) uses radars and a camera for collecting golf club and ball data, or [Sportlight](sportlight.ai) system utilizes multicamera and LIDAR data for football players tracking.
 
 There are various ways to perform calibration, with two major groups: the classical manual calibration process or Deep Learning-based approaches. For example, in deep learning calibration of a multi-sensor setup, a common approach is to bring the data into a common representation. Then, perform feature-matching calibration parameter optimization to align data acquired from different modalities or from different sensors.
 
@@ -94,6 +94,6 @@ _Fig. 5. An RL-controlled autonomous drone can compete at the level of human wor
 
 \[8\]: Ella Kaufmann et al. Champion-level drone racing using deep reinforcement learning. [Nature 620, 982–987 (2023)](https://www.nature.com/articles/s41586-023-06419-4).
 
-_Note: The title gif was generated from [video](https://www.youtube.com/watch?v=fBiataDpGIo) of \[8\]._
+_Note: The title gif was generated from a [video](https://www.youtube.com/watch?v=fBiataDpGIo) of \[8\]._
 
 
