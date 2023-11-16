@@ -14,10 +14,10 @@ sitemap:
 ## __IT Skills and experience__
 
 | __Languages:__ | | Python, C/C++, R, SQL |
-| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, Keras, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow, DeepStream, Gstreamer, FastAPI |
+| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow, DeepStream, Gstreamer, FastAPI |
 | __Hardware:__ | | Industrial cameras, Optics, LIDARs, IMU, DL Accelerators |
 | __Skills:__ | | Artificial Neural Networks, Deep Learning, Computer Vision, Semantic Segmentation, Object Detection and Tracking, Depth Estimation, Video Event Detection, Sensor Fusion, Calibration, 3D Scene Reconstruction Localization and Pathplanning, Control, Numerical Methods, Optimization, MLOps, Research, Team Leader |
-| __Spare-time Projects:__ | | [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter)|
+| __Spare-time Projects:__ | | [Kaggle competitions](/competitions), [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter). |
 
 ## __Employment__
 
@@ -26,12 +26,12 @@ __10/2020 - present,__ __Head of AI__ _Sportlight Technology_
 Development of CV-based Analytics for elite football clubs.
 
 _Responsibilities:_
-* Architect a Deep Learning system for match data capturing. Research and development of DL solutions for LIDAR and visual data analytics: object detection and tracking, segmentation, person re-identification, pose estimation, event detection, data fusion.
-* Leading AI projects with cross-functional teams, e.g.: a project on transition to real-time data processing.
+* Architect a Deep Learning system for match data capturing. Spearheaded the development of a real-time Deep Learning system to extract insights from visual and LIDAR data via object detection, tracking, segmentation, person re-identification, pose estimation, event detection, and multi-modal data fusion.
+* Led AI projects in cross-functional teams, e.g.: a project on transition to real-time data processing. Ensured adherence to best development practices and deep learning experimentation strategies to foster technological excellence.
 
 _Achievements:_
-* The system is being deployed in commercial operation in the majority of The English Premier League stadiums.
-* The results allowed 5x time cost reduction of the data processing. The startup [raised £4m](https://news.sky.com/story/athlete-tracking-start-up-sportlight-scores-with-1634m-fundraising-12643021) in 2022.
+* Architected and executed an operational system deployed across the majority of the English Premier League stadiums, achieving industry-leading player tracking accuracy.
+* The results allowed 5x time cost reduction of the data processing and an order of magnitude upscale in operations.
 
 __08/2017 - 08/2020,__ __Leading Computer Vision R&D__ _Constanta/OSAI_
 
@@ -43,7 +43,7 @@ _Responsibilities:_
 * Industrial cameras video capturing and online calibration pipelines development.
 * Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
 * Speed up DL pipelines, implementation of production ready inference.
-* Leading CV projects teams, mentoring junior colleagues.
+* Led CV projects teams, mentoring junior colleagues.
 
 _Achievements:_
 * Designed a novel multi-task (object detection and tracking, semantic segmentation and event spotting) neural network architecture for real-time video processing. [CVPRw2020 paper: TTNet: Real-Time Temporal and Spatial Video Analysis of Table Tennis](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html).
@@ -60,7 +60,7 @@ Responsibilities:
 * Sample preparation and instrumental analysis.
 
 Achievements:
-* 6 scientific papers and 3 conference reports were coauthored
+* 6 scientific papers and 3 conference reports were coauthored.
 
 ## __Education__
 
@@ -90,7 +90,7 @@ Achievements:
 ## __Prizes and Awards__
 
 |__2023__ ||| __[SoccerNet Camera Calibration Challenge 2023](https://www.soccer-net.org/challenges/2023)__, __CVPR__ |
-| ||| Top-1 An approach to generate camera calibration values from football broadcast videos. The challenges was held at CVPR 2023. |
+| ||| Top-1. DL approach to camera calibration from football broadcast videos. The challenges was held at CVPR 2023. |
 |__2018__ ||| __[Quick, Draw! Doodle Recognition Challenge](https://www.kaggle.com/c/quickdraw-doodle-recognition)__, __Kaggle__ |
 | ||| Top-4% (50/1316). Application of deep neural networks to classification of users drawings into 300+ classes with 50M train samples |
 |__2018__ ||| __[TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)__, __Kaggle__ |
@@ -132,6 +132,15 @@ _Nanotechnology:_
 
 [ResearchGate profile](https://www.researchgate.net/profile/Nikolay-Falaleev)
 
+
+## Public Talks
+
+|__11/2023__ ||| __Computer Vision Summit London 2023__ |
+| ||| Deploying unparalleled accuracy in athletes' performance analysis with LIDAR and video data processing. Keynote presentation, 250+ attendees. |
+|__06/2023__ ||| __CVPR, 9th International Workshop on Computer Vision in Sports__ |
+| ||| Presentation on a DL approach to camera calibration. |
+|__07/2022__ ||| __GSIG Solutions Showcase: Athlete tracking: AI, computer vision, machine learning__ |
+| ||| LIDAR and visual data fusion for athlete tracking. |
 
 ## Clubs & Societies
 
