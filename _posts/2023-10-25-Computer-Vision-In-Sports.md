@@ -3,7 +3,7 @@ layout: post
 title:  "Deep Learning in Sports and Autonomous Vehicles"
 title_img: /assets/post19/title.gif
 abstract: Application of Deep Learning in Sports and similarities with the Self-Drivind field.
-date:   2023-10-27 12:00:00 +0300
+date:   2023-10-27 12:00:00 +0100
 categories: DeepLearning ComputerVision Self-Driving
 article: true
 sitemap:
