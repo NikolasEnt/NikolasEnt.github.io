@@ -14,6 +14,8 @@ _An original input video frame and a football pitch model overlay (represented b
 
 In this solution, [Ruilong Chen](https://www.linkedin.com/in/ruilong-chen-199a08111/) participated as well (thanks a lot for valuable contributions!), the participation in the challenge was supported by [Sportlight](https://www.sportlight.ai/), which also included providing some of the GPUs resources, used for the challenge.
 
+The project code is available on [Github](https://github.com/NikolasEnt/soccernet-calibration-sportlight).
+
 ### Contents:
 
 1. [Top-1 solution of SoccerNet Camera Calibration Challenge 2023][Post]

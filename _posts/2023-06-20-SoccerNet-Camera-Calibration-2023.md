@@ -32,6 +32,8 @@ Annotation classes contained 23 lines (each line represented as two or more poin
 
 More details on the challenge metric and the challenge itself can be found in the official [repo](https://github.com/SoccerNet/sn-calibration).
 
+The project code is available on [Github](https://github.com/NikolasEnt/soccernet-calibration-sportlight).
+
 ## The solution ideas
 
 An accurate pitch model is available, providing real-world coordinates of various keypoints on the pitch, such as line intersections, penalty points, the pitch center, and etc. Furthermore, the pitch model allows calculating coordinates of numerous additional points on the pitch. This implies that it is feasible to leverage the pitch model coordinates with corresponding points detected in the images to conduct standard camera calibration, just using the pitch model instead of a traditional checkerboard calibration pattern.
