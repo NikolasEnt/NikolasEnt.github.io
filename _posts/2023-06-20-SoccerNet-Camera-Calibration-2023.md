@@ -82,7 +82,7 @@ In scenarios where the camera alignment coincided with the direction of the long
 
 ## Neural network
 
-The keypoint detection employed the HRNetV2-w48 backbone \[2\]. To enhance spatial resolution of the predicted heatmaps, we added 2x upsampling and skip-connection features concatenation from the corresponding resolution of the convolution stem. The final predictions had half the resolution of the original image, with softmax used as the last activation. The target tensor consisted of 2D feature maps for each point, where Gaussian peaks \\( \sigma = 2 px \\) were positioned at the keypoint locations. An extra target channel was included, which represented the inverse of the maximal value among the other target feature maps, ensuring that the final target tensor summed up to 1.0 at each spatial point. Only points within the image boundaries were used as targets.
+The keypoint detection employed the HRNetV2-w48 backbone \[2\]. To enhance spatial resolution of the predicted heatmaps, we added 2x upsampling and skip-connection features concatenation from the corresponding resolution of the convolution stem. The final predictions had half the resolution of the original image, with softmax used as the last activation. The target tensor consisted of 2D feature maps for each point, where Gaussian peaks \\( \sigma = 3 px \\) were positioned at the keypoint locations. An extra target channel was included, which represented the inverse of the maximal value among the other target feature maps, ensuring that the final target tensor summed up to 1.0 at each spatial point. Only points within the image boundaries were used as targets.
 
 ![Neural network architecture](/assets/post18/architecture.jpg){: .center-image }
 _Fig. 7. The neural network architecture._
