@@ -3,7 +3,7 @@ layout: page
 title: Profile
 permalink: /resume/
 sitemap:
-    lastmod: 2023-06-21
+    lastmod: 2024-06-21
 ---
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
@@ -37,27 +37,14 @@ __08/2017 - 08/2020,__ __Leading Computer Vision R&D__ _Constanta/OSAI_
 
 R&D of applied CV systems for real-time Sports Analytics.
 
-_Responsibilities:_
-* Research, development and application of DL-based CV algorithms for real-time video analysis of sports events (e.g.: table tennis, billiards games, team and cyber sports). The data was used for [MR broadcasting](https://www.youtube.com/watch?v=S7T2hKB4DSA), sports analytic and betting.
-* Video event detection, image segmentation, object detection and tracking of fast moving objects (e.q., balls, players) in real-time.
-* Industrial cameras video capturing and online calibration pipelines development.
-* Post-processing of predictions with sophisticated filters (such as Unscented Kalman filter).
-* Speed up DL pipelines, implementation of production ready inference.
-* Led CV projects teams, mentoring junior colleagues.
-
-_Achievements:_
-* Designed a novel multi-task (object detection and tracking, semantic segmentation and event spotting) neural network architecture for real-time video processing. [CVPRw2020 paper: TTNet: Real-Time Temporal and Spatial Video Analysis of Table Tennis](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html).
-* Implemented a multitask Computer Vision module for real-time video table tennis analysis (at 120 fps). For example, the system was deployed at [Tokyo 2020 Olympics](https://tokyo2020.osai.ai/) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c).
+* Proposed and executed the development of a DL-based system for real-time video analysis of sports events for [MR broadcasting](https://www.youtube.com/watch?v=S7T2hKB4DSA), sports analytics, and betting, including hardware design, computer vision R\&D, data management, and scalable deployment.
+* Led the implementation of production-ready inference pipelines and managed project life cycles from initial concept to commercial operation.
+* Pioneered a real-time spatio-temporal video processing ANN architecture, published in a [CVPR 2020 paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html). The system was showcased in high-profile events such as [Tokyo 2020 Olympics](https://web.archive.org/web/20230607084409/https://tokyo2020.osai.ai/), [JOOLA North American Teams Championships](https://medium.com/@osai.ai/news-north-american-teams-championships-2021-to-live-stream-table-tennis-in-mixed-reality-powered-8f3da803b86f) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c), and has been deployed in numerous venues worldwide for 24/7 commercial operation.
 * Created a Computer Vision module for pool-9 real-time analysis from organizing data collection to product deployment. [Video demo](https://youtu.be/KfQTzod34JE), [Blog article [rus]](https://habr.com/ru/company/constanta/blog/430030/).
 
-__10/2015 - 07/2017__ __Junior Researcher__ _Department of Strength, Survivability and Safety of Machines, Mechanical Engineering Research Institute of the Russian Academy of Sciences named after A.A.Blagonravov_
+__10/2014 - 07/2017__ __Junior Researcher__ _Academic Research Institute_
 
-Responsibilities:
-* Constructing stable finite-difference schemes for transient heat conduction in 3D case. Choosing the solution approach. Coding and numerical calculations.
-* Scientific programming using C and MATLAB languages.
-* Automation of experimental data collection and processing.
-* Conducting mechanical experiments and numerical results data analysis in R.
-* Sample preparation and instrumental analysis.
+Constructing stable finite-difference schemes for transient heat conduction in 3D case.
 
 Achievements:
 * 6 scientific papers and 3 conference reports were coauthored.
@@ -108,13 +95,14 @@ Achievements:
 
 ## __Patents__
 
-* Russian Patent __#106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
+* __RU106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
 
 ## __Publications__
 
 _Deep Learning:_
 
-1. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: 10.1109/CVPRW50498.2020.00450
+1. Cioppa A., Giancola S., ..., <u>Falaleev N.</u>, et al. _SoccerNet 2023 challenges results_, // __Sports Engineering__, V. 27, 2024, DOI: 10.1007/s12283-024-00466-4
+2. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: 10.1109/CVPRW50498.2020.00450
 
 _Nanotechnology:_
 
