@@ -102,8 +102,10 @@ Achievements:
 _Deep Learning:_
 
 1. <u>Falaleev N.</u>, Chen R. _Enhancing Soccer Camera Calibration Through Keypoint Exploitation_, //
-__MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports__, 2024, pp. 65-73, DOI: [10.1145/3689061.3689074](https://dl.acm.org/doi/abs/10.1145/3689061.3689074). [Github repo](10.1145/3689061.3689074).
+__MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports__, 2024, pp. 65-73, DOI: [10.1145/3689061.3689074](https://dl.acm.org/doi/abs/10.1145/3689061.3689074). [GitHub repo](10.1145/3689061.3689074).
+
 2. Cioppa A., Giancola S., ..., <u>Falaleev N.</u>, et al. _SoccerNet 2023 challenges results_, // __Sports Engineering__, V. 27, 2024, DOI: [10.1007/s12283-024-00466-4](https://arxiv.org/abs/2309.06006).
+
 3. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: [10.1109/CVPRW50498.2020.00450](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html).
 
 _Nanotechnology:_
@@ -124,7 +126,10 @@ _Nanotechnology:_
 
 
 ## Public Talks
-
+|__11/2024__ ||| __ London PyTorch Meetup__ |
+| ||| Optimising Video Pipelines for Neural Network Training with PyTorch. [Slides](https://docs.google.com/presentation/d/1Qw9Cy0Pjikf5IBdZIGVqK968cKepKN2GuZD6hA1At8s/edit?usp=sharing), [GitHub repo](https://github.com/NikolasEnt/decode-video-pytorch). |
+|__11/2024__ ||| __Computer Vision Summit London 2024__ |
+| ||| Transforming Athlete Performance with LIDAR and Video Data. Keynote presentation, 250+ attendees. |
 |__11/2023__ ||| __Computer Vision Summit London 2023__ |
 | ||| Deploying unparalleled accuracy in athletes' performance analysis with LIDAR and video data processing. Keynote presentation, 250+ attendees. |
 |__06/2023__ ||| __CVPR, 9th International Workshop on Computer Vision in Sports__ |
