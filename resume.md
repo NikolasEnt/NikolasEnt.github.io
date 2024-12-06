@@ -126,7 +126,7 @@ _Nanotechnology:_
 
 
 ## Public Talks
-|__11/2024__ ||| __ London PyTorch Meetup__ |
+|__11/2024__ ||| __London PyTorch Meetup__ |
 | ||| Optimising Video Pipelines for Neural Network Training with PyTorch. [Slides](https://docs.google.com/presentation/d/1Qw9Cy0Pjikf5IBdZIGVqK968cKepKN2GuZD6hA1At8s/edit?usp=sharing), [GitHub repo](https://github.com/NikolasEnt/decode-video-pytorch). |
 |__11/2024__ ||| __Computer Vision Summit London 2024__ |
 | ||| Transforming Athlete Performance with LIDAR and Video Data. Keynote presentation, 250+ attendees. |
