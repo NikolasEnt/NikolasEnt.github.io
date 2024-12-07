@@ -17,7 +17,7 @@ sitemap:
 | __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow, DeepStream, Gstreamer, FastAPI |
 | __Hardware:__ | | Industrial cameras, Optics, LIDARs, IMU, DL Accelerators |
 | __Skills:__ | | Artificial Neural Networks, Deep Learning, Computer Vision, Semantic Segmentation, Object Detection and Tracking, Depth Estimation, Video Event Detection, Sensor Fusion, Calibration, 3D Scene Reconstruction Localization and Pathplanning, Control, Numerical Methods, Optimization, MLOps, Research, Team Leader |
-| __Spare-time Projects:__ | | [Kaggle competitions](/competitions), [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation), [Image Classification](https://github.com/NikolasEnt/Traffic-Sign-Classifier), [Driver Behavioral Cloning with CNN](https://github.com/NikolasEnt/Driver-Behavioral-Cloning-Project), [Lane Lines Detection with CV](https://github.com/NikolasEnt/Advanced-Lane-Lines), [Vehicles Detection and Tracking with CV](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking), [PID Controller](https://github.com/NikolasEnt/PID-controller), [Model Predictive Control](https://github.com/NikolasEnt/Model-Predictive-Control), [Unscented Kalman Filter](https://github.com/NikolasEnt/Unscented-Kalman-Filter), [Particle Filter](https://github.com/NikolasEnt/Particle-Filter). |
+| __Spare-time Projects:__ | | [Kaggle competitions](/competitions), [Broadcast Camera Calibration](https://github.com/NikolasEnt/soccernet-calibration-sportlight), support of development of [argus](https://github.com/lRomul/argus) framework, [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation). |
 
 ## __Employment__
 
@@ -126,6 +126,7 @@ _Nanotechnology:_
 
 
 ## Public Talks
+
 |__11/2024__ ||| __London PyTorch Meetup__ |
 | ||| Optimising Video Pipelines for Neural Network Training with PyTorch. [Slides](https://docs.google.com/presentation/d/1Qw9Cy0Pjikf5IBdZIGVqK968cKepKN2GuZD6hA1At8s/edit?usp=sharing), [GitHub repo](https://github.com/NikolasEnt/decode-video-pytorch). |
 |__11/2024__ ||| __Computer Vision Summit London 2024__ |
@@ -133,7 +134,7 @@ _Nanotechnology:_
 |__11/2023__ ||| __Computer Vision Summit London 2023__ |
 | ||| Deploying unparalleled accuracy in athletes' performance analysis with LIDAR and video data processing. Keynote presentation, 250+ attendees. |
 |__06/2023__ ||| __CVPR, 9th International Workshop on Computer Vision in Sports__ |
-| ||| Presentation on a DL approach to camera calibration. |
+| ||| Presentation on a DL approach to camera calibration. [GitHub repo](https://github.com/NikolasEnt/soccernet-calibration-sportlight). |
 |__07/2022__ ||| __GSIG Solutions Showcase: Athlete tracking: AI, computer vision, machine learning__ |
 | ||| LIDAR and visual data fusion for athlete tracking. |
 
