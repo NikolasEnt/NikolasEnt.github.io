@@ -46,106 +46,106 @@ The second option is to use a homography-based method, which is based on the ide
 
 1. Find homography matrix, filtering points by RANSAC method. See details and other parameters of the function in [cv2.findHomography](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga4abc2ece9fab9398f2e560d53c8c9780) documentation.
 
-```python
-import cv2
+    ```python
+    import cv2
 
-# ransacReprojThreshol - reprojection error in px to consider the point pair
-homography, _ = cv2.findHomography(
-    world_points, camera_points, cv2.RANSAC, ransacReprojThreshol=10)
-```
+    # ransacReprojThreshol - reprojection error in px to consider the point pair
+    homography, _ = cv2.findHomography(
+        world_points, camera_points, cv2.RANSAC, ransacReprojThreshol=10)
+    ```
 
 2. Compute the intrinsic camera parameters from the homography matrix.
 
-```python
-import numpy as np
-# Based on implementation from
-# https://github.com/SoccerNet/sn-calibration/blob/main/src/camera.py
+    ```python
+    import numpy as np
+    # Based on implementation from
+    # https://github.com/SoccerNet/sn-calibration/blob/main/src/camera.py
 
-def calibration_matrix_from_homography(
-        homography: np.ndarray,
-        img_size: tuple[int, int] = (1280, 720)):
+    def calibration_matrix_from_homography(
+            homography: np.ndarray,
+            img_size: tuple[int, int] = (1280, 720)):
 
-    image_width, image_height = img_size
-    H = np.reshape(homography, (9,))
-    A = np.zeros((5, 6))  # Constraint matrix
-    A[0, 1] = 1.0
-    A[1, 0] = 1.0
-    A[1, 2] = -1.0
-    A[2, 3] = image_height / image_width
-    A[2, 4] = -1.0
-    A[3, 0] = H[0] * H[1]
-    A[3, 1] = H[0] * H[4] + H[1] * H[3]
-    A[3, 2] = H[3] * H[4]
-    A[3, 3] = H[0] * H[7] + H[1] * H[6]
-    A[3, 4] = H[3] * H[7] + H[4] * H[6]
-    A[3, 5] = H[6] * H[7]
-    A[4, 0] = H[0] * H[0] - H[1] * H[1]
-    A[4, 1] = 2 * H[0] * H[3] - 2 * H[1] * H[4]
-    A[4, 2] = H[3] * H[3] - H[4] * H[4]
-    A[4, 3] = 2 * H[0] * H[6] - 2 * H[1] * H[7]
-    A[4, 4] = 2 * H[3] * H[6] - 2 * H[4] * H[7]
-    A[4, 5] = H[6] * H[6] - H[7] * H[7]
+        image_width, image_height = img_size
+        H = np.reshape(homography, (9,))
+        A = np.zeros((5, 6))  # Constraint matrix
+        A[0, 1] = 1.0
+        A[1, 0] = 1.0
+        A[1, 2] = -1.0
+        A[2, 3] = image_height / image_width
+        A[2, 4] = -1.0
+        A[3, 0] = H[0] * H[1]
+        A[3, 1] = H[0] * H[4] + H[1] * H[3]
+        A[3, 2] = H[3] * H[4]
+        A[3, 3] = H[0] * H[7] + H[1] * H[6]
+        A[3, 4] = H[3] * H[7] + H[4] * H[6]
+        A[3, 5] = H[6] * H[7]
+        A[4, 0] = H[0] * H[0] - H[1] * H[1]
+        A[4, 1] = 2 * H[0] * H[3] - 2 * H[1] * H[4]
+        A[4, 2] = H[3] * H[3] - H[4] * H[4]
+        A[4, 3] = 2 * H[0] * H[6] - 2 * H[1] * H[7]
+        A[4, 4] = 2 * H[3] * H[6] - 2 * H[4] * H[7]
+        A[4, 5] = H[6] * H[6] - H[7] * H[7]
 
-    _, _, vh = np.linalg.svd(A)  # Note: SVD may not converge
-    w = vh[-1]
-    W = np.zeros((3, 3))
-    W[0, 0] = w[0] / w[5]
-    W[0, 1] = w[1] / w[5]
-    W[0, 2] = w[3] / w[5]
-    W[1, 0] = w[1] / w[5]
-    W[1, 1] = w[2] / w[5]
-    W[1, 2] = w[4] / w[5]
-    W[2, 0] = w[3] / w[5]
-    W[2, 1] = w[4] / w[5]
-    W[2, 2] = w[5] / w[5]
+        _, _, vh = np.linalg.svd(A)  # Note: SVD may not converge
+        w = vh[-1]
+        W = np.zeros((3, 3))
+        W[0, 0] = w[0] / w[5]
+        W[0, 1] = w[1] / w[5]
+        W[0, 2] = w[3] / w[5]
+        W[1, 0] = w[1] / w[5]
+        W[1, 1] = w[2] / w[5]
+        W[1, 2] = w[4] / w[5]
+        W[2, 0] = w[3] / w[5]
+        W[2, 1] = w[4] / w[5]
+        W[2, 2] = w[5] / w[5]
 
-    # Note: Cholesky decomposition may fail if the matrix is not positive definite
-    Ktinv = np.linalg.cholesky(W)
-    # pinv instead of inv to be more robust to numerical issues
-    K = np.linalg.pinv(np.transpose(Ktinv))
-    # Normalize K so K[2, 2] element is 1
-    K /= K[2, 2]
-    fx = K[0, 0]
-    fy = K[1, 1]
-    cx = image_width / 2.0
-    cy = image_height / 2.0
+        # Note: Cholesky decomposition may fail if the matrix is not positive definite
+        Ktinv = np.linalg.cholesky(W)
+        # pinv instead of inv to be more robust to numerical issues
+        K = np.linalg.pinv(np.transpose(Ktinv))
+        # Normalize K so K[2, 2] element is 1
+        K /= K[2, 2]
+        fx = K[0, 0]
+        fy = K[1, 1]
+        cx = image_width / 2.0
+        cy = image_height / 2.0
 
-    return np.ndarray([[fx, 0, cx],
-                        [0, fy, cy],
-                        [0, 0, 1]])
+        return np.ndarray([[fx, 0, cx],
+                            [0, fy, cy],
+                            [0, 0, 1]])
 
-```
+    ```
 
 3. Estimate the camera pose from the homography matrix.
 
-```python
-# homography from cv2.findHomography
-# camera_matrix from calibration_matrix_from_homography
+    ```python
+    # homography from cv2.findHomography
+    # camera_matrix from calibration_matrix_from_homography
 
-def extrinsic_from_homography(
-    homography: np.ndarray,
-    camera_matrix: np.ndarray):
+    def extrinsic_from_homography(
+        homography: np.ndarray,
+        camera_matrix: np.ndarray):
 
-    hprim = np.linalg.pinv(camera_matrix) @ homography
-    lambda1 = 1 / np.linalg.norm(hprim[:, 0])
-    lambda2 = 1 / np.linalg.norm(hprim[:, 1])
-    lambda3 = np.sqrt(lambda1 * lambda2)
+        hprim = np.linalg.pinv(camera_matrix) @ homography
+        lambda1 = 1 / np.linalg.norm(hprim[:, 0])
+        lambda2 = 1 / np.linalg.norm(hprim[:, 1])
+        lambda3 = np.sqrt(lambda1 * lambda2)
 
-    r0 = hprim[:, 0] * lambda1
-    r1 = hprim[:, 1] * lambda2
-    r2 = np.cross(r0, r1)
+        r0 = hprim[:, 0] * lambda1
+        r1 = hprim[:, 1] * lambda2
+        r2 = np.cross(r0, r1)
 
-    R = np.column_stack((r0, r1, r2))
-    u, s, vh = np.linalg.svd(R)
-    R = u @ vh
-    if np.linalg.det(R) < 0:
-        u[:, 2] *= -1
+        R = np.column_stack((r0, r1, r2))
+        u, s, vh = np.linalg.svd(R)
         R = u @ vh
-    rotation = R
-    t = hprim[:, 2] * lambda3
-    position = - np.transpose(R) @ t
-    return R, position
-```
+        if np.linalg.det(R) < 0:
+            u[:, 2] *= -1
+            R = u @ vh
+        rotation = R
+        t = hprim[:, 2] * lambda3
+        position = - np.transpose(R) @ t
+        return R, position
+    ```
 
 ## Pros and cons of the approaches
 
