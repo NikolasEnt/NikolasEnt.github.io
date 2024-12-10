@@ -21,7 +21,7 @@ th, td {
 }
 </style>
 
-*The idea for this post arose as a response to a common misconception I frequently hear: that camera calibration is equivalent to homography computation. This post will demonstrate the difference between OpenCV-based camera calibration and the pure homography-based method.*
+*The idea for this post arose as a response to a common misconception I frequently hear: that camera calibration is equivalent to homography computation. This post will demonstrate the difference between OpenCV-based camera calibration and the pure homography-based calibration method.*
 
 ![Title image](/assets/post20/title.webp)
 
@@ -213,11 +213,11 @@ More complicated pipelines may use a combination of the approaches to get the be
 
 ## References:
 
-[1]: {% post_url 2017-05-05-Camera-calibration-with-OpenCV %}
+[1]: {% post_url 2017-05-05-Camera-calibration-with-OpenCV %}.
 \[1\]: [Camera calibration with OpenCV]({% post_url 2017-05-05-Camera-calibration-with-OpenCV %})
 
 [2]: {% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}
-\[2\]: [Top-1 solution of SoccerNet Camera Calibration Challenge 2023]({% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}).
+\[2\]: [Top-1 solution of SoccerNet Camera Calibration Challenge 2023]({% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %})
 
 \[3\]: Zhengyou Zhang. _A flexible new technique for camera calibration_. // IEEE Transactions on Pattern Analysis and Machine Intelligence, 2000, V. 22, I. 11, pp. 1330-1334.
 
