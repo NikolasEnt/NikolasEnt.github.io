@@ -23,15 +23,13 @@ sitemap:
 
 __10/2020 - present,__ __Head of AI__ _Sportlight Technology_
 
-Development of CV-based Analytics for elite football clubs.
+AI-Driven Analytics for Elite Sports (EPL, SPL, NBA, and others)
 
-_Responsibilities:_
-* Architect a Deep Learning system for match data capturing. Spearheaded the development of a real-time Deep Learning system to extract insights from visual and LIDAR data via object detection, tracking, segmentation, person re-identification, pose estimation, event detection, and multi-modal data fusion.
-* Led AI projects in cross-functional teams, e.g.: a project on transition to real-time data processing. Ensured adherence to best development practices and deep learning experimentation strategies to foster technological excellence.
-
-_Achievements:_
-* Architected and executed an operational system deployed across the majority of the English Premier League stadiums, achieving industry-leading player tracking accuracy.
-* The results allowed 5x time cost reduction of the data processing and an order of magnitude upscale in operations.
+* Architected and deployed an operational AI system used across all English Premier League (EPL) stadiums, the Saudi Pro League (SPL), and other venues worldwide, achieving **industry-leading player tracking accuracy** and reducing data QA time and costs by 12x.
+* Defined and implemented the company’s AI strategy, leading cross-functional teams in developing a real-time system that integrates multi-camera video and LIDAR data for insights through multi-modal data fusion (e.g., object detection, tracking, pose estimation, event detection).
+* Spearheaded the transition to real-time data processing, enabling scalability for deployments across various sports and geographies, scaling AI operations by 50x.
+* Ensured adherence to best practices in AI experimentation, software development, and data handling to foster **technological excellence** and support scalable commercial applications.
+* Positioned the company for future growth by introducing innovations that expanded the AI product roadmap to new markets and sports.
 
 __08/2017 - 08/2020,__ __Leading Computer Vision R&D__ _Constanta/OSAI_
 
