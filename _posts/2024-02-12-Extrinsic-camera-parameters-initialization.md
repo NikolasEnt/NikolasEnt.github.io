@@ -3,11 +3,11 @@ layout: post
 title:  "Camera calibration: Homography vs OpenCV"
 title_img: /assets/post20/title.webp
 abstract: Comparison of the direct OpenCV camera calibration method with an approach based on a homography matrix.
-date:   2024-02-12 12:00:00 +0000
+date:   2024-11-12 12:00:00 +0000
 categories: ComputerVision OpenCV
 article: true
 sitemap:
-    lastmod: 2024-02-12
+    lastmod: 2024-12-09
 ---
 
 <style>
@@ -207,7 +207,7 @@ The last column of the table `CVPR entry` shows the results of the CVPR entry al
 
 ## Conclusion
 
-Despite the simplicity of the homography-based approach concept and its mathematical correctness, in reality, the approach is less accurate in real-world scenarios as data compression to a single homography matrix can lead to significant loss of information. The homography-based approach can be useful when only 4-5 points are available for calibration, but in other real-world cases, the OpenCV-based method or Zhang's algorithm in general is more suitable and adds a lot of flexibility regarding additional value computations, such as distortion estimation. 
+Despite the simplicity of the homography-based approach concept and its mathematical correctness, in reality, the approach is less accurate in real-world scenarios as data compression to a single homography matrix can lead to significant loss of information. The homography-based approach can be useful when only 4-5 points are available for calibration, but in real-world cases, the OpenCV-based method or Zhang's algorithm in general is more suitable and adds a lot of flexibility regarding additional value computations, such as distortion estimation. On the other hand, homography-based methods are widely used in deep learning based camera calibration methods due to its simplicity of representation and ease of application for many other relevant tasks, such as camera-to-camera calibration in multiview systems. For further details on these methods, there is a great survey [6].
 
 More complicated pipelines may use a combination of the approaches to get the best from both methods. Extra heuristics and data processing techniques, especially for data cleaning and refinement, could be used to achieve the best possible result.
 
@@ -219,9 +219,11 @@ More complicated pipelines may use a combination of the approaches to get the be
 [2]: {% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}
 \[2\]: [Top-1 solution of SoccerNet Camera Calibration Challenge 2023]({% post_url 2023-06-20-SoccerNet-Camera-Calibration-2023 %}).
 
-\[3\]: Zhengyou Zhang. A flexible new technique for camera calibration. // IEEE Transactions on Pattern Analysis and Machine Intelligence, 2000, V. 22, I. 11, pp. 1330-1334.
+\[3\]: Zhengyou Zhang. _A flexible new technique for camera calibration_. // IEEE Transactions on Pattern Analysis and Machine Intelligence, 2000, V. 22, I. 11, pp. 1330-1334.
 
 \[4\]: Richard Hartley and Andrew Zisserman. Multiple View Geometry in Computer Vision. Second Edition. Cambridge University Press, 2004.
 
-\[5\]: Falaleev N., Chen R. _Enhancing Soccer Camera Calibration Through Keypoint Exploitation_, //
-MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports, 2024, pp. 65-73, DOI: [10.1145/3689061.3689074](https://dl.acm.org/doi/abs/10.1145/3689061.3689074). [GitHub repo](10.1145/3689061.3689074).
+\[5\]: Falaleev N., Chen R. _Enhancing Soccer Camera Calibration Through Keypoint Exploitation_. //
+MMSports'24: Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports, 2024, pp. 65-73, DOI: [10.1145/3689061.3689074](https://dl.acm.org/doi/abs/10.1145/3689061.3689074). [GitHub repo](10.1145/3689061.3689074).
+
+\[6\]: Deep Learning for Camera Calibration and Beyond: A Survey // [arXiv:2303.10559](https://arxiv.org/abs/2303.10559v2).
