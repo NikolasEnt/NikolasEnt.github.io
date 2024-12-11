@@ -10,7 +10,7 @@ url: "https://nikolasent.github.io" # the base hostname & protocol
 github:  NikolasEnt
 
 allowsearch: false
-enableTags:  false
+enableTags:  true
 
 google_analytics: UA-104440412-1
 
