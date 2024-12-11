@@ -3,20 +3,21 @@ layout: default
 ---
 <article class="post">
   <h3>{{ page.title }}</h3>
-    {% for p in  site.data.projects %}
-        {% if p.id == page.project_id %}
-            {% assign project = p %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-    <img src='/static/projects/{{ project.image }}' alt="Project title image">
+  {% for p in site.data.projects %}
+  {% if p.id == page.project_id %}
+  {% assign project = p %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  <img src='/static/projects/{{ project.image }}' alt="Project title image">
   <p> </p>
   <div class="post-content">
     {{ content }}
     <p> </p>
-    <p>The full project code is available on my {% if page.github_url != null %}<a href={{ page.github_url }}>Github</a></p>{% else %}<a href="https://github.com/NikolasEnt">Github</a></p>{% endif %}
+    <p>The full project code is available on my {% if page.github_url != null %}<a href={{ page.github_url }}>Github</a>
+    </p>{% else %}<a href="https://github.com/NikolasEnt">Github</a></p>{% endif %}
 
-<h3>Project posts</h3>
+    <h3>Project posts</h3>
     {% assign posts = site.posts | where: "project", project.id %}
     {% include posts_list.html posts=posts %}
 </article>
