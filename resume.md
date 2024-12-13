@@ -3,7 +3,7 @@ layout: page
 title: Profile
 permalink: /resume/
 sitemap:
-    lastmod: 2024-06-21
+    lastmod: 2024-12-13
 ---
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
@@ -11,7 +11,7 @@ sitemap:
   <i>Head of AI, <a href="https://www.kaggle.com/nikolasent/">Kaggle master</a></i>
 </div>
 
-## __IT Skills and experience__
+## IT Skills and experience
 
 | __Languages:__ | | Python, C/C++, R, SQL |
 | __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow, DeepStream, Gstreamer, FastAPI |
@@ -19,15 +19,15 @@ sitemap:
 | __Skills:__ | | Artificial Neural Networks, Deep Learning, Computer Vision, Semantic Segmentation, Object Detection and Tracking, Depth Estimation, Video Event Detection, Sensor Fusion, Calibration, 3D Scene Reconstruction Localization and Pathplanning, Control, Numerical Methods, Optimization, MLOps, Research, Team Leader |
 | __Spare-time Projects:__ | | [Kaggle competitions](/competitions), [Broadcast Camera Calibration](https://github.com/NikolasEnt/soccernet-calibration-sportlight), support of development of [argus](https://github.com/lRomul/argus) framework, [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation). |
 
-## __Employment__
+## Employment
 
 __10/2020 - present,__ __Head of AI__ _Sportlight Technology_
 
-AI-Driven Analytics for Elite Sports (EPL, SPL, NBA, and others)
+AI-Driven Analytics for Elite Sports (EPL, SPL, NBA, NHL, and others)
 
-* Architected and deployed an operational AI system used across all English Premier League (EPL) stadiums, the Saudi Pro League (SPL), and other venues worldwide, achieving **industry-leading player tracking accuracy** and reducing data QA time and costs by 12x.
+* Architected and deployed an operational AI system used across all English Premier League (EPL) stadiums, the Saudi Pro League (SPL), and other venues worldwide, achieving **industry-leading player tracking accuracy** and reducing data QA time and costs by **12x**.
 * Defined and implemented the company’s AI strategy, leading cross-functional teams in developing a real-time system that integrates multi-camera video and LIDAR data for insights through multi-modal data fusion (e.g., object detection, tracking, pose estimation, event detection).
-* Spearheaded the transition to real-time data processing, enabling scalability for deployments across various sports and geographies, scaling AI operations by 50x.
+* Spearheaded the transition to real-time data processing, enabling scalability for deployments across various sports and geographies, scaling AI operations by **50x**.
 * Ensured adherence to best practices in AI experimentation, software development, and data handling to foster **technological excellence** and support scalable commercial applications.
 * Positioned the company for future growth by introducing innovations that expanded the AI product roadmap to new markets and sports.
 
@@ -47,7 +47,7 @@ Constructing stable finite-difference schemes for transient heat conduction in 3
 Achievements:
 * 6 scientific papers and 3 conference reports were coauthored.
 
-## __Education__
+## Education
 
 | __09/2015 - 07/2017__ ||| __Master of Science with Honours__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
@@ -55,7 +55,7 @@ Achievements:
 | __09/2011 - 07/2015__ ||| __Bachelor of Science__ in Materials Science, Department of Materials Science |
 | ||| _Lomonosov Moscow State University (MSU)_ |
 
-### __Continuing education__
+### Continuing education
 
 | __07/2021 - 08/2021__ ||| __Oxford Machine Learning Summer School 2021__  |
 | ||| [Certificate](/static/img/OxML.pdf) |
@@ -72,7 +72,7 @@ Achievements:
 | __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
 | ||| _Coursera, Udacity, edX and etc._ |
 
-## __Prizes and Awards__
+## Prizes and Awards
 
 |__2023__ ||| __[SoccerNet Camera Calibration Challenge 2023](https://www.soccer-net.org/challenges/2023)__, __CVPR__ |
 | ||| Top-1. DL approach to camera calibration from football broadcast videos. The challenges was held at CVPR 2023. |
@@ -91,11 +91,11 @@ Achievements:
 |__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
 | ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
 
-## __Patents__
+## Patents
 
 * __RU106765__ “Device for producing 3D images by a single camera”. A special method for depth map calculation based on an image, produced by the device, was also developed and the gear is able to work as a range finder.
 
-## __Publications__
+## Publications
 
 _Deep Learning:_
 
@@ -140,6 +140,6 @@ _Nanotechnology:_
 
 Founded a non-commercial organization [OniroAI](http://oniro.ai/) ([Github](https://github.com/OniroAI)) for independent research and development in Computer Vision and Artificial Intelligence.
 
-## __Interests__
+## Interests
 
 Self-Driving Cars, Deep Learning, Computer Vision, Robotics, Artificial Intelligence, Mathematical Modeling, UAVs
