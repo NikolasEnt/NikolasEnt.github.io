@@ -4,7 +4,7 @@ title:  "Image classification using SVM"
 title_img: /assets/post5/hog_image.jpg
 abstract: Application of a linear SVM for image classification with HOG, binned color and color histogram features.
 date:   2017-08-01 12:00:00 +0300
-categories: Classifier
+categories: Classification
 project: proj2
 ---
 ## Introduction

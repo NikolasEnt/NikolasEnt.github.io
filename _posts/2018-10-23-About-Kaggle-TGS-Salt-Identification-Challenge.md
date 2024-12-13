@@ -4,7 +4,7 @@ title:  "About Kaggle TGS Salt Identification Challenge"
 title_img: /assets/logos/tgs.png
 abstract: Kaggle Challenge to segment salt deposits beneath the Earth's surface on seismic images.
 date:   2018-10-23 19:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Segmentation
 project: comp3
 ---
 

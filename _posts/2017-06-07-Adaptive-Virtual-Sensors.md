@@ -4,7 +4,7 @@ title:  "Adaptive Virtual Sensors for Lane detection"
 title_img: /assets/post4/title_img.gif
 abstract: Computer vision approach for road marking detection with adaptive thresholds and positions of virtual sensors.
 date:   2017-06-07 12:00:00 +0300
-categories: OpenCV
+categories: OpenCV Self-Driving
 project: proj1
 ---
 ## Introduction

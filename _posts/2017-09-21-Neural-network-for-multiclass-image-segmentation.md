@@ -4,7 +4,7 @@ title:  "Neural network for multiclass image segmentation"
 title_img: /assets/post6/title_img.jpg
 abstract: VGG16-based fully convolutional networks for semantic segmentation of images on Cityscapes
 date:   2017-09-21 12:00:00 +0300
-categories: DeepLearning
+categories: DeepLearning Segmentation
 project: proj4
 ---
 

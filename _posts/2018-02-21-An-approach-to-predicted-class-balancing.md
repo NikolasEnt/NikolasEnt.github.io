@@ -4,7 +4,7 @@ title:  "An approach to predicted class balancing"
 title_img: /assets/logos/kaggle.png
 abstract: An approach how to increase your position on a leaderpoard in a classification datascience competition by balancing predictions.
 date:   2018-02-21 12:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Classification
 project: comp1
 ---
 

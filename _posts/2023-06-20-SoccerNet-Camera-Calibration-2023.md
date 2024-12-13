@@ -4,7 +4,7 @@ title:  "Top-1 solution of SoccerNet Camera Calibration Challenge 2023"
 title_img: /assets/post18/logo.jpg
 abstract: An approach to generate camera calibration values from football broadcast videos.
 date:   2023-06-20 12:00:00 +0100
-categories: DeepLearning ComputerVision
+categories: DeepLearning ComputerVision Calibration Competitions
 article: true
 project: comp4
 sitemap:

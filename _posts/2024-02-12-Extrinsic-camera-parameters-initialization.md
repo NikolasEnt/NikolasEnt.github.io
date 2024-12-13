@@ -4,7 +4,7 @@ title:  "Camera calibration: Homography vs OpenCV"
 title_img: /assets/post20/title.webp
 abstract: Comparison of the direct OpenCV camera calibration method with an approach based on a homography matrix.
 date:   2024-11-12 12:00:00 +0000
-categories: ComputerVision OpenCV
+categories: ComputerVision OpenCV Calibration
 article: true
 sitemap:
     lastmod: 2024-12-09

@@ -4,7 +4,7 @@ title:  "Camera model identification with deep learning"
 title_img: /static/projects/comp1/title_img.jpg
 abstract: Ideas and approach to the Kaggle IEEE's Signal Processing Society - Camera Model Identification challenge.
 date:   2018-02-20 12:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Classification
 project: comp1
 ---
 

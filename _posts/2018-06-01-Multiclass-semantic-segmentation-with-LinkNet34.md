@@ -4,7 +4,7 @@ title:  "Multiclass semantic segmentation with LinkNet34"
 title_img: /assets/post11/target.gif
 abstract: A CNN approach used for multiclass semantic segmentation during the Lyft Perception Challenge.
 date:   2018-06-05 12:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Segmentation
 project: comp2
 ---
 

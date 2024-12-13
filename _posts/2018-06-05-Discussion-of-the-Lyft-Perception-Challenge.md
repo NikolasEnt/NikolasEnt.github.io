@@ -4,7 +4,7 @@ title:  "Discussion of the Lyft Perception Challenge"
 title_img: /assets/post12/title_img.jpg
 abstract: How to increase inference speed on a semantic segmentation task and further ideas.
 date:   2018-06-05 12:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Segmentation
 project: comp2
 ---
 

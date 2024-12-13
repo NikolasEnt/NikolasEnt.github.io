@@ -4,7 +4,7 @@ title:  "About Lyft Perception Challenge"
 title_img: /assets/logos/lyft.png
 abstract: A partnered Lyft and Udacity semantic segmentation challenge with synthetic images.
 date:   2018-05-31 12:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Segmentation
 project: comp2
 ---
 

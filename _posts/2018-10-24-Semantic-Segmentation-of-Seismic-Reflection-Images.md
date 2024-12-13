@@ -4,7 +4,7 @@ title:  "Semantic Segmentation of Seismic Reflection Images"
 title_img: /assets/post14/corner_postprocess.png
 abstract: A gold medal solution of the TGS Salt Identification Challenge.
 date:   2018-10-24 23:00:00 +0300
-categories: DeepLearning Competitions
+categories: DeepLearning Competitions Segmentation
 project: comp3
 ---
 

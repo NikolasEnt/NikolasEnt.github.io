@@ -4,7 +4,7 @@ title:  "Camera calibration with OpenCV"
 title_img: /assets/post2/title_img.gif
 abstract: A simple way to calibrate an optical system with a chessboard pattern by means of the OpenCV to reduce distortion.
 date:   2017-05-05 12:00:00 +0300
-categories: OpenCV
+categories: OpenCV Calibration
 project: proj1
 ---
 ## Introduction
