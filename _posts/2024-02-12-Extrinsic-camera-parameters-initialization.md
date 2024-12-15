@@ -7,7 +7,7 @@ date:   2024-11-12 12:00:00 +0000
 categories: ComputerVision OpenCV Calibration
 article: true
 sitemap:
-    lastmod: 2024-12-09
+    lastmod: 2024-12-15
 ---
 
 <style>
@@ -207,7 +207,7 @@ The last column of the table `CVPR entry` shows the results of the CVPR entry al
 
 ## Conclusion
 
-Despite the simplicity of the homography-based approach concept and its mathematical correctness, in reality, the approach is less accurate in real-world scenarios as data compression to a single homography matrix can lead to significant loss of information. The homography-based approach can be useful when only 4-5 points are available for calibration, but in real-world cases, the OpenCV-based method or Zhang's algorithm in general is more suitable and adds a lot of flexibility regarding additional value computations, such as distortion estimation. On the other hand, homography-based methods are widely used in deep learning based camera calibration methods due to its simplicity of representation and ease of application for many other relevant tasks, such as camera-to-camera calibration in multiview systems. For further details on these methods, there is a great survey [6].
+Despite the simplicity of the homography-based approach concept and its mathematical correctness, in reality, the approach is less accurate in real-world scenarios as data compression to a single homography matrix can lead to significant loss of information. The homography-based approach can be useful when only 4-5 points are available for calibration, but in real-world cases, the OpenCV-based method or Zhang's algorithm in general is more suitable and adds a lot of flexibility regarding additional value computations, such as distortion estimation. On the other hand, homography-based methods are widely used in deep-learning-based camera calibration methods due to their simplicity of representation and ease of application for many other relevant tasks, such as camera-to-camera calibration in multiview systems or rough estimation of an object's position on the ground when precision is less important. For further details on the deep-learning-based methods, there is a great survey [6].
 
 More complicated pipelines may use a combination of the approaches to get the best from both methods. Extra heuristics and data processing techniques, especially for data cleaning and refinement, could be used to achieve the best possible result.
 
