@@ -5,6 +5,13 @@ permalink: /resume/
 sitemap:
     lastmod: 2024-12-13
 ---
+
+<style>
+        th, td {
+            padding: 5px; /* Padding inside the cells  */
+        }
+    </style>
+
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
   <p>London, United Kingdom, <a href="mailto:nikolasent@gmail.com">nikolasent@gmail.com</a></p>
@@ -57,20 +64,20 @@ Achievements:
 
 ### Continuing education
 
-| __07/2021 - 08/2021__ ||| __Oxford Machine Learning Summer School 2021__  |
-| ||| [Certificate](/static/img/OxML.pdf) |
+| __07/2021 - 08/2021__ | __Oxford Machine Learning Summer School 2021__  |
+| | [Certificate](/static/img/OxML.pdf) |
 
-| __03/2021 - 08/2021__ ||| __Intel Edge AI for IoT Developers__ Nanodegree |
-| ||| _Udacity_, [Certificate](https://confirm.udacity.com/CDQPRVAA)|
+| __03/2021 - 08/2021__ | __Intel Edge AI for IoT Developers__ Nanodegree |
+| | _Udacity_, [Certificate](https://confirm.udacity.com/CDQPRVAA)|
 
-| __01/2020 - 06/2020__ ||| __C++__ Nanodegree |
-| ||| _Udacity_, [Certificate](https://confirm.udacity.com/J7YTCDPL)|
+| __01/2020 - 06/2020__ | __C++__ Nanodegree |
+| | _Udacity_, [Certificate](https://confirm.udacity.com/J7YTCDPL)|
 
-| __11/2016 - 10/2017__ ||| __Self-Driving Car Engineer__ Nanodegree |
-| ||| _Udacity_, [Certificate](https://confirm.udacity.com/ERTTLT2G), graduated with the first ever cohort |
+| __11/2016 - 10/2017__ | __Self-Driving Car Engineer__ Nanodegree |
+| | _Udacity_, [Certificate](https://confirm.udacity.com/ERTTLT2G), graduated with the first ever cohort |
 
-| __11/2012 - present__ ||| [__MOOCs__](/moocs/) >30 courses in computer and data sciences, robotics, computer vision and machine learning|
-| ||| _Coursera, Udacity, edX and etc._ |
+| __11/2012 - present__ | >30 [__MOOCs__](/moocs/) in Computer and Data Sciences, Robotics, Computer Vision and Machine Learning |
+| | _Coursera, Udacity, edX and etc._ |
 
 ## Prizes and Awards
 
