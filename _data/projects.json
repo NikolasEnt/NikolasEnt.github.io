@@ -4,7 +4,11 @@
         "image": "proj4/title_img.gif",
         "url": "/proj/proj4",
         "date": "Sep 2017",
-        "tags": ["Deep Learning","Computer Vision"],
+        "tags": [
+            "Deep Learning",
+            "Computer Vision",
+            "Self-Driving"
+        ],
         "main": "true",
         "id": "proj4"
     },
@@ -13,7 +17,10 @@
         "image": "proj2/title_img.gif",
         "url": "/proj/proj2",
         "date": "Mar 2017",
-        "tags": ["Self-Driving","Computer Vision"],
+        "tags": [
+            "Self-Driving",
+            "Computer Vision"
+        ],
         "main": "true",
         "id": "proj2"
     },
@@ -22,7 +29,10 @@
         "image": "proj3/title_img.gif",
         "url": "/proj/proj3",
         "date": "Nov 2016",
-        "tags": ["Self-Driving", "Deep Learning"],
+        "tags": [
+            "Self-Driving",
+            "Deep Learning"
+        ],
         "main": "true",
         "id": "proj3"
     },
@@ -31,7 +41,10 @@
         "image": "proj1/title_img.gif",
         "url": "/proj/proj1",
         "date": "Feb 2017",
-        "tags": ["Self-Driving","Computer Vision"],
+        "tags": [
+            "Self-Driving",
+            "Computer Vision"
+        ],
         "main": "false",
         "id": "proj1"
     }
