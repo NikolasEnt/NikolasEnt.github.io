@@ -6,75 +6,44 @@ title: Home
 <h3><a href="/#top">Welcome!</a></h3>
 <p>{{ site.description }}</p>
 <a name="projects"></a>
-<h3><a href="/projects">Selected Projects</a></h3>
+<h3>Selected <a href="/projects">Projects</a> and <a href="/competitions">Competitions</a></h3>
 <div class="projects row">
     {% include project_tags.html %}
-    {% for i in site.data.projects %}
-    {% if i.main == "true" %}
-    <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
-        <div class="well project-outer">
-            <div class="project-inner">
-                <a href="/static/projects/{{ i.image }}" class="thickbox">
-                <div class="project-img bordered" style="background-image: url('/static/projects/{{ i.image }}');"></div>
-                </a>
-                {% if i.url %} <a href="{{ i.url }}"> {% endif %}
-                <h3 class="project-headlines">{{ i.name }}</h3>
-                {% if i.url %} </a> {% endif %}
-                <div class="project-content">
-                    <div class="tag-holder">
-                    {% if i.tags %} 
-                        {% for j in i.tags %}
-                        <span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
-                        {% endfor %}
-                    {% endif %}
-                    </div>
-                </div>
-                <div class="project-footer"> 
-                    {% if i.url %} 
-                    <a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
-                    {% endif %}
-                    <span class="project-timeline">{{ i.date }}</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    {% endif %}
+    {% assign projects_list = site.data.competitions %}
+    {% for item in site.data.projects %}
+    {% assign projects_list = projects_list | push: item %}
     {% endfor %}
-</div>
-
-<a name="competitions"></a>
-<h3><a href="/competitions">Selected Competitions</a></h3>
-<div class="competitions row">
-    {% include project_tags.html %}
-    {% for i in site.data.competitions %}
+    {% for i in projects_list %}
     {% if i.main == "true" %}
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
         <div class="well project-outer">
             <div class="project-inner">
                 <a href="/static/projects/{{ i.image }}" class="thickbox">
-                <div class="project-img bordered" style="background-image: url('/static/projects/{{ i.image }}');"></div>
+                    <div class="project-img bordered" style="background-image: url('/static/projects/{{ i.image }}');">
+                    </div>
                 </a>
                 {% if i.url %} <a href="{{ i.url }}"> {% endif %}
-                <h3 class="project-headlines">{{ i.name }}</h3>
-                {% if i.url %} </a> {% endif %}
+                    <h3 class="project-headlines">{{ i.name }}</h3>
+                    {% if i.url %}
+                </a> {% endif %}
                 <div class="project-content">
                     <div class="tag-holder">
-                    {% if i.tags %} 
+                        {% if i.tags %}
                         {% for j in i.tags %}
                         <span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
                         {% endfor %}
-                    {% endif %}
+                        {% endif %}
                     </div>
                 </div>
-                <div class="project-footer"> 
-                    {% if i.url %} 
+                <div class="project-footer">
+                    {% if i.url %}
                     <a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
                     {% endif %}
                     <span class="project-timeline">{{ i.date }}</span>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     {% endif %}
     {% endfor %}
 </div>
@@ -83,4 +52,4 @@ title: Home
 <h3><a href="/blog">Posts</a></h3>
 
 {% assign posts=site.posts | limit: 10 %}
-{% include posts_list.html posts=posts%}
+{% include posts_list.html posts=posts %}
