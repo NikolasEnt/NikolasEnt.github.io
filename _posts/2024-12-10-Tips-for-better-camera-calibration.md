@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Camera calibration: What to perfect before touching the code"
+title:  "Camera Calibration: What to perfect before touching the code"
 title_img: /assets/post21/title.webp
 abstract: Physical and optical considerations of accurate real-world camera calibration - practical tips and techniques.
 date:   2024-12-12 12:00:00 +0000
@@ -68,7 +68,7 @@ Apart from the listed calibration patterns, there are also multiple novel approa
     <br><i>PuzzleBoard pattern. Image from [2].</i>
 </div>
 
-### The phisical board for calibration
+### The physical board for calibration
 
 Once the optimal pattern is decided, one needs to produce it in the real world. As mentioned before, calibration should be performed with a lens already focused at the distance corresponding to the final use case scenario. This means that a quite large calibration pattern may be required if the camera needs to focus on a long distance so that all details of the pattern can be recognised in the camera image.
 
@@ -82,13 +82,13 @@ Once the optimal pattern is decided, one needs to produce it in the real world. 
 
 1. Ensure the calibration patterns cover the entire frame across all calibration images set. Pay special attention to corners, which are crucial for distortion estimation.
 2. Capture images at a distance corresponding to the use case after focusing and setting the camera. Take into account the Depth-of-Field to avoid out-of-focus artefacts. Include a variety of orientations, with the board parallel to the sensor and tilted up to ±45° along both axes to measure foreshortening accurately, which is important for intrinsic parameters calibration.
-3. Ensure good even lighting. Shadows or uneven illumination reduce detection accuracy, espessially for the checkerboard-family patterns.
+3. Ensure good even lighting. Shadows or uneven illumination reduce detection accuracy, especially, for the checkerboard-family patterns.
 4. In many cases, it is more practical to move the camera relative to the calibration target rather than moving the board itself. This approach simplifies the process, especially when dealing with larger calibration boards that may be bulkier and susceptible to bending during movement. Additionally, ensuring consistent lighting becomes more challenging when moving a large calibration board.
 4. In many cases, it is more practical to move the camera relative to the calibration target rather than moving the board itself. This approach simplifies the process, especially when dealing with larger calibration boards that may be bulkier and prone to bending during movement. Additionally, ensuring consistent lighting becomes more manageable when the camera moves instead of a large board.
 
 ## Conclusion
 
-Camera calibration is a foundational step in ensuring the accuracy and reliability of vision-based systems. While the process may seem straightforward, achieving high precision requires careful consideration of physical, optical, and environmental factors. From choosing and producing the right calibration pattern to accounting for lens-specific features and optimising the calibration experimental setup, every detail contributes to the overall success. Remember, calibration is not a one-time process—periodic validation and recalibration are essential to maintaining long-term performance in real-world applications.
+Camera calibration is a foundational step in ensuring the accuracy and reliability of vision-based systems. While the process may seem straightforward, achieving high precision requires careful consideration of physical, optical, and environmental factors. From choosing and producing the right calibration pattern to accounting for lens-specific features and optimising the calibration experimental setup, every detail contributes to the overall success.
 
 In the next article, we will dive deeper into the intricacies of camera calibration algorithms.
 
