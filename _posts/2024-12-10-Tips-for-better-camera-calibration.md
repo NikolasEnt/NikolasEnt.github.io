@@ -44,6 +44,11 @@ Note that different optical design of a lens requires different camera model for
 
 Usually, a camera calibration approach assumes grayscale image. In the case of a colour camera, the sensor pixels are covered with alternating colour filters following the Bayer pattern or other colour arrangement and the final image is the result of interpolation of the colour subpixels, essentially meaning that the colour image pixel values do not represent what was actually seen by the camera. It is commonly said that a colour camera is just a grayscale camera, which is spoiled by colour filters.
 
+<div style="text-align: center;">
+    <img src="/assets/post21/bayer_pattern.png" alt="Bayer pattern" style="max-width: 50%; height: auto; display: inline-block;">
+    <br><i>The Bayer arrangement of color filters on the pixel array of an image sensor. Image from <a href="https://commons.wikimedia.org/wiki/File:Bayer_pattern_on_sensor.svg">Wikimedia Commons</a>.</i>
+</div>
+
 At the same time, there are cases when a colour image is produced without spatial separation of different colours, and hence these sensors have no impact of the colour nature of images on the calibration accuracy. For example, in [Foveon](https://en.wikipedia.org/wiki/Foveon_X3_sensor) sensors, colour separation is achieved by photon penetration depth into silicon, resulting in demosaicing-free colour image perception with some potential loss of colour accuracy. In addition, there are solutions with external colour separation, like three-chip RGB sensors with prisms or just an external set of colour filters applied alternately to a grayscale camera to capture individual colours for stitching the data later, as is commonly done in astro-photography. Despite the advantages of demosaicing-free colour images, they are very rare.
 
 So, in the case of using a colour image for camera calibration, make sure that the proper algorithm is used to account for the impact of the image demosaicing process. Demosaicing algorithms affect how edges and high-frequency details are reconstructed, meaning that demosaiced images may be less accurate as a data source for precise keypoint localisation. Therefore, raw data from sensors is generally preferred in all cases.
