@@ -103,7 +103,7 @@ In the next article, we will dive deeper into the intricacies of camera calibrat
 [1]: {% post_url 2017-05-05-Camera-calibration-with-OpenCV %}
 \[1\]: [Camera calibration with OpenCV]({% post_url 2017-05-05-Camera-calibration-with-OpenCV %})
 
-\[2\]: OpenCVV tutorial: [Create calibration pattern](https://docs.opencv.org/4.x/da/d0d/tutorial_camera_calibration_pattern.html). Pattern images in the post are from the source.
+\[2\]: OpenCV tutorial: [Create calibration pattern](https://docs.opencv.org/4.x/da/d0d/tutorial_camera_calibration_pattern.html). Pattern images in the post are from the source.
 
 \[3\]: P. Stelldinger, N. Schönherr, and J. Biermann. PuzzleBoard: A New Camera Calibration Pattern
 with Position Encoding // [arXiv:2409.20127](https://arxiv.org/abs/2409.20127), [GitHub code](https://github.com/PStelldinger/PuzzleBoard).
