@@ -7,7 +7,7 @@ date:   2024-12-12 12:00:00 +0000
 categories: ComputerVision OpenCV Calibration Hardware
 article: true
 sitemap:
-    lastmod: 2024-12-16
+    lastmod: 2024-12-20
 ---
 
 <style>
@@ -34,7 +34,7 @@ In an ideal scenario, if we had an exact mapping of each pixel into precise posi
 
 ## Understanding Optics
 
-The effective focal length of a lens changes with the focus distance, leading to an effect called 'focus breathing'. There are [telecentric](https://en.wikipedia.org/wiki/Telecentric_lens) lenses that minimize this effect through their design. However, in real-world applications, despite the ease of calibration for telecentric lenses, these expensive pieces of optics still exhibit some measurable level of focus breathing. Ultimately, this means that camera calibration should be performed at the focus distance matching the actual lens use case. The same is true about the aperture setting.
+The effective focal length of a lens changes with the focus distance, leading to an effect called 'focus breathing'. There are [telecentric](https://en.wikipedia.org/wiki/Telecentric_lens) lenses that minimize this effect through their design. However, in real-world applications, despite the ease of calibration for telecentric lenses, these expensive pieces of optics still exhibit some measurable level of focus breathing. Ultimately, this means that camera calibration should be performed at the focus distance matching the actual lens use case. The same applies to the aperture setting. In summary, calibration should be performed on each individual camera-lens system after setting the optical parameters. Any change in these parameters will invalidate the calibration results, and new calibration is required.
 
 It is also very important to fix the lens focus with a screw or other means available for a particular lens during the entire duration of the calibration process and, ideally, throughout its usage. Repetitive focus setting in real-world applications is hardly achievable, so if the lens focus was changed and then returned to what seems to be the same position, the calibration results would not be as accurate as they were during the original calibration. It is also important to keep in mind that the lens focus can be affected by thermal expansion effects due to changes in ambient temperature and that there may be a gradual drift in the focus settings over time due to natural vibration. All of these factors mean that calibration cannot be ideally accurate, and its accuracy may change over the long-term use of the optical setup. It means, in many cases, calibration is not a one-time process — periodic validation and recalibration may be essential to maintaining long-term performance in real-world applications.
 
@@ -91,6 +91,7 @@ Once the optimal pattern is decided, one needs to produce it in the real world. 
 3. Ensure good even lighting. Shadows or uneven illumination reduce detection accuracy, especially, for the checkerboard-family patterns.
 4. In many cases, it is more practical to move the camera relative to the calibration target rather than moving the board itself. This approach simplifies the process, especially when dealing with larger calibration boards that may be bulkier and susceptible to bending during movement. Additionally, ensuring consistent lighting becomes more challenging when moving a large calibration board.
 5. Both the camera and the calibration board should remain completely stationary while capturing the calibration frames. Secure them to tripods or other mounting devices to prevent any movement that could impact the calibration process.
+6. If only a portion of the sensor is used for capturing images, it is essential to consistently utilize the same part of the sensor during both the calibration process and subsequent operations. Otherwise, the calibration results, particularly the principal point position and the distortion parameters, may become invalid. However, some of the relevant effects can be accounted for through proper calculations.
 
 ## Conclusion
 
