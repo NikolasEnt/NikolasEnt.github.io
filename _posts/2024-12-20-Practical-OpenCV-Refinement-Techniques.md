@@ -27,7 +27,7 @@ _This article is part of a series on camera calibration that has accumulated pra
 
 ## Introduction
 
-Despite attention to detail in capturing camera calibration images is a crucial factor for final calibration accuracy, the algorithm itself is equally important. To achieve pixel-level accuracy in applications such as photogrammetry or other optical system measurements, the calibration process must aim for sub-pixel precision. However, there are multiple numerical and computational aspects of this process that can significantly impact the outcome, even for the same set of calibration images.
+Despite attention to detail in capturing camera calibration images is a crucial factor for achieving final calibration accuracy, the algorithm itself is equally important. To achieve pixel-level accuracy in applications such as photogrammetry or other optical system measurements, the calibration process must aim for sub-pixel precision. However, there are multiple numerical and computational aspects of this process that can significantly impact the outcome, even for the same set of calibration images.
 
 Understanding the limitations of the acquired  data and the chosen calibration approach is essential to realistically assess which parts of the camera model can be accurately accounted for and which elements might lead to unnecessary complexity in a particular real-world scenario. In many cases, using the most advanced camera models may not only be impractical but could even result in inadequate outcomes.
 
@@ -36,7 +36,7 @@ In this post, we will discuss several techniques for refining the calibration pr
 
 ## Refinement of Keypoints Detection
 
-Once the keypoints are detected, it is possible to refine them to achieve sub-pixel detection accuracy. What is more,the refinement step can compensate for some optical characteristics and issues in the camera image processing pipeline, such as demosaicing or aliasing artifacts.
+Once the keypoints are detected, it is possible to refine them to achieve sub-pixel detection accuracy. What is more, the refinement step can compensate for some optical characteristics and issues in the camera image processing pipeline, such as demosaicing or aliasing artifacts.
 
 The following demonstrates the application of [cv2.cornerSubPix](https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga354e0d7c86d0d9da75de9b9701a9a87e) to refine checkerboard pattern corners recognition results. `winSize` and `zeroZone` are used to define the search window around each corner and can be tuned to achieve the best accuracy. `criteria` parameter defines the termination criteria for the iterative refinement process, which can be tuned to achieve the desired level of accuracy.
 
@@ -87,7 +87,7 @@ Then, when satisfactory results are obtained, and the validation process indicat
 
 ## Distortion Model
 
-The OpenCV [cv2.calibrateCamera](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d) method supports various distortion models. These range from a simple 4-parameter model with two radial and two tangential distortion coefficients to a more complex models, up to  14 parameters. The model can incorporate additional effects such as higher-order radial distortions (`cv2.CALIB_RATIONAL_MODEL` flag), thin prism distortions (`cv2.CALIB_THIN_PRISM_MODEL`), and a tilted sensor model, which accounts for cases where the image sensor is not perfectly aligned with the camera's optical axis (`cv2.CALIB_TILTED_MODEL`).
+The OpenCV [cv2.calibrateCamera](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d) method supports various distortion models. These range from a simple 4-parameter model with two radial and two tangential distortion coefficients to a more complex models, with up to  14 parameters. The model can incorporate additional effects such as higher-order radial distortions (`cv2.CALIB_RATIONAL_MODEL` flag), thin prism distortions (`cv2.CALIB_THIN_PRISM_MODEL`), and a tilted sensor model, which accounts for cases where the image sensor is not aligned with the camera's optical axis (`cv2.CALIB_TILTED_MODEL`).
 
 When selecting a distortion model, it is crucial to consider:
 
@@ -124,22 +124,22 @@ When selecting a distortion model, it is crucial to consider:
 
 To evaluate the calibration images, one can use various techniques to access the image quality. For example, sharpness of the checkerboard pattern images can be assessed with [cv2.estimateChessboardSharpness ](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga1b976b476cd2083edd4323a34e9e1ffa). It makes no sense to use the data until the quality of the images is sufficient. OpenCV manual suggests that the sharpness value, which is a measure of a black-white transition edge width, should be below 3 px.
 
-Perform validation of the calibration by splitting the calibration images into two subsets: one used for calibration itself and another one for validation to ensure that your model is robust.
+Validate the calibration by splitting the calibration images into two subsets: one used for calibration itself and another one for validation to ensure that your model is robust.
 
-Another useful technique, which helps to verify if the derived calibration parameters are actually informative and accurate is to perform the calibration process several times (from data collection to calibration and results validation) and compare the results. Standard deviation of the calibration parameters can shed some light on whether a particular calibration parameter is reliable in the experimental setup. Out of experience, the principal point position often shows significant variation between experiments, indicating that the values should be fixed to the sensor center or the calibration process revised to improve accuracy.
+Another useful technique, which helps to verify if the derived calibration parameters are actually informative and accurate is to perform the calibration process several times (from data collection to calibration and results validation) and compare the results. The standard deviation of the calibration parameters can shed some light on whether a particular calibration parameter is reliable in the experimental setup. Out of experience, the principal point position often shows significant variation between experiments, indicating that the values should be fixed to the sensor center or the calibration process revised to improve accuracy.
 
 Similarly, it is worth checking the calibration parameters standard deviations estimates, as produced by [cv2.calibrateCameraExtended](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d). 
 
 To quantify calibration accuracy, various metrics can be used, such as reprojection error and the [cv2.norm](https://docs.opencv.org/4.x/d2/de8/group__core__array.html#ga55a581f0accd8d990af775d378e7e46c) function for $$L_2$$ metric computation.
 
 ```python
-mean_error = 0
+sum_error = 0
 for i in range(len(obj_points)):
     img_points_reproj, _ = cv2.projectPoints(obj_points[i], rvecs[i], tvecs[i], mtx, dist)
     error = cv2.norm(img_points[i], img_points_reproj, cv.NORM_L2) / len(img_points_reproj)
-    mean_error += error
+    sum_error += error
 
-total_error = mean_error / len(objpoints)
+total_error = sum_error / len(objpoints)
 print("Reprojection Error: ", total_error)
 ```
 
