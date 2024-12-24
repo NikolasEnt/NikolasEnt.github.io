@@ -37,7 +37,19 @@ $text_size: 13px;
         @include margins(5px 0);
         @include borderbtm( #EEE );
         font-size: $heading_size;
-
+        line-height: 1.4; // Adjust line height to fit two lines
+        height: calc(2 * 1.4 * #{$heading_size}); // Set height for exactly two lines
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to two lines */
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+    }
+    .project-content{
+        .tag-holder {
+            line-height: 1.4;
+        }
     }
 
     .project-inner > a { display: block; }
@@ -49,11 +61,9 @@ $text_size: 13px;
     }
 
     span.tags {
-
         @include borderbtm( #888 );
         @include margins(0 5px);
         font-size: ($heading_size / 2);
-
         &:first-child, &:last-child { margin-left: 0; }
     }
 
