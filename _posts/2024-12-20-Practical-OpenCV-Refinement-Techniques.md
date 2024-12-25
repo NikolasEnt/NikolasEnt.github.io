@@ -21,7 +21,7 @@ th, td {
 }
 </style>
 
-_This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or provide instructions for a state-of-the-art optical laboratory setup. Rather, it focuses on the practical aspects of camera calibration in real-world environments with limited resources or DIY scenarios, while aiming to achieve the best possible results. This article explores physical aspects of calibration prior to processing calibration images._
+_This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or provide instructions for a state-of-the-art optical laboratory setup. Rather, it focuses on the practical aspects of camera calibration in real-world environments with limited resources or DIY scenarios, while aiming to achieve the best possible results. This article explores algorithmic aspects of calibration, primarily focusing on OpenCV implementation; however, similar principles apply to other tools._
 
 ![Title image](/assets/post22/title.webp)
 
@@ -100,10 +100,10 @@ When selecting a distortion model, it is crucial to consider:
 
 * **Thin prism distortion** occurs when the lens optical elements are not perfectly aligned to be parallel with the camera sensor plane. Similar to tangential distortion, if the lens is manufactured to high standards, this effect is likely negligible.
 
-
 * The **tilted sensor model** accounts for cases where the image sensor plane is not orthogonal to the optical axis. High-quality camera systems often employ advanced alignment techniques (for example, [Active Sensor Alignment](Active Sensor Alignment) by LUCID) to mitigate sensor tilt. In these cases, including the tilted sensor model may lead to overfitting and unnecessary complexity in the calibration process.
   However, there are situations where a tilted sensor model is essential. For instance, in [Scheimpflug principle](https://en.wikipedia.org/wiki/Scheimpflug_principle) applications (e.g., for lenses called 'tilt-shift' or 'perspective control' lenses), the optical axis is deliberately tilted relative to the sensor plane. In such cases, using the tilted sensor model is necessary for accurate calibration. A comprehensive review of Scheimpflug camera calibration methods, including advanced techniques, is available in [3].
 
+It may happen that a particular optical system requires more complex models than those available in OpenCV.
 
 ### Practical Considerations
 
