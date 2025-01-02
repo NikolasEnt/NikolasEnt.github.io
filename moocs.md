@@ -3,6 +3,12 @@ layout: page
 title: List of MOOCs
 permalink: /moocs/
 ---
+<style>
+    th, td {
+        padding: 5px; /* Padding inside the cells  */
+    }
+</style>
+
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
   <p>I completed a lot of MOOCs. The most interesting of them are listed below.</p>
