@@ -24,7 +24,14 @@ kramdown:
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
   - Gemfile.lock
+
+social:
+  name: Nikolay Falaleev
+  links:
+    - https://www.linkedin.com/in/nikolay-falaleev
+    - https://github.com/nikolasent
