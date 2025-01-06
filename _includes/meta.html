@@ -20,4 +20,12 @@
 {% endfor %}
 {%endif %}
 
+{% if page.date or page.sitemap.lastmod %}
+{% if page.sitemap.lastmod %}
+<meta http-equiv="last-modified" content="{{ page.sitemap.lastmod | date_to_rfc822  }}">
+{% else %}
+<meta http-equiv="last-modified" content="{{ page.date | date_to_rfc822 }}">
+{% endif %}
+{% endif %}
+
 {% seo %}
