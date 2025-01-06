@@ -6,5 +6,9 @@
   {
     "icon": "fa-github",
     "link": "https://github.com/NikolasEnt"
+  },
+  {
+    "icon": "fa fa-rss",
+    "link": "https://nikolasent.github.io/feed.xml"
   }
 ]
