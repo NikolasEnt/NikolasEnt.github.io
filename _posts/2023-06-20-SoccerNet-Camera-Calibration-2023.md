@@ -45,7 +45,7 @@ In total, the solution used 57 keypoints.
 The provided data annotation contained manually annotated points on the lines. However, in many cases, the provided data lacked accuratre intersection points of the lines, which were crucial for calibration purposes, considering the intersection coordinates of lines in the pitch model. To address this limitation of the annotation, 30 points were defined as the intersections of linear data fitting applied to the line points provided in the annotation. This approach not only enabled the generation of accurate intersection points but also facilitated automated filtering of annotated, making it straightforward to exclude outliers and unrealistic intersections.
 
 ![Annotation sample](/assets/post18/annotation.jpg){: .center-image }
-_Fig. 3. Annotation sample. Small red dots with yellow circles show the points from annotation. As many intersections were not included in annotation, it was nessesary to perform linear fitting of the annotation to find the lines intersections._
+_Fig. 3. Annotation sample. Small red dots with yellow circles show the points from annotation. As many intersections were not included in annotation, it was necesary to perform linear fitting of the annotation to find the lines intersections._
 
 ### Conics intersections
 
@@ -102,7 +102,7 @@ In addition to the points on the ground plane, two additional vertical planes co
 The camera calibration process was repeated on several subsets of the keypoints, selected by various heuristics:
 * all keypoints, thresholded by confidence;
 * only keypoints, which correspond to the original line intersections;
-* all keypoints after filtering potential outliers using RANSAC homography finding (ground plane points that could not be fitted by the homography reprojection with a 5 px tolerance were excluded in this case) - this heuristic is helpful in situations when the neural network misclassifid some of the points, so the RANSAC filtering will exclude the outliers;
+* all keypoints after filtering potential outliers using RANSAC homography finding (ground plane points that could not be fitted by the homography reprojection with a 5 px tolerance were excluded in this case) - this heuristic is helpful in situations when the neural network misclassified some of the points, so the RANSAC filtering will exclude the outliers;
 * only the groundplane points, thresholded by confidence;
 
 The final camera calibration values were determined through a heuristic voting process, which considered the root mean square error (RMSE) of the reprojection. The camera parameter set that yielded the lowest RMSE was selected as the final prediction, with preference given to the parameters based on all detected points if the RMSE was <5 px .
@@ -120,11 +120,15 @@ _Fig. 8. Some results of the camera calibration._
 
 The results appeared to be the best on the challenge leaderboard. Even though the approach cannot be considered general, it or some of the tricks described above can be used for various applications such as online camera calibration or refinement of extrinsic camera parameters, particularly when a well-known pattern is available within the camera's field of view.
 
+Details on the solution with ablation study of the used tricks was published in \[3\].
+
 ## References:
 
 \[1\]: Radim Halı́ř and Jan Flusser. Numerically stable direct least squares fitting of ellipses. 1998
 
 \[2\]: Jingdong Wang et al. Deep High-Resolution Representation Learning for Visual Recognition. [arXiv:1908.07919](https://arxiv.org/abs/1908.07919)
+
+\[3\]: Nikolay Falaleev, Ruilong Chen. Enhancing Soccer Camera Calibration Through Keypoint Exploitation // Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports, 2024 [arXiv:2410.07401](https://arxiv.org/abs/2410.07401), [Github code](https://github.com/NikolasEnt/soccernet-calibration-sportlight)
 
 
 
