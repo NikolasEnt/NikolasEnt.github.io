@@ -6,9 +6,16 @@ abstract: Benchmark results of GTX 1080 TI, RTX 2080Ti, 3090 and 4090 on DL task
 date:   2022-11-30 12:00:00 +0100
 categories: Hardware DeepLearning
 article: true
+sitemap:
+    lastmod: 2025-01-08
 ---
 
 <style>
+table {
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;

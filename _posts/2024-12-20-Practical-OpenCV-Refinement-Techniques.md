@@ -10,17 +10,6 @@ sitemap:
     lastmod: 2024-12-25
 ---
 
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-</style>
-
 _This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or provide instructions for a state-of-the-art optical laboratory setup. Rather, it focuses on the practical aspects of camera calibration in real-world environments with limited resources or DIY scenarios, while aiming to achieve the best possible results. This article explores algorithmic aspects of calibration, primarily focusing on OpenCV implementation; however, similar principles apply to other tools._
 
 ![Title image](/assets/post22/title.webp)

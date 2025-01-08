@@ -6,9 +6,16 @@ abstract: Comparation of Nvidia RTX 2080 Ti with GTX 1080 Ti and 1070.
 date:   2018-11-06 12:00:00 +0300
 categories: Hardware DeepLearning
 article: true
+sitemap:
+    lastmod: 2025-01-08
 ---
 
 <style>
+table {
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;

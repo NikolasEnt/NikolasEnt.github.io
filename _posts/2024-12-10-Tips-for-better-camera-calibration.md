@@ -7,10 +7,15 @@ date:   2024-12-12 12:00:00 +0000
 categories: ComputerVision OpenCV Calibration Hardware
 article: true
 sitemap:
-    lastmod: 2024-12-20
+    lastmod: 2025-01-08
 ---
 
 <style>
+table {
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
