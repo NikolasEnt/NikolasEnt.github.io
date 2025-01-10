@@ -68,6 +68,8 @@ $text_size: 13px;
         height: 180px;
         display: block;
         @include bg(cover);
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 7px;
     }
 
     span.tags {
