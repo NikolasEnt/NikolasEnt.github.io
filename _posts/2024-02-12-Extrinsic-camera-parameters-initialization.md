@@ -10,22 +10,6 @@ sitemap:
     lastmod: 2025-01-08
 ---
 
-<style>
-table {
-  overflow-x: auto;
-  display: block;
-  width: 100%;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-</style>
-
 *The idea for this post arose as a response to a common misconception I frequently hear: that camera calibration is equivalent to homography computation. This post will demonstrate the difference between OpenCV-based camera calibration and the pure homography-based calibration method.*
 
 ![Title image](/assets/post20/title.webp)

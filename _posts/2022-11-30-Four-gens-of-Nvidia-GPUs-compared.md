@@ -10,22 +10,6 @@ sitemap:
     lastmod: 2025-01-08
 ---
 
-<style>
-table {
-  overflow-x: auto;
-  display: block;
-  width: 100%;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-</style>
-
 ## Testing
 
 The post continues the series of benchmark rusults published [previously][Benchmark] with results for GPUs of the latest four generations of Nvidia GPUs. The selected hardware constitute progress of the high-end consumer grade graphics adapter, which I have being using in my Deep Learning activities over the past five years.
