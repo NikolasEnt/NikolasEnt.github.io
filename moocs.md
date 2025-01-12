@@ -14,6 +14,16 @@ permalink: /moocs/
   <p>I completed a lot of MOOCs. The most interesting of them are listed below.</p>
 </div>
 
+<style>
+table,
+th,
+td {
+    border: none;
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
 | __Provider__ | | __MOOC Title__ | | __Grade__ | | __Link__ |
 | _Udacity_ | | Intel Edge AI for IoT Developers Nanodegree | |  | | [Certificate](https://confirm.udacity.com/CDQPRVAA) |
 | _Udacity_ | | C++ Nanodegree | |  | | [Certificate](https://confirm.udacity.com/J7YTCDPL) |
@@ -31,5 +41,4 @@ permalink: /moocs/
 | _QUT Online_ | | Robotic Vision _by Peter Corke_ | | 100% | | [Video of the final project](https://youtu.be/RPiUF6k66uc)|
 | _Udacity_ | | Artificial Intelligence for Robotics | |  | | |
 | _Stepic_ | | Introduction to Computer Graphics | | 100%  | |  [Link](https://stepik.org/certificate/9e5336844b15c2a4f119e1f73ef093421356b39c.pdf) |
-
 

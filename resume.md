@@ -3,13 +3,17 @@ layout: page
 title: Profile
 permalink: /resume/
 sitemap:
-    lastmod: 2025-01-02
+    lastmod: 2025-01-11
 ---
 
 <style>
-    th, td {
-        padding: 5px; /* Padding inside the cells  */
-    }
+table,
+th,
+td {
+    border: none;
+    padding: 5px;
+    text-align: left;
+}
 </style>
 
 <div align="center">
