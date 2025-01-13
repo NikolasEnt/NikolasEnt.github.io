@@ -4,4 +4,4 @@ title: Competitions
 permalink: /competitions/
 ---
 
-## Data science and computer vision competitions
+## Data Science and Computer Vision competitions
