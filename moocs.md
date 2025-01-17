@@ -25,10 +25,10 @@ td {
 </style>
 
 | __Provider__ | | __MOOC Title__ | | __Grade__ | | __Link__ |
-| _Udacity_ | | Intel Edge AI for IoT Developers Nanodegree | |  | | [Certificate](https://confirm.udacity.com/CDQPRVAA) |
-| _Udacity_ | | C++ Nanodegree | |  | | [Certificate](https://confirm.udacity.com/J7YTCDPL) |
+| _Udacity_ | | Intel Edge AI for IoT Developers Nanodegree | |  | | [Certificate](www.udacity.com/certificate/e/4054a8c4-336a-11eb-bde2-7b7a89634ac6) |
+| _Udacity_ | | C++ Nanodegree | |  | | [Certificate](www.udacity.com/certificate/e/d8637a4c-8810-11ea-a6b0-eb96979cd3fd) |
 | _Coursera_ | | Deep Learning Specialization _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/specialization/RJV7RR3QXRPD) |
-| _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](https://confirm.udacity.com/ERTTLT2G) |
+| _Udacity_ | | Self-Driving Car Engineer Nanodegree | |  | | [Certificate](www.udacity.com/certificate/e/66c85e6c-b571-11e7-acc0-47181a06362a) |
 | _Coursera_ | | Machine Learning (Stanford) _by Andrew Ng_ | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/WKJK4NLH6BFS) |
 | _Coursera_ | | Practical Machine Learning | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/EGD3GEC2P3LW) |
 | _Coursera_ | | Reproducible Research | | 100% | | [Link](https://www.coursera.org/account/accomplishments/certificate/UT6CT93KXBLS) |
