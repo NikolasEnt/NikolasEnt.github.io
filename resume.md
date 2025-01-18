@@ -119,13 +119,13 @@ __MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia 
 | | [Certificate](/static/img/OxML.pdf) |
 
 | __03/2021 - 08/2021__ | __Intel Edge AI for IoT Developers__ Nanodegree |
-| | _Udacity_, [Certificate](https://confirm.udacity.com/CDQPRVAA)|
+| | _Udacity_, [Certificate](www.udacity.com/certificate/e/4054a8c4-336a-11eb-bde2-7b7a89634ac6)|
 
 | __01/2020 - 06/2020__ | __C++__ Nanodegree |
-| | _Udacity_, [Certificate](https://confirm.udacity.com/J7YTCDPL)|
+| | _Udacity_, [Certificate](www.udacity.com/certificate/e/d8637a4c-8810-11ea-a6b0-eb96979cd3fd)|
 
 | __11/2016 - 10/2017__ | __Self-Driving Car Engineer__ Nanodegree |
-| | _Udacity_, [Certificate](https://confirm.udacity.com/ERTTLT2G), graduated with the first ever cohort |
+| | _Udacity_, [Certificate](www.udacity.com/certificate/e/66c85e6c-b571-11e7-acc0-47181a06362a), graduated with the first ever cohort |
 
 | __11/2012 - present__ | >30 [__MOOCs__](/moocs/) in Computer and Data Sciences, Robotics, Computer Vision and Machine Learning |
 | | _Coursera, Udacity, edX and etc._ |
