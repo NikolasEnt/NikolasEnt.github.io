@@ -44,7 +44,8 @@ h6 {
 a,
 a:focus,
 a:hover {
-    color: #062F4F
+    color: #062F4F;
+    text-decoration: underline
 }
 
 a .material-icons,
