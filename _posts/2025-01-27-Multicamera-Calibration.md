@@ -7,7 +7,7 @@ date:   2025-01-27 6:00:00 +0000
 categories: ComputerVision OpenCV Calibration DeepLearning
 article: true
 sitemap:
-    lastmod: 2025-01-27
+    lastmod: 2025-01-28
 ---
 
 _This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or provide instructions for a state-of-the-art optical laboratory setup. This article explores the complexities of multicamera calibration, addressing key considerations and strategies for enhancing accuracy. Additionally, we review a variety of learning-based approaches, offering an overview of potential techniques. While this article does not provide step-by-step recipes, it can serve as a reference for exploring solutions to challenges in multicamera calibration.._
@@ -110,7 +110,9 @@ Kalman filtering can also be employed to fuse multiple transformation or smooth 
 
 ## Learning-based techniques
 
-As mentioned earlier, a key aspect of multicamera calibration involves identifying reference keypoints for camera calibration. In cases where cameras have overlapping fields of view, finding corresponding keypoints in images from different cameras can be addressed using commonly used feature detection and matching approaches, such as traditional algorithms like SIFT or SURF. Deep learning techniques can extract more robust features compared to traditional methods, leading to better alignment between images. 
+As mentioned earlier, a key aspect of multicamera calibration involves identifying reference keypoints for camera calibration. In cases where cameras have overlapping fields of view, finding corresponding keypoints in images from different cameras can be addressed using commonly used feature detection and matching approaches, such as traditional algorithms like SIFT or SURF. Deep learning techniques can extract more robust features compared to traditional methods, leading to better alignment between images.
+
+One possible solution for robust keypoint extraction is the recognition of well-known shapes within the camera's field of view by a deep learning model. This could include industrial equipment or parts, sports playground lines, or other objects that are easily identifiable. These shapes, with their known sizes, can be used as reference keypoints for calibration. For example, a previous [solution]({% post_url  2023-06-20-SoccerNet-Camera-Calibration-2023 %}) of the SoccerNet Camera Calibration challenge demonstrated the use of various visual features of a football pitch for precise camera calibration.
 
 <div style="text-align: center;">
     <img src="/assets/post23/pseudopillars.png" alt="PseudoPillars model architecture" style="max-width: 90%; height: auto; display: inline-block;">
