@@ -6,6 +6,8 @@ abstract: A CNN approach used for multiclass semantic segmentation during the Ly
 date:   2018-06-05 12:00:00 +0300
 categories: DeepLearning Competitions Segmentation
 project: comp2
+sitemap:
+    lastmod: 2025-01-30
 ---
 
 ## Software and Hardware
@@ -51,7 +53,7 @@ __Loss = (1 - F<sub>2</sub>(car)) + (1 - F<sub>0.5</sub>(road)) + (1 - F<sub>1</
 
 The code is organized in such way that makes it simple to experiment with different weights of different classes as well as change beta in F-beta scores.
 
-{% highlight python linenos%}
+```python
 import torch
 
 smooth = 1e-4
@@ -69,7 +71,7 @@ def fb_loss(preds, trues, beta):
     Fb = Fb * weights
     score = Fb.sum() / (weights.sum() + smooth)
     return torch.clamp(score, 0., 1.)
-{% endhighlight %}
+```
 
 _F-beta score calculation for a batch of images with PyTorch_
 
