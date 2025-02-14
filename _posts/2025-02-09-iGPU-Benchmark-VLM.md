@@ -26,13 +26,13 @@ Complementary GitHub repo: [https://github.com/NikolasEnt/ollama-webui-intel](ht
 
 ## Ollama on Intel iGPUs
 
-Hardware acceleration on Intel hardware can be achieved using [ipex-llm](https://ipex-llm-latest.readthedocs.io/en/latest/index.html), which can be used directly with PyTorch or integrated with other tools, for example, a provided Ollama version patched by Intel to support the relevant hardware.
+Hardware acceleration on Intel hardware can be achieved using [ipex-llm](https://ipex-llm-latest.readthedocs.io/en/latest/index.html), which can be used directly with PyTorch or integrated with other tools, for example, a provided [Ollama](https://github.com/ollama/ollama) version [patched by Intel](https://github.com/intel/ipex-llm/blob/main/docs/mddocs/Quickstart/ollama_quickstart.md) to support the relevant hardware.
 
 ## Hardware Acceleration Using IPEX-LLM
 
 It is an optimised library that enhances performance for transformer-based models on Intel processors and other hardware (GPUs, iGPUs, NPUs). `ipex-llm` is designed to provide efficient execution by using Intel's oneAPI Deep Neural Network Library (oneDNN). It supports various levels of low bit inference: INT2/INT4/INT8, FP4/FP8/FP16 and BF16.
 
-For convenience and reproducibility, an all-in-one Docker compose solution is provided in the GitHub repository for this post: [https://github.com/NikolasEnt/ollama-webui-intel](https://github.com/NikolasEnt/ollama-webui-intel). It includes Ollama with IPEX-LLM as an accelerated backend, compatible with both Intel iGPUs and dedicated GPUs (such as Arc, Flex, and Max), along with the required parameters and settings, as well as the Open WebUI interface.
+For convenience and reproducibility, an all-in-one Docker compose solution is provided in the GitHub repository for this post: [https://github.com/NikolasEnt/ollama-webui-intel](https://github.com/NikolasEnt/ollama-webui-intel). It includes Ollama with IPEX-LLM as an accelerated backend, compatible with both Intel iGPUs and dedicated GPUs (such as Arc, Flex, and Max), along with the required parameters and settings, as well as the [Open WebUI](https://github.com/open-webui/open-webui) interface.
 
 Using Intel GPUs for Deep Learning tasks computations requires having Intel firmware installed. For example, on Debian-like systems:
 
@@ -49,7 +49,7 @@ Models' inference speeds were compared with Nvidia RTX 3090 results, which is de
 
 For convenience and reproducibility, a benchmarking [script](https://github.com/NikolasEnt/ollama-webui-intel/blob/master/scripts/benchmark.py) is provided. The benchmarking results include uncertainty measures as standard deviations from multiple runs. These measurements were obtained by executing different prompts for text-based models and describing several images for visual models. The standard deviation across these runs gives an estimate of the variability in inference times due to differences in task complexity or types of visual content.
 
-Although tokens do not directly correspond to words, we can use the following rough estimations for actual speed: 2 tokens/s is about the speed of human typing; 5-10 tokens/s is a comfortable model output rate for reading results in chat-based interactions; ~30 tokens/s is required inference speed for comfortable real-time code completion in code-assisting scenarios, such as using Ollama as an inference backend for continue.dev autocomplete. 
+Although tokens do not directly correspond to words, we can use the following rough estimations for actual speed: 2 tokens/s is about the speed of human typing; 5-10 tokens/s is a comfortable model output rate for reading results in chat-based interactions; ~30 tokens/s is required inference speed for comfortable real-time code completion in code-assisting scenarios, such as using Ollama as an inference backend for [continue.dev](https://github.com/continuedev/continue) autocomplete.
 
 All tests were performed using Ollama 0.5.1, which is the latest version for now supported by ipex-llm as an accelerated backend for iGPUs or dedicated Intel GPUs like Arc, Flex, and Max. Experiments were conducted on an Intel Ultra 5 125H (Meteor Lake) CPU with 64GB of RAM. 12 threads were used for CPU inference. The value was tuned empirically by optimising throughput on some models; however, it is worth noting that the parameter may require further optimisation for each individual model and context length to achieve optimal performance. All tests were performed with an 8k context length where appropriate for the model and using Q4_K_M quantisation, which is the default recommended quantisation level for Ollama. Note that the SoC was not overclocked during the experiments, so it could theoretically demonstrate a higher generation rate. 
 
