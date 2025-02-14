@@ -51,32 +51,32 @@ For convenience and reproducibility, a benchmarking [script](https://github.com/
 
 Although tokens do not directly correspond to words, we can use the following rough estimations for actual speed: 2 tokens/s is about the speed of human typing; 5-10 tokens/s is a comfortable model output rate for reading results in chat-based interactions; ~30 tokens/s is required inference speed for comfortable real-time code completion in code-assisting scenarios, such as using Ollama as an inference backend for [continue.dev](https://github.com/continuedev/continue) autocomplete.
 
-All tests were performed using Ollama 0.5.1, which is the latest version for now supported by ipex-llm as an accelerated backend for iGPUs or dedicated Intel GPUs like Arc, Flex, and Max. Experiments were conducted on an Intel Ultra 5 125H (Meteor Lake) CPU with 64GB of RAM. 12 threads were used for CPU inference. The value was tuned empirically by optimising throughput on some models; however, it is worth noting that the parameter may require further optimisation for each individual model and context length to achieve optimal performance. All tests were performed with an 8k context length where appropriate for the model and using Q4_K_M quantisation, which is the default recommended quantisation level for Ollama. Note that the SoC was not overclocked during the experiments, so it could theoretically demonstrate a higher generation rate. 
+All tests were performed using Ollama 0.5.1, which is the latest version for now supported by `ipex-llm` as an accelerated backend for iGPUs or dedicated Intel GPUs like Arc, Flex, and Max. Experiments were conducted on an Intel Ultra 5 125H (Meteor Lake) CPU with 64GB of RAM. 12 threads were used for CPU inference. The value was tuned empirically by optimising throughput on some models; however, it is worth noting that the parameter may require further optimisation for each individual model and context length to achieve optimal performance. All tests were performed with an 8k context length where appropriate for the model and using Q4_K_M quantisation, which is the default recommended quantisation level for Ollama. Note that the SoC was not overclocked during the experiments, so it could theoretically demonstrate a higher generation rate.
 
-| Model             | Ultra 5 CPU tokens/s | Ultra 5 iGPU tokens/s | RTX 3090 tokens/s |
-|-------------------|----------------------|-----------------------|-------------------|
-| deepseek-r1:70b   | 1.12 ± 0.07          | 1.55 ± 0.03           | NA                |
-| llama3.3:70b      | 1.16 ± 0.01          | 1.58 ± 0.00           | NA                |
-| llama3.1:70b      | 1.17 ± 0.00          | 1.57 ± 0.00           | NA                |
-| qwen2.5:72b       | 1.11 ± 0.01          | 1.16 ± 0.00           | NA                |
-| qwen2.5:32b       | 2.46 ± 0.01          | 3.22 ± 0.01           | 31.91 ± 0.34      |
-| qwen2.5:7b        | 10.27 ± 0.16         | 12.08 ± 0.08          | 101.03 ± 1.01     |
-| qwq               | 2.29 ± 0.08          | 3.01 ± 0.04           | 30.53 ± 0.75      |
-| mistral-small:24b | 3.42 ± 0.03          | 4.47 ± 0.02           | 45.31 ± 0.25      |
-| phi4:14b          | 5.30 ± 0.09          | 6.46 ± 0.06           | 64.09 ± 0.95      |
-| phi3.5:3.8b       | 19.16 ± 0.89         | 17.91 ± 2.08          | 171.51 ± 1.15     |
-| llama3.2:3b       | 20.33 ± 0.26         | 20.96 ± 0.34          | 161.96 ± 3.01     |
-| smallthinker:3b   | 13.79 ± 0.63         | 13.91 ± 0.87          | 105.53 ± 1.84     |
-| smollm2:1.7b      | 26.92 ± 0.79         | 26.34 ± 0.44          | 209.49 ± 1.78     |
-| smollm2:360m      | 56.67 ± 2.09         | 32.25 ± 0.32          | 250.60 ± 8.13     |
-| opencoder:1.5b    | 32.88 ± 1.60         | 17.67 ± 0.90          | 207.72 ± 3.92     |
-| llama3.1:8b       | 9.75 ± 0.20          | 11.52 ± 0.19          | 104.31 ± 2.06     |
+| Model              | Ultra 5 CPU tokens/s | Ultra 5 iGPU tokens/s | RTX 3090 tokens/s |
+|--------------------|----------------------|-----------------------|-------------------|
+| deepseek-r1:70b    | 1.12 ± 0.07          | 1.55 ± 0.03           | NA                |
+| llama3.3:70b       | 1.16 ± 0.01          | 1.58 ± 0.00           | NA                |
+| llama3.1:70b       | 1.17 ± 0.00          | 1.57 ± 0.00           | NA                |
+| llama3.1:8b        | 9.75 ± 0.20          | 11.52 ± 0.19          | 104.31 ± 2.06     |
+| qwen2.5:72b        | 1.11 ± 0.01          | 1.16 ± 0.00           | NA                |
+| qwen2.5:32b        | 2.46 ± 0.01          | 3.22 ± 0.01           | 31.91 ± 0.34      |
+| qwen2.5:7b         | 10.27 ± 0.16         | 12.08 ± 0.08          | 101.03 ± 1.01     |
+| qwq                | 2.29 ± 0.08          | 3.01 ± 0.04           | 30.53 ± 0.75      |
+| mistral-small:24b  | 3.42 ± 0.03          | 4.47 ± 0.02           | 45.31 ± 0.25      |
+| phi4:14b           | 5.30 ± 0.09          | 6.46 ± 0.06           | 64.09 ± 0.95      |
+| phi3.5:3.8b        | 19.16 ± 0.89         | 17.91 ± 2.08          | 171.51 ± 1.15     |
+| llama3.2:3b        | 20.33 ± 0.26         | 20.96 ± 0.34          | 161.96 ± 3.01     |
+| smallthinker:3b    | 13.79 ± 0.63         | 13.91 ± 0.87          | 105.53 ± 1.84     |
+| smollm2:1.7b       | 26.92 ± 0.79         | 26.34 ± 0.44          | 209.49 ± 1.78     |
+| smollm2:360m       | 56.67 ± 2.09         | 32.25 ± 0.32          | 250.60 ± 8.13     |
+| starcoder2:3b      | 19.47 ± 1.51         | 22.30 ± 2.38          | 177.34 ± 3.42     |
+| qwen2.5-coder:1.5b | 27.19 ± 0.26         | 36.74 ± 0.23          | 170.02 ± 4.20     |
+| opencoder:1.5b     | 32.88 ± 1.60         | 17.67 ± 0.90          | 207.72 ± 3.92     |
 
-Excluding very small models, iGPU offers up to 30% faster inference on Intel Ultra 5 125H than the CPU. At the same time, the iGPU consumes about three times less power than the CPU itself. 
+An interesting observation is that the iGPU outperforms CPU inference despite being more energy efficient. Excluding very small models, iGPU offers up to 30% faster inference on Intel Ultra 5 125H than the CPU. At the same time, the iGPU consumes about three times less power than the CPU itself.
 
 `Deepseek-r1:32b` performance is not included in the test results above, but it performs similarly to qwen2.5:32b. 
-
-An interesting observation is that the iGPU outperforms CPU inference despite being more energy efficient. 
 
 Of course, inference on Nvidia RTX 3090 is much faster, outperforming the Intel iGPU by 7.5-10x. At the same time, the results are achieved with a 25-30x increase in energy consumption of the GPU subsystem (partially due to the much older 8 nm process versus TSMC's N5 (5nm) used for the graphics tile of Intel’s SoC and, secondarily, due to differences in model computation optimisations applied for different hardware architectures). 
 
@@ -120,7 +120,7 @@ Unfortunately, Ollama does not yet support Qwen2.5-VL, a family of very useful m
 
 ## Comments on application
 
-This setup, based on a modern Intel CPU with a capable iGPU that can utilize unified RAM, provides unique capabilities for running relatively large models locally. The iGPUs are surprisingly efficient, offering better performance than the CPU while maintaining energy efficiency, even when compared to dedicated GPUs. Offloading model inference onto the iGPU allows the CPU to be utilized for other tasks, or enabling parallel execution of multiple models. For example, the setup can run llama3.3:70b (1.05 tokens/s on iGPU) and qwen2.5:32b (1.77 tokens/s on CPU) in parallel with a combined throughput higher than sequential execution of the two models. With up to 96GB of RAM, the system could potentially run two 70B models simultaneously.
+This setup, based on a modern Intel CPU with a capable iGPU that can utilize unified RAM, provides unique capabilities for running relatively large models locally. The iGPUs are surprisingly efficient, offering better performance than the CPU while maintaining energy efficiency, even when compared to dedicated GPUs. Offloading model inference onto the iGPU allows the CPU to be utilized for other tasks, or enabling parallel execution of multiple models. For example, the setup can run llama3.3:70b (`1.05` tokens/s on iGPU) and `qwen2.5:32b` (1.77 tokens/s on CPU) in parallel with a combined throughput higher than sequential execution of the two models. With up to 96GB of RAM, the system could potentially run two 70B models simultaneously.
 
 Solutions developed with prototyping stage on such an iGPU platform can be ported to other, more powerful Intel inference solutions without significant changes, which is yet another attractive point for some cases.
 
