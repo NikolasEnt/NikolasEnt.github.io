@@ -51,25 +51,25 @@ For convenience and reproducibility, a benchmarking [script](https://github.com/
 
 Although tokens do not directly correspond to words, we can use the following rough estimations for actual speed: 2 tokens/s is about the speed of human typing; 5-10 tokens/s is a comfortable model output rate for reading results in chat-based interactions; ~30 tokens/s is required inference speed for comfortable real-time code completion in code-assisting scenarios, such as using Ollama as an inference backend for [continue.dev](https://github.com/continuedev/continue) autocomplete.
 
-All tests were performed using Ollama 0.5.1, which is the latest version for now supported by `ipex-llm` as an accelerated backend for iGPUs or dedicated Intel GPUs like Arc, Flex, and Max. Experiments were conducted on an Intel Ultra 5 125H (Meteor Lake) CPU with 64GB of RAM. 12 threads were used for CPU inference. The value was tuned empirically by optimising throughput on some models; however, it is worth noting that the parameter may require further optimisation for each individual model and context length to achieve optimal performance. All tests were performed with an 8k context length where appropriate for the model and using Q4_K_M quantisation, which is the default recommended quantisation level for Ollama. Note that the SoC was not overclocked during the experiments, so it could theoretically demonstrate a higher generation rate.
+All tests were performed using Ollama 0.5.1, which is the latest version for now supported by `ipex-llm` as an accelerated backend for iGPUs or dedicated Intel GPUs like Arc, Flex, and Max. Experiments were conducted on an Intel Ultra 5 125H (Meteor Lake) CPU with 64GB of RAM. 12 threads were used for CPU inference. The value was tuned empirically by optimising throughput on some models; however, it is worth noting that the parameter may require further optimisation for each individual model and context length to achieve optimal performance. All tests were performed with an 8k context length where appropriate for the model and using Q4_K_M quantisation, which is the default recommended quantisation level for Ollama. Power mode was set to 'Performance'. Note that the SoC was not further overclocked during the experiments, so it could theoretically demonstrate a higher generation rate.
 
 | Model              | Ultra 5 CPU tokens/s | Ultra 5 iGPU tokens/s | RTX 3090 tokens/s |
 |--------------------|----------------------|-----------------------|-------------------|
-| deepseek-r1:70b    | 1.12 ± 0.07          | 1.55 ± 0.03           | NA                |
+| deepseek-r1:70b    | 1.12 ± 0.07          | 1.65 ± 0.08           | NA                |
 | llama3.3:70b       | 1.16 ± 0.01          | 1.58 ± 0.00           | NA                |
 | llama3.1:70b       | 1.17 ± 0.00          | 1.57 ± 0.00           | NA                |
-| llama3.1:8b        | 9.75 ± 0.20          | 11.52 ± 0.19          | 104.31 ± 2.06     |
-| qwen2.5:72b        | 1.11 ± 0.01          | 1.16 ± 0.00           | NA                |
-| qwen2.5:32b        | 2.46 ± 0.01          | 3.22 ± 0.01           | 31.91 ± 0.34      |
-| qwen2.5:7b         | 10.27 ± 0.16         | 12.08 ± 0.08          | 101.03 ± 1.01     |
+| llama3.1:8b        | 9.76 ± 0.18          | 12.69 ± 0.20          | 104.31 ± 2.06     |
+| qwen2.5:72b        | 1.11 ± 0.01          | 1.24 ± 0.00           | NA                |
+| qwen2.5:32b        | 2.46 ± 0.01          | 3.44 ± 0.02           | 31.91 ± 0.34      |
+| qwen2.5:7b         | 10.26 ± 0.18         | 13.06 ± 0.09          | 101.03 ± 1.01     |
 | qwq                | 2.29 ± 0.08          | 3.01 ± 0.04           | 30.53 ± 0.75      |
-| mistral-small:24b  | 3.42 ± 0.03          | 4.47 ± 0.02           | 45.31 ± 0.25      |
-| phi4:14b           | 5.30 ± 0.09          | 6.46 ± 0.06           | 64.09 ± 0.95      |
-| phi3.5:3.8b        | 19.16 ± 0.89         | 17.91 ± 2.08          | 171.51 ± 1.15     |
-| llama3.2:3b        | 20.33 ± 0.26         | 20.96 ± 0.34          | 161.96 ± 3.01     |
-| smallthinker:3b    | 13.79 ± 0.63         | 13.91 ± 0.87          | 105.53 ± 1.84     |
-| smollm2:1.7b       | 26.92 ± 0.79         | 26.34 ± 0.44          | 209.49 ± 1.78     |
-| smollm2:360m       | 56.67 ± 2.09         | 32.25 ± 0.32          | 250.60 ± 8.13     |
+| mistral-small:24b  | 3.37 ± 0.03          | 4.87 ± 0.02           | 45.31 ± 0.25      |
+| phi4:14b           | 5.27 ± 0.08          | 7.11 ± 0.06           | 64.09 ± 0.95      |
+| phi3.5:3.8b        | 19.07 ± 0.86         | 19.60 ± 2.42          | 171.51 ± 1.15     |
+| llama3.2:3b        | 20.63 ± 0.44         | 23.20 ± 0.26          | 161.96 ± 3.01     |
+| smallthinker:3b    | 13.83 ± 0.63         | 14.66 ± 0.42          | 105.53 ± 1.84     |
+| smollm2:1.7b       | 27.41 ± 0.66         | 27.84 ± 0.65          | 209.49 ± 1.78     |
+| smollm2:360m       | 57.56 ± 2.63         | 35.13 ± 0.32          | 250.60 ± 8.13     |
 | starcoder2:3b      | 19.47 ± 1.51         | 22.30 ± 2.38          | 177.34 ± 3.42     |
 | qwen2.5-coder:1.5b | 27.19 ± 0.26         | 36.74 ± 0.23          | 170.02 ± 4.20     |
 | opencoder:1.5b     | 32.88 ± 1.60         | 17.67 ± 0.90          | 207.72 ± 3.92     |
