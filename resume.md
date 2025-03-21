@@ -53,7 +53,7 @@ R&D of applied CV systems for real-time Sports Analytics.
 
 __10/2014 - 07/2017__ __Junior Researcher__ _Academic Research Institute_
 
-Developed and analyzed stable finite-difference schemes for modeling transient heat and mass transfer in three-dimensional geometries. Contributed to six peer-reviewed scientific publications and presented findings at three conferences.
+Developed and analyzed stable finite-difference schemes for modeling transient heat and mass transfer in three-dimensional geometries using C/C++. Contributed to six peer-reviewed scientific publications and presented findings at three conferences.
 
 ## Selected Publications
 
