@@ -8,7 +8,7 @@ date: 2025-02-09 21:00:00 +0000
 categories: Hardware DeepLearning
 article: true
 sitemap:
-    lastmod: 2025-02-13
+    lastmod: 2025-03-23
 ---
 
 <style>
@@ -18,11 +18,11 @@ table{
     text-align: center;
 }
 </style>
-_The topic of the blog has always been and remains Computer Vision. Sometimes, when working on computer vision tasks, it can be handy to use language models or vision-language models. For example, these models can serve as components in agent-based systems for research on specific topics, or in the case of vision-language models, they can act as simple prototypes for custom computer vision models or a source of annotation. Typically, capable models often require substantial hardware, powerful dedicated GPUs with a lot of VRAM. However, this post explores a less widely known budget-friendly option for running these models._
+_The topic of the blog has always been and remains Computer Vision. Sometimes, when working on computer vision tasks, it can be handy to use language models or vision-language models. For example, these models can serve as components in agent-based systems for research on specific topics, or in the case of vision-language models, they can act as simple prototypes for custom computer vision models or a source of annotation. Typically, capable models often require substantial hardware, powerful dedicated GPUs with a large amount of VRAM. However, this post explores a less widely known budget-friendly option for running these models._
 
 ![Benchmark results](/assets/post24/title.png)
 
-Complementary GitHub repo: [https://github.com/NikolasEnt/ollama-webui-intel](https://github.com/NikolasEnt/ollama-webui-intel)
+Complementary GitHub repository: [https://github.com/NikolasEnt/ollama-webui-intel](https://github.com/NikolasEnt/ollama-webui-intel)
 
 ## Ollama on Intel iGPUs
 
@@ -30,7 +30,7 @@ Hardware acceleration on Intel hardware can be achieved using [ipex-llm](https:/
 
 ## Hardware Acceleration Using IPEX-LLM
 
-It is an optimised library that enhances performance for transformer-based models on Intel processors and other hardware (GPUs, iGPUs, NPUs). `ipex-llm` is designed to provide efficient execution by using Intel's oneAPI Deep Neural Network Library (oneDNN). It supports various levels of low bit inference: INT2/INT4/INT8, FP4/FP8/FP16 and BF16.
+It is an optimised library that enhances performance for transformer-based models on Intel processors and other hardware (GPUs, iGPUs, NPUs). `ipex-llm` is designed to provide efficient execution by using Intel's oneAPI Deep Neural Network Library (oneDNN). It supports various levels of low-bit inference: INT2/INT4/INT8, FP4/FP8/FP16 and BF16.
 
 For convenience and reproducibility, an all-in-one Docker compose solution is provided in the GitHub repository for this post: [https://github.com/NikolasEnt/ollama-webui-intel](https://github.com/NikolasEnt/ollama-webui-intel). It includes Ollama with IPEX-LLM as an accelerated backend, compatible with both Intel iGPUs and dedicated GPUs (such as Arc, Flex, and Max), along with the required parameters and settings, as well as the [Open WebUI](https://github.com/open-webui/open-webui) interface.
 
@@ -43,7 +43,7 @@ sudo update-initramfs -u -k all
 
 All experiments were conducted using an Intel Ultra 5 125H (equipped with an Intel Arc Xe-LPG 112EU GPU) [1] with 64GB of DDR5 RAM at 5600 MHz in a dual-channel configuration. Note that the full power of the Intel Arc iGPU is only available with at least 16GB of system memory in a dual-channel configuration [2]. The CPU supports AVX2 but does not support AVX-512, so it cannot benefit from Ollama 0.5.8 optimisations, which include AVX512 acceleration. The entire setup was obtained as parts from the Chinese marketplace for under $500, making it an attractive option for running larger models without significant investments. 
 
-Models' inference speeds were compared with Nvidia RTX 3090 results, which is de facto the most cost-efficient GPU solution for single and dual-GPU workstations when running LLMs locally.
+Models’ inference speeds were compared with Nvidia RTX 3090 results, which is de facto the most cost-efficient GPU solution for single and dual-GPU workstations when running LLMs locally.
 
 ### Benchmarking
 
@@ -132,7 +132,7 @@ Another potential application is running smart home assistants using the low-pow
 
 Another interesting component of the Intel SoC is the NPU, which is also [supported](https://github.com/intel/ipex-llm/tree/main/python/llm/example/NPU/HF-Transformers-AutoModels/LLM) by ipex-llm, will be benchmarked in future posts.
 
-As a final remark, it is worth noting that if fast inference is required and cost is not a limiting factor, Nvidia-based solutions can undeniably offer much higher performance and throughput for big models. However, such Intel SoCs may have specific applications where energy efficiency and budget-friendliness are important.
+As a final remark, it is worth noting that if fast inference is required and cost is not a limiting factor, Nvidia-based solutions can undeniably offer much higher performance and throughput for big models. However, Intel SoCs may be suitable for specific applications where energy efficiency and cost are important.
 
 
 References:
