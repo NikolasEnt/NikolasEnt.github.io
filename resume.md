@@ -19,22 +19,27 @@ td {
 <div align="center">
   <h2><b>Nikolay S. Falaleev</b></h2>
   <p>London, United Kingdom, <a href="mailto:nikolasent@gmail.com">nikolasent@gmail.com</a></p>
-  <i>Head of AI, <a href="https://www.kaggle.com/nikolasent/">Kaggle master</a></i>
+  <i>Head of AI, <a href="https://www.kaggle.com/nikolasent/">Kaggle Master</a></i>
 </div>
 
-## IT Skills and experience
+Visionary AI leader with a decade of experience translating research into commercial success. Expertise in real-time and scalable multi-modal AI solutions for precision-critical applications. Proven ability to lead cross-functional teams and deliver end-to-end project execution.
 
+## Skills & Expertise
+
+| __Leadership:__ | | AI Strategy & Vision, Technical Leadership, Cross-Functional Team Leadership, Project Management, Scaling AI Solutions, Mentoring, Research & Development |
+| __Core Expertise:__ | | Deep Learning, Computer Vision, MLOps & AI Infrastructure, Semantic Segmentation, Object Detection & Tracking, Depth Estimation, Video Event Detection, Sensor Fusion, 3D Scene Reconstruction, Localization & Pathplanning |
+| __AI/ML Technologies:__ | | PyTorch, TensorRT, TensorFlow, TFLite, ONNX, Scikit-learn, NumPy, MLflow, vLLM, LangChain, vector DBs |
+| __Multimedia Frameworks:__ | | OpenCV, FFmpeg, DeepStream, GStreamer |
+| __Deployment:__ | | gRPC, FastAPI, Docker, Cloud Infrastructure (Azure, AWS, DigitalOcean), CI/CD Pipelines |
 | __Languages:__ | | Python, C/C++, R, SQL |
-| __Tools:__ | | PyTorch, TensorFlow, TFLite, ONNX, OpenCV, FFmpeg, Scikit-learn, NumPy, Docker, TensorRT, OpenVINO, MLflow, DeepStream, Gstreamer, FastAPI |
-| __Hardware:__ | | Industrial cameras, Optics, LIDARs, IMU, DL Accelerators |
-| __Skills:__ | | Artificial Neural Networks, Deep Learning, Computer Vision, Semantic Segmentation, Object Detection and Tracking, Depth Estimation, Video Event Detection, Sensor Fusion, Calibration, 3D Scene Reconstruction Localization and Pathplanning, Control, Numerical Methods, Optimization, MLOps, Research, Team Leader |
-| __Spare-time Projects:__ | | [Kaggle competitions](/competitions), [Broadcast Camera Calibration](https://github.com/NikolasEnt/soccernet-calibration-sportlight), support of development of [argus](https://github.com/lRomul/argus) framework, [Real-time CPU person segmentation for privacy in video calls](https://github.com/NikolasEnt/PersonMask_TFLite), [Image Semantic Segmentation](https://github.com/NikolasEnt/Road-Semantic-Segmentation). |
+| __DS & Analytics:__ | | Statistical Modeling, Optimization, Numerical Methods, Data Analysis, Data Visualization |
+| __Hardware:__ | | Industrial Cameras, Optics, LiDARs, Depth Cameras, IMUs, DL Accelerators, Sensor Fusion |
 
-## Employment
+## Experience
 
 __10/2020 - present,__ __Head of AI__ _Sportlight Technology_
 
-AI-Driven Analytics for Elite Sports (EPL, SPL, NBA, NHL, and others)
+AI-Driven Analytics for Elite Sports (**EPL, SPL, NBA, NHL**, and others)
 
 * Defined and implemented the company’s AI strategy, leading cross-functional teams in developing a real-time system that integrates multi-camera video and LIDAR data for insights through multi-modal data fusion (e.g., object detection, tracking, pose estimation, action spotting).
 * Architected and deployed an operational AI system used across all English Premier League (EPL) stadiums, the Saudi Pro League (SPL), and other venues worldwide, achieving **industry-leading player tracking accuracy** and reducing data QA time and costs by **12x**.
@@ -44,12 +49,11 @@ AI-Driven Analytics for Elite Sports (EPL, SPL, NBA, NHL, and others)
 
 __08/2017 - 08/2020,__ __Leading Computer Vision R&D__ _Constanta/OSAI_
 
-R&D of applied CV systems for real-time Sports Analytics.
+Led the research, development, and deployment of cutting-edge Computer Vision systems for real-time sports analytics, transforming data capture and analysis for tennis, basketball, billiards, and esports. Spearheaded projects that replaced human scouting with automated, highly accurate CV solutions, driving significant cost savings and enhancing data quality for betting, coaching, and broadcast applications. 
 
-* Proposed and executed the development of a DL-based system for real-time video analysis of sports events for [MR broadcasting](https://www.youtube.com/watch?v=S7T2hKB4DSA), sports analytics, and betting, including hardware design, computer vision R\&D, data management, and scalable deployment.
-* Led the implementation of production-ready inference pipelines and managed project life cycles from initial concept to commercial operation.
-* Pioneered a real-time spatio-temporal video processing ANN architecture, published in a [CVPR 2020 paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html). The system was showcased in high-profile events such as [Tokyo 2020 Olympics](https://web.archive.org/web/20230607084409/https://tokyo2020.osai.ai/), [JOOLA North American Teams Championships](https://medium.com/@osai.ai/news-north-american-teams-championships-2021-to-live-stream-table-tennis-in-mixed-reality-powered-8f3da803b86f) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c), and has been deployed in numerous venues worldwide for 24/7 commercial operation.
-* Created a Computer Vision module for pool-9 real-time analysis from organizing data collection to product deployment. [Video demo](https://youtu.be/KfQTzod34JE), [Blog article [rus]](https://habr.com/ru/company/constanta/blog/430030/).
+* **Pioneered a real-time spatio-temporal video processing architecture**, published in a [CVPR 2020 paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html). The system was showcased at high-profile events: [Tokyo 2020 Olympics](https://web.archive.org/web/20230607084409/https://tokyo2020.osai.ai/), [JOOLA North American Teams Championships](https://medium.com/@osai.ai/news-north-american-teams-championships-2021-to-live-stream-table-tennis-in-mixed-reality-powered-8f3da803b86f) and [National Table Tennis Championship 2020](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c), and has been deployed in numerous venues **worldwide for 24/7 commercial operation**. The system is **52% faster than humans, 40% cheaper and has accuracy above 97.5%**. [SBJ article](https://www.sportsbusinessjournal.com/Daily/Issues/2022/12/27/Technology/osai-ai-machine-learning-computer-vision-table-tennis-microbetting-data-mixed-reality/).
+* Architected and deployed Computer Vision modules for real-time video analysis of 100,000s of eSports tournaments monthly, including FIFA, NHL, and NBA.
+* Led the end-to-end development of a Computer Vision module for pool-9 real-time analysis, overseeing the entire project from data collection to product deployment. This system delivered significant cost savings. [Video demo](https://youtu.be/KfQTzod34JE), [Blog article [rus]](https://habr.com/ru/company/constanta/blog/430030/).
 
 __10/2014 - 07/2017__ __Junior Researcher__ _Academic Research Institute_
 
@@ -100,10 +104,6 @@ __MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia 
 | ||| Top-3% (15/583). The [solution](/proj/comp1) is based on convolutional neural networks as classifiers for camera models captured a given image. |
 |__2016__ ||| __[Image-Based Localization Challenge](https://medium.com/udacity/challenge-3-image-based-localization-5d9cadcff9e7)__, __Udacity__ |
 | ||| The 3d place. A deep learning [approach](/proj/proj3) based on GoogLeNet inception module was applied for "localization as classification" method for localization of an autonomous vehicle. |
-|__2015__ ||| __ХХVII International Innovation Conference of Young Scientists and Students__, Moscow, Russia |
-| ||| Diploma for the best scientific report “Mathematical modeling and numerical calculations of particles and coatings heating during gas-dynamic spraying”. |
-|__2013__ ||| __Mendeleev Prize for Young Chemists__, Kazan, Russia |
-| ||| The Second Prize for a report: “Properties of single wall carbon nanotubes encapsulated by inorganic compounds” |
 
 ## Education
 
@@ -133,11 +133,6 @@ __MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia 
 ## Clubs & Societies
 
 Founded a non-commercial organization [OniroAI](http://oniro.ai/) ([Github](https://github.com/OniroAI)) for independent research and development in Computer Vision and Artificial Intelligence.
-
-## Interests
-
-Self-Driving Cars, Deep Learning, Computer Vision, Robotics, Artificial Intelligence, Mathematical Modeling, UAVs
-
 
 ## Other Publications
 
