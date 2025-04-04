@@ -8,15 +8,13 @@ permalink: /about/
 
 I’m Nikolay Falaleev, a Deep Learning Researcher and Developer Lead with a strong passion for real-time multi-modal multi-task pipelines, mainly in the areas of perception, dynamic forecasting and other embodied AI systems. My fascination with robotics and artificial intelligence has been a driving force throughout my career and entire life, as I envision the transformative impact these technologies will have on our future.
 
-I firmly believe in the importance of classical fundamental education to be well prepared to meet all the challenges of the modern fast-changing but fascinating world. I completed my Master’s degree at Lomonosov Moscow State University’s Department of Material Science with honours. This fundamental interdisciplinary programme provided me with a robust foundation in Mathematics, Mechanics, Physics, Chemistry and Computer Sciences, along with hands-on experience in data processing from experimental observations and vast academic research experience.
-
-To stay ahead in the fast-evolving field of AI, I regularly engage in Summer Schools and MOOCs covering Computer Science and Data Analysis. One notable course was Udacity’s Self-Driving Car Engineer Nanodegree, taught by Sebastian Thrun.
+I firmly believe in the importance of classical fundamental education to be well prepared to meet all the challenges of the modern fast-changing but fascinating world. I completed my Master’s degree at Lomonosov Moscow State University’s Department of Material Science with honours. This fundamental interdisciplinary programme provided me with a robust foundation in Mathematics, Mechanics, Physics, Chemistry and Computer Sciences, along with hands-on experience in data processing from experimental observations and vast academic research experience. To stay at the forefront of this rapidly evolving field, I continuously pursue learning through Summer Schools and MOOCs.
 
 In addition to education, I am actively involved in independent projects, academic research on AI and lecturing. I regularly participate in Data Science [competitions][challenges] and share insights and tips for tackling real-world challenges in Computer Vision and Deep Learning. My contributions are detailed on the blog, which serves as a platform for sharing educational projects and discussing innovative ideas.
 
 Professionally, I have led significant advancements at various companies, mainly driving the development of real-time AI systems for sports analytics and MR broadcasting. These experiences have honed my ability to lead cross-functional teams in delivering cutting-edge solutions that are both scalable and commercially viable.
 
-My journey is not just professional but also personal; I am deeply passionate about self-driving cars, deep learning, computer vision, robotics, artificial intelligence, mathematical modelling and unmanned aerial vehicles (UAVs). Beyond work, I contribute to research and open-source AI projects on [GitHub][github].
+My journey is not just professional but deeply personal. I’m passionate about self-driving cars, deep learning, computer vision, robotics, artificial intelligence, mathematical modelling, and unmanned aerial vehicles (UAVs). Beyond my work, I contribute to research and open-source AI projects on [GitHub][github].
 
 I look forward to continuing my journey of innovation and exploration in these exciting fields.
 
