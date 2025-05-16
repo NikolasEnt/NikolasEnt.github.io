@@ -10,7 +10,7 @@ sitemap:
     lastmod: 2025-01-15
 ---
 
-_This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or provide instructions for a state-of-the-art optical laboratory setup. Rather, it focuses on the practical aspects of camera calibration in real-world environments with limited resources or DIY scenarios, while aiming to achieve the best possible results. This article explores physical aspects of calibration prior to processing calibration images._
+_This article is part of a series on camera calibration that has accumulated practical tips over more than a decade of experience. The series is not intended to be a comprehensive beginner's guide to camera calibration or to provide instructions for a state-of-the-art optical laboratory setup. Rather, it focuses on the practical aspects of camera calibration in real-world environments with limited resources or DIY scenarios, while aiming to achieve the best possible results. This article explores physical aspects of calibration prior to processing calibration images._
 
 ![Title image](/assets/post21/title.webp)
 
@@ -27,7 +27,7 @@ The effective focal length of a lens changes with the focus distance, leading to
 
 It is also crucial to fix the lens focus with a screw or other means available for a particular lens during the entire duration of the calibration process and, ideally, throughout its usage. Repetitive focus setting in real-world applications is hardly achievable, so if the lens focus was changed and then returned to what seems to be the same position, the calibration results would not be as accurate as they were during the original calibration. It is also important to keep in mind that the lens focus can be affected by thermal expansion effects due to changes in ambient temperature and that there may be a gradual drift in the focus settings over time due to natural vibration. All of these factors mean that calibration cannot be ideally accurate, and its accuracy may change over the long-term use of the optical setup. It means that, in many cases, calibration is not a one-time process — periodic validation and recalibration may be essential to maintaining long-term performance in real-world applications.
 
-Note that different optical designs of lenses require different camera model for the calibration process, for example, OpenCV has different set of functions for a standard lens calibration ([cv2.calibrateCamera](https://docs.opencv.org/4.10.0/d9/d0c/group__calib3d.html#ga687a1ab946686f0d85ae0363b5af1d7b)) as well as a set of functions for [fisheye](https://docs.opencv.org/4.10.0/db/d58/group__calib3d__fisheye.html) lens (e.g., [cv2.fisheye.calibrate](https://docs.opencv.org/4.10.0/db/d58/group__calib3d__fisheye.html#gad626a78de2b1dae7489e152a5a5a89e1)).
+Note that different optical designs of lenses require different camera models for the calibration process, for example, OpenCV has different set of functions for a standard lens calibration ([cv2.calibrateCamera](https://docs.opencv.org/4.10.0/d9/d0c/group__calib3d.html#ga687a1ab946686f0d85ae0363b5af1d7b)) as well as a set of functions for [fisheye](https://docs.opencv.org/4.10.0/db/d58/group__calib3d__fisheye.html) lens (e.g., [cv2.fisheye.calibrate](https://docs.opencv.org/4.10.0/db/d58/group__calib3d__fisheye.html#gad626a78de2b1dae7489e152a5a5a89e1)).
 
 ## Colour Image
 
