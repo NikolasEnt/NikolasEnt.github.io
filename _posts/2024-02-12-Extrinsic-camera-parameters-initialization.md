@@ -7,7 +7,7 @@ date:   2024-11-12 12:00:00 +0000
 categories: ComputerVision OpenCV Calibration
 article: true
 sitemap:
-    lastmod: 2025-01-08
+    lastmod: 2025-06-19
 ---
 
 *The idea for this post arose as a response to a common misconception I frequently hear: that camera calibration is equivalent to homography computation. This post will demonstrate the difference between OpenCV-based camera calibration and the pure homography-based calibration method.*
@@ -21,7 +21,7 @@ Camera calibration is the process of obtaining camera extrinsic and intrinsic pa
 The key step in calibrating a camera involves obtaining one or several images of a well-known object and a list of corresponding points in both the camera and world coordinate systems. There are many ways to find these correspondences, as demonstrated in previous posts: checkboard patterns [\[1\]][1] and football pitch lines as the calibration pattern [\[2\]][2]. The general rule is that the more points used and the better their uniform coverage of the entire frame by keypoints, the more accurate the calibration will be.
 In addition to acquiring point pairs, there is a subsequent step of processing these points to obtain the camera parameters, which can be done in several different ways.
 
-One option is to use OpenCV's [calibrateCamera](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d) method, which is based on Zhengyou Zhang's algorithm [3]. Internally, this method computes the initial intrinsic camera parameters, then it estimates the camera pose by solving Perspective-n-Points problem (see [solvePnP](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d)), and finally refines all parameters through Levenberg-Marquardt optimisation to minimise reprojection error.
+One option is to use OpenCV's [calibrateCamera](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d) method, which is based on Zhengyou Zhang's algorithm [3]. Internally, this method computes the initial intrinsic camera parameters, then estimates the camera pose by solving Perspective-n-Points problem (see [solvePnP](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d)), and finally refines all parameters through Levenberg-Marquardt optimisation to minimise reprojection error.
 
 ```python
 import cv2
@@ -148,7 +148,7 @@ Homography-based camera calibration, on the other hand, has simplicity in its co
 
 * **Computational Demand**: Homography-based methods can be computationally lighter for initial parameter estimation, but require further processing and refinement to achieve comparable accuracy. Numerical stability issues can arise, especially with noisy data for the homography-based calibration method.
 
-It is worth mentioning, that the results of extrinsic parameters estimations with the homography-based approach can be refined using an additional steps, such as application of openCV [solvePnPRefineLM](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga650ba4d286a96d992f82c3e6dfa525fa) algorithm, which uses the available points to refine the camera pose. An example code implementing the approach is available [here](https://github.com/NikolasEnt/soccernet-calibration-sportlight/blob/9ac3ad2adc2458af9af331ea82e1a0e8097c7e38/baseline/camera.py#L105).
+It is worth mentioning that the results of extrinsic parameters estimations with the homography-based approach can be refined using an additional steps, such as application of OpenCV [solvePnPRefineLM](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga650ba4d286a96d992f82c3e6dfa525fa) algorithm, which uses the available points to refine the camera pose. An example code implementing the approach is available [here](https://github.com/NikolasEnt/soccernet-calibration-sportlight/blob/9ac3ad2adc2458af9af331ea82e1a0e8097c7e38/baseline/camera.py#L105).
 
 ## Comparison on SoccerNet Camera Calibration dataset
 
@@ -170,7 +170,7 @@ _, mtx, dist, rvect, tvect = cv2.calibrateCamera(
     cameraMatrix=None, distCoeffs=None, flags=flags)
 ```
 
-For the homography-based approach the code was discribes in the previous section. Refinement for the homography-based method was performed using OpenCV `solvePnPRefineLM` function.
+For the homography-based approach the code was discribed in the previous section. Refinement for the homography-based method was performed using OpenCV `solvePnPRefineLM` function.
 
 The applied metrics are the same as those used in the CVPR Camera Calibration challenge 2023, as detailed in [\[2\]][2].
 
@@ -178,10 +178,10 @@ The applied metrics are the same as those used in the CVPR Camera Calibration ch
 
 | **Metric**                    | **OpenCV Calibration** | **Homography Calibration** | **Homography Calibration + Refinement** | **CVPR entry** |
 |-------------------------------|------------------------|-----------------------------|---------------------------------------|--------------|
-| **$$L_2$$ Reprojection Error, px**  | 13.84919               | 28.23587                    | 13.70023                              | 9.945787     |
-| **Accuracy@5**                    | 0.7141704              | 0.1429572                   | 0.5942461                             | 0.7417732    |
-| **Completeness**                | 0.7272727              | 0.7531133                   | 0.7531133                             | 0.746264     |
-| **Final metric** | 0.5193967              | 0.107663                    | 0.4475347                             | 0.5535587    |
+| **$$L_2$$ Reprojection Error, px**  | 13.85               | 28.24                    | 13.70                              | 9.95     |
+| **Accuracy@5**                    | 0.7142              | 0.1430                   | 0.5942                             | 0.7418    |
+| **Completeness**                | 0.7273              | 0.7531                   | 0.7531                             | 0.7462     |
+| **Final metric** | 0.5194              | 0.1077                    | 0.4475                             | 0.5536    |
 
 
 **$$L_2$$​ Reprojection Error** : OpenCV Calibration has an error of 13.8 px, while Homography Calibration alone shows a much higher error at 28.2 px. With refinement steps added to the method, the error drops to a value comparable with the OpenCV method: 13.7 px.
@@ -198,7 +198,7 @@ The last column of the table `CVPR entry` shows the results of the CVPR entry al
 
 Despite the simplicity of the homography-based approach concept and its mathematical correctness, in reality, the approach is less accurate in real-world scenarios as data compression to a single homography matrix can lead to significant loss of information. The homography-based approach can be useful when only 4-5 points are available for calibration, but in real-world cases, the OpenCV-based method or Zhang's algorithm in general is more suitable and adds a lot of flexibility regarding additional value computations, such as distortion estimation. On the other hand, homography-based methods are widely used in deep-learning-based camera calibration methods due to their simplicity of representation and ease of application for many other relevant tasks, such as camera-to-camera calibration in multiview systems or rough estimation of an object's position on the ground when precision is less important. For further details on the deep-learning-based methods, there is a great survey [6].
 
-More complicated pipelines may use a combination of the approaches to get the best from both methods. Extra heuristics and data processing techniques, especially for data cleaning and refinement, could be used to achieve the best possible result.
+More complicated pipelines may use a combination of the approaches to get the best from both methods. Extra heuristics and data processing techniques, especially for data cleaning and refinement, can be used to achieve the best possible result.
 
 ## References:
 
