@@ -61,7 +61,7 @@ Developed and analyzed stable finite-difference schemes for modeling transient h
 
 ## Selected Publications
 
-1. <u>Falaleev N.</u>, Orlov N. _Self-Controlled Diffusion for Denoising in Scientific Imaging_, //
+1. <u>Falaleev N.</u>, Orlov N. _DIFFRACT: Diffusion-based Restoration via Adaptive Control and Thresholding for Diffraction Imaging_, // To appear in __The IEEE/CVF International Conference on Computer Vision (ICCV) Workshops Proceedings__,
 2025, [ArXiv:2504.16951](https://arxiv.org/abs/2504.16951v1).
 
 2. <u>Falaleev N.</u>, Chen R. _Enhancing Soccer Camera Calibration Through Keypoint Exploitation_, //
@@ -69,7 +69,7 @@ __MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia 
 
 3. Cioppa A., Giancola S., ..., <u>Falaleev N.</u>, et al. _SoccerNet 2023 challenges results_, // __Sports Engineering__, V. 27, 2024, DOI: [10.1007/s12283-024-00466-4](https://link.springer.com/article/10.1007/s12283-024-00466-4), [ArXiv:2309.06006](https://arxiv.org/abs/2309.06006).
 
-4. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops__, 2020, pp. 884-885, DOI: [10.1109/CVPRW50498.2020.00450](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html), [ArXiv:2004.09927](https://arxiv.org/abs/2004.09927).
+4. Voeikov R., <u>Falaleev N.</u>, Baikulov R. _TTNet: Real-time temporal and spatial video analysis of table tennis._ // __The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops Proceedings__, 2020, pp. 884-885, DOI: [10.1109/CVPRW50498.2020.00450](https://openaccess.thecvf.com/content_CVPRW_2020/html/w53/Voeikov_TTNet_Real-Time_Temporal_and_Spatial_Video_Analysis_of_Table_Tennis_CVPRW_2020_paper.html), [ArXiv:2004.09927](https://arxiv.org/abs/2004.09927).
 
 
 [Google Scholar profile](https://scholar.google.com/citations?user=745cJkYAAAAJ&hl=en)
