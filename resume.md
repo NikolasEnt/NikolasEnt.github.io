@@ -62,7 +62,7 @@ Developed and analyzed stable finite-difference schemes for modeling transient h
 ## Selected Publications
 
 1. <u>Falaleev N.</u>, Orlov N. _DIFFRACT: Diffusion-based Restoration via Adaptive Control and Thresholding for Diffraction Imaging_, // To appear in __The IEEE/CVF International Conference on Computer Vision (ICCV) Workshops Proceedings__,
-2025, [ArXiv:2504.16951](https://arxiv.org/abs/2504.16951v1).
+2025, [ArXiv:2504.16951](https://arxiv.org/abs/2504.16951v2).
 
 2. <u>Falaleev N.</u>, Chen R. _Enhancing Soccer Camera Calibration Through Keypoint Exploitation_, //
 __MMSports '24: Proceedings of the 7th ACM International Workshop on Multimedia Content Analysis in Sports__, 2024, pp. 65-73, DOI: [10.1145/3689061.3689074](https://dl.acm.org/doi/abs/10.1145/3689061.3689074), [GitHub repo](10.1145/3689061.3689074).
