@@ -43,6 +43,13 @@
     color: #fff;
 }
 
+a,
+a:focus,
+a:hover {
+    color: #062F4F;
+    text-decoration: underline
+}
+
 p.info {
     color: #fff;
 }
