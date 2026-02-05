@@ -341,7 +341,7 @@ server {
 
 Using Nginx enables more complex setups as the service scales, including load balancing and more advanced security features.
 
-*Note:* Given the current situation with Nginx, it can be beneficial to consider using Nginx alternatives, many of which use the same config structure and offer extra features.
+*Note:* Given the current situation with Nginx, it can be beneficial to consider using Nginx alternatives, many of which use the same config structure and offer extra features. MinIO alternatives, such us RustFS and Garage are worth considering too.
 
 
 ## 5. Client-Side Usage
